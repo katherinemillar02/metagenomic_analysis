@@ -1,0 +1,18 @@
+[33mNextflow 25.10.4 is available - Please consider updating your version to it(B[m
+The following invalid input values have been detected:
+
+* --input (/gpfs/scratch/ajh20fhu/scripts/nfcoresheet.csv): Validation of file failed:
+	-> Entry 1: Error for field 'short_reads_1' (/gpfs/.../H_13_01_nohost_R1.fastq.gz): the file or directory '/gpfs/.../H_13_01_nohost_R1.fastq.gz' does not exist (short_reads_1 needs to be a file path with no spaces.
+
+File needs to exist!)
+	-> Entry 1: Error for field 'short_reads_2' (/gpfs/.../H_13_01_nohost_R2.fastq.gz): the file or directory '/gpfs/.../H_13_01_nohost_R2.fastq.gz' does not exist (short_reads_2 needs to be a file path with no spaces.
+
+File needs to exist!)
+	-> Entry 2: Error for field 'short_reads_1' (/gpfs/.../NH_12_01_nohost_R1.fastq.gz): the file or directory '/gpfs/.../NH_12_01_nohost_R1.fastq.gz' does not exist (short_reads_1 needs to be a file path with no spaces.
+
+File needs to exist!)
+	-> Entry 2: Error for field 'short_reads_2' (/gpfs/.../NH_12_01_nohost_R2.fastq.gz): the file or directory '/gpfs/.../NH_12_01_nohost_R2.fastq.gz' does not exist (short_reads_2 needs to be a file path with no spaces.
+
+File needs to exist!)
+
+ -- Check script '/gpfs/home/ajh20fhu/.nextflow/assets/nf-core/mag/subworkflows/nf-core/utils_nfschema_plugin/main.nf' at line: 68 or see '.nextflow.log' file for more details

@@ -1,0 +1,10 @@
+
+ N E X T F L O W   ~  version 25.04.6
+
+NOTE: Your local project version looks outdated - a different revision is available in the remote repository [0c370baf73]
+ERROR ~ Unable to parse config file: '/gpfs/scratch/ajh20fhu/nf_magpipeline'
+
+  Is a directory
+
+
+ -- Check '.nextflow.log' file for details

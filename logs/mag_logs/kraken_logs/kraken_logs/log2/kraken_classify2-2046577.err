@@ -1,0 +1,6 @@
+gzip: gzip: /gpfs/scratch/ajh20fhu/medfly_metagenomics/results2/*_nohost.fastq.1.gz: No such file or directory
+/gpfs/scratch/ajh20fhu/medfly_metagenomics/results2/*_nohost.fastq.2.gz: No such file or directory
+Loading database information... done.
+0 sequences (0.00 Mbp) processed in 0.029s (0.0 Kseq/m, 0.00 Mbp/m).
+  0 sequences classified (-nan%)
+  0 sequences unclassified (-nan%)

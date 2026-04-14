@@ -1,0 +1,32 @@
+Feb-26 19:16:01.247 [main] DEBUG nextflow.cli.Launcher - $> nextflow run nf-core/mag -profile singularity,slurm --input samplesheet.csv --outdir results -work-dir /mag_work -resume
+Feb-26 19:16:01.570 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 25.04.6
+Feb-26 19:16:01.627 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/gpfs/home/ajh20fhu/.nextflow/plugins; core-plugins: nf-amazon@2.15.0,nf-azure@1.16.0,nf-cloudcache@0.4.3,nf-codecommit@0.2.3,nf-console@1.2.1,nf-google@1.21.1,nf-k8s@1.0.0,nf-tower@1.11.4,nf-wave@1.12.1
+Feb-26 19:16:01.689 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Feb-26 19:16:01.689 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Feb-26 19:16:01.691 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+Feb-26 19:16:01.698 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Feb-26 19:16:01.705 [main] DEBUG nextflow.scm.ProviderConfig - Using SCM config path: /gpfs/home/ajh20fhu/.nextflow/scm
+Feb-26 19:16:02.331 [main] DEBUG nextflow.scm.AssetManager - Git config: /gpfs/home/ajh20fhu/.nextflow/assets/nf-core/mag/.git/config; branch: main; remote: origin; url: https://github.com/nf-core/mag.git
+Feb-26 19:16:02.353 [main] DEBUG nextflow.scm.RepositoryFactory - Found Git repository result: [RepositoryFactory]
+Feb-26 19:16:02.359 [main] DEBUG nextflow.scm.AssetManager - Git config: /gpfs/home/ajh20fhu/.nextflow/assets/nf-core/mag/.git/config; branch: main; remote: origin; url: https://github.com/nf-core/mag.git
+Feb-26 19:16:03.434 [main] DEBUG nextflow.config.ConfigBuilder - Found config base: /gpfs/home/ajh20fhu/.nextflow/assets/nf-core/mag/nextflow.config
+Feb-26 19:16:03.435 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /gpfs/home/ajh20fhu/.nextflow/assets/nf-core/mag/nextflow.config
+Feb-26 19:16:03.443 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /gpfs/home/ajh20fhu/.nextflow/secrets/store.json
+Feb-26 19:16:03.445 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@721d5b74] - activable => nextflow.secret.LocalSecretsProvider@721d5b74
+Feb-26 19:16:03.455 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `singularity,slurm`
+Feb-26 19:16:04.642 [main] DEBUG nextflow.config.ConfigBuilder - Available config profiles: [bih, cfc_dev, uzl_omics, ifb_core, embl_hd, denbi_qbic, alice, mjolnir_globe, uppmax, giga, incliva, ilifu, ki_luria, uge, icr_alma, rosalind_uge, lugh, mccleary, unibe_ibu, vai, czbiohub_aws, jax, roslin, iris, tes, scw, unc_longleaf, tigem, tubingen_apg, apollo, ipop_up, vsc_calcua, pdc_kth, ceci_nic5, ccga_cau, humantechnopole, stjude, daisybio, eddie, medair, biowulf, apptainer, bi, test_minimal, bigpurple, adcra, cedars, pawsey_setonix, vsc_kul_uhasselt, pawsey_nimbus, rki, ucl_myriad, utd_ganymede, charliecloud, fred_hutch, seattlechildrens, icr_davros, ceres, munin, rosalind, hasta, cfc, emulate_amd64, uzh, shu_bmrc, ebi_codon_slurm, test_alternatives, ebc, ccga_dx, test_hybrid, crick, ku_sund_danhead, marvin, lrz_cm4, shifter, biohpc_gen, mana, mamba, york_viking, unc_lccc, wehi, awsbatch, wustl_htcf, arcc, ceci_dragon2, imperial, maestro, software_license, cannon, genotoul, nci_gadi, abims, eva_grace, janelia, nu_genomics, googlebatch, oist, sahmri, kaust, alliance_canada, arm64, mpcdf, leicester, vsc_ugent, create, sage, cambridge, jex, test_assembly_input, podman, ebi_codon, cheaha, xanadu, nyu_hpc, test, marjorie, test_longreadonly_alternatives, computerome, ucd_sonic, gpu, test_single_end, seg_globe, mssm, sanger, dkfz, bluebear, pasteur, einstein, ethz_euler, m3c, test_full, imb, ucl_cscluster, tuos_stanage, azurebatch, seadragon, crukmi, csiro_petrichor, qmul_apocrita, wave, docker, engaging, gis, hypatia, psmn, eva, unity, cropdiversityhpc, nygc, fgcz, conda, crg, singularity, mpcdf_viper, pe2, dirac, self_hosted_runner, tufts, uw_hyak_pedslabs, binac2, debug, hki_genie, genouest, cbe, unsw_katana, utd_juno, phoenix, seawulf, test_longreadonly, uod_hpc, fub_curta, lovelace, uct_hpc, aws_tower, binac, fsu_draco]
+Feb-26 19:16:04.658 [main] DEBUG nextflow.cli.Launcher - Operation aborted
+nextflow.exception.AbortOperationException: Unknown configuration profile: 'slurm'
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
+	at nextflow.config.ConfigBuilder.checkValidProfile(ConfigBuilder.groovy:511)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
+	at nextflow.config.ConfigBuilder.buildConfig0(ConfigBuilder.groovy:386)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
+	at nextflow.config.ConfigBuilder.buildGivenFiles(ConfigBuilder.groovy:318)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
+	at nextflow.config.ConfigBuilder.buildConfigObject(ConfigBuilder.groovy:816)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
+	at nextflow.config.ConfigBuilder.build(ConfigBuilder.groovy:829)
+	at nextflow.cli.CmdRun.run(CmdRun.groovy:333)
+	at nextflow.cli.Launcher.run(Launcher.groovy:513)
+	at nextflow.cli.Launcher.main(Launcher.groovy:673)

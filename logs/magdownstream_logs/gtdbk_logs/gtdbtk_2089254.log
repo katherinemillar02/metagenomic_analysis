@@ -1,0 +1,18 @@
+[2026-03-24 13:07:54] INFO: GTDB-Tk v2.6.1
+[2026-03-24 13:07:54] INFO: gtdbtk classify_wf --genome_dir /gpfs/scratch/ajh20fhu/nfcore/nfcore_magpipeline_21032026_trial/results/GenomeBinning/MaxBin2/bins/drep_MaxBin2_out/dereplicated_genomes --out_dir /gpfs/scratch/ajh20fhu/nfcore/gtdbtk_db/results --extension fa --cpus 16 --pplacer_cpus 1
+[2026-03-24 13:07:54] INFO: Using GTDB-Tk reference data version r226: /gpfs/scratch/ajh20fhu/gtdbtk_db/release226
+[2026-03-24 13:07:54] INFO: Loading reference genomes.
+[2026-03-24 13:07:55] INFO: Calculating all vs all ANI with skani v0.3.1.
+[2026-03-24 13:07:55] INFO: Sketching refence genomes
+[2026-03-24 13:15:44] INFO: Done
+[2026-03-24 13:15:56] INFO: Capturing skani results.
+[2026-03-24 13:16:02] INFO: Summary of results saved to: /gpfs/scratch/ajh20fhu/nfcore/gtdbtk_db/results/classify/ani_screen/gtdbtk.bac120.ani_summary.tsv
+[2026-03-24 13:16:02] INFO: 3 genome(s) have been classified using the ANI pre-screening step.
+[2026-03-24 13:16:02] INFO: Done.
+[2026-03-24 13:16:02] INFO: All genomes have been classified by the ANI screening step, Identify and Align steps will be skipped.
+[2026-03-24 13:16:03] INFO: Note that Tk classification mode is insufficient for publication of new taxonomic designations. New designations should be based on one or more de novo trees, an example of which can be produced by Tk in de novo mode.
+[2026-03-24 13:16:03] INFO: Done.
+[2026-03-24 13:16:03] INFO: Removing intermediate files.
+[2026-03-24 13:16:03] INFO: Intermediate files removed.
+[2026-03-24 13:16:03] INFO: Done.
+GTDB-Tk job finished!

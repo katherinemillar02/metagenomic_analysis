@@ -1,0 +1,25 @@
+==============================
+Running eggNOG on MEGAHIT-MaxBin2-NH_12_01.001.fa
+Start time: Sun Mar 22 20:55:40 GMT 2026
+==============================
+#  emapper-2.1.13
+# emapper.py  -i MEGAHIT-MaxBin2-NH_12_01.001.fa -o MEGAHIT-MaxBin2-NH_12_01.001_eggnog --cpu 8 --data_dir /gpfs/scratch/ajh20fhu/scripts/results/GenomeBinning/MaxBin2/bins/drep_MaxBin2_out/dereplicated_genomes/eggnog_db --translate
+Output files detected in disk. Use --resume or --override to continue
+Finished MEGAHIT-MaxBin2-NH_12_01.001.fa at Sun Mar 22 20:55:42 GMT 2026
+==============================
+Running eggNOG on MEGAHIT-MaxBin2-NH_12_01.002.fa
+Start time: Sun Mar 22 20:55:42 GMT 2026
+==============================
+#  emapper-2.1.13
+# emapper.py  -i MEGAHIT-MaxBin2-NH_12_01.002.fa -o MEGAHIT-MaxBin2-NH_12_01.002_eggnog --cpu 8 --data_dir /gpfs/scratch/ajh20fhu/scripts/results/GenomeBinning/MaxBin2/bins/drep_MaxBin2_out/dereplicated_genomes/eggnog_db --translate
+Output files detected in disk. Use --resume or --override to continue
+Finished MEGAHIT-MaxBin2-NH_12_01.002.fa at Sun Mar 22 20:55:43 GMT 2026
+==============================
+Running eggNOG on SPAdes-MaxBin2-H_13_01.003.fa
+Start time: Sun Mar 22 20:55:43 GMT 2026
+==============================
+#  emapper-2.1.13
+# emapper.py  -i SPAdes-MaxBin2-H_13_01.003.fa -o SPAdes-MaxBin2-H_13_01.003_eggnog --cpu 8 --data_dir /gpfs/scratch/ajh20fhu/scripts/results/GenomeBinning/MaxBin2/bins/drep_MaxBin2_out/dereplicated_genomes/eggnog_db --translate
+Output files detected in disk. Use --resume or --override to continue
+Finished SPAdes-MaxBin2-H_13_01.003.fa at Sun Mar 22 20:55:43 GMT 2026
+All MAGs completed successfully at Sun Mar 22 20:55:43 GMT 2026

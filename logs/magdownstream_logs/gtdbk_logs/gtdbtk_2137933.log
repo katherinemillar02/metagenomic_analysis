@@ -1,0 +1,50 @@
+[2026-03-30 11:04:16] INFO: GTDB-Tk v2.6.1
+[2026-03-30 11:04:16] INFO: gtdbtk classify_wf --genome_dir /gpfs/scratch/ajh20fhu/nfcore/gtdbtk_db/results_CONCOCT/all_bins_fa --out_dir /gpfs/scratch/ajh20fhu/nfcore/gtdbtk_db/results_CONCOCT --extension fa --cpus 16 --pplacer_cpus 1
+[2026-03-30 11:04:16] INFO: Using GTDB-Tk reference data version r226: /gpfs/scratch/ajh20fhu/gtdbtk_db/release226
+[2026-03-30 11:04:17] INFO: Loading reference genomes.
+[2026-03-30 11:04:19] INFO: Calculating all vs all ANI with skani v0.3.1.
+[2026-03-30 11:04:20] INFO: Sketching refence genomes
+[2026-03-30 11:13:15] INFO: Done
+[2026-03-30 11:15:28] INFO: Capturing skani results.
+[2026-03-30 11:15:41] INFO: Summary of results saved to: /gpfs/scratch/ajh20fhu/nfcore/gtdbtk_db/results_CONCOCT/classify/ani_screen/gtdbtk.bac120.ani_summary.tsv
+[2026-03-30 11:15:41] INFO: 78 genome(s) have been classified using the ANI pre-screening step.
+[2026-03-30 11:15:41] INFO: Done.
+[2026-03-30 11:15:42] INFO: Identifying markers in 213 genomes with 16 threads.
+[2026-03-30 11:15:42] TASK: Running Prodigal V2.6.3 to identify genes.
+[2026-03-30 11:15:45] INFO: Completed 213 genomes in 3.14 seconds (67.88 genomes/second).
+[2026-03-30 11:15:45] WARNING: Skipping 6 of 213 genomes as no genes were called by Prodigal. Check the genome quality (see gtdbtk.warnings.log).
+[2026-03-30 11:15:45] WARNING: Skipping: MEGAHIT-CONCOCT-NH_12_01_60
+[2026-03-30 11:15:45] WARNING: Skipping: MEGAHIT-CONCOCT-H_13_01_44
+[2026-03-30 11:15:45] WARNING: Skipping: MEGAHIT-CONCOCT-NH_12_01_11
+[2026-03-30 11:15:45] WARNING: Skipping: MEGAHIT-CONCOCT-NH_12_01_55
+[2026-03-30 11:15:45] WARNING: Skipping: MEGAHIT-CONCOCT-NH_12_01_44
+[2026-03-30 11:15:45] WARNING: Skipping: SPAdes-CONCOCT-NH_12_01_55
+[2026-03-30 11:15:45] TASK: Identifying TIGRFAM protein families.
+[2026-03-30 11:15:49] INFO: Completed 207 genomes in 3.94 seconds (52.51 genomes/second).
+[2026-03-30 11:15:49] TASK: Identifying Pfam protein families.
+[2026-03-30 11:15:50] INFO: Completed 207 genomes in 0.63 seconds (328.71 genomes/second).
+[2026-03-30 11:15:50] INFO: Annotations done using HMMER 3.4 (Aug 2023).
+[2026-03-30 11:15:50] TASK: Summarising identified marker genes.
+[2026-03-30 11:15:50] INFO: Completed 207 genomes in 0.29 seconds (717.39 genomes/second).
+[2026-03-30 11:15:50] INFO: Done.
+[2026-03-30 11:15:53] INFO: Aligning markers in 207 genomes with 16 CPUs.
+[2026-03-30 11:15:53] INFO: Processing 207 genomes identified as bacterial.
+[2026-03-30 11:16:06] INFO: Read concatenated alignment for 136,646 GTDB genomes.
+[2026-03-30 11:16:06] TASK: Generating concatenated alignment for each marker.
+[2026-03-30 11:16:08] INFO: Completed 207 genomes in 0.01 seconds (27,477.08 genomes/second).
+[2026-03-30 11:16:09] TASK: Aligning 11 identified markers using hmmalign 3.4 (Aug 2023).
+[2026-03-30 11:16:11] INFO: Completed 11 markers in 0.02 seconds (492.17 markers/second).
+[2026-03-30 11:16:11] TASK: Masking columns of bacterial multiple sequence alignment using canonical mask.
+[2026-03-30 11:19:04] INFO: Completed 136,653 sequences in 2.88 minutes (47,506.83 sequences/minute).
+[2026-03-30 11:19:04] INFO: Masked bacterial alignment from 41,084 to 5,036 AAs.
+[2026-03-30 11:19:04] INFO: 7 bacterial user genomes have amino acids in <10.0% of columns in filtered MSA.
+[2026-03-30 11:19:04] INFO: Creating concatenated alignment for 136,646 bacterial GTDB and user genomes.
+[2026-03-30 11:19:45] INFO: All bacterial user genomes have been filtered out.
+[2026-03-30 11:19:46] INFO: Done.
+[2026-03-30 11:19:47] WARNING: 206 of 291 genomes have been labeled as 'Unclassified'.
+[2026-03-30 11:19:47] INFO: Note that Tk classification mode is insufficient for publication of new taxonomic designations. New designations should be based on one or more de novo trees, an example of which can be produced by Tk in de novo mode.
+[2026-03-30 11:19:47] INFO: Done.
+[2026-03-30 11:19:47] INFO: Removing intermediate files.
+[2026-03-30 11:19:53] INFO: Intermediate files removed.
+[2026-03-30 11:19:53] INFO: Done.
+GTDB-Tk job finished!

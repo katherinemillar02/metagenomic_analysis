@@ -1,0 +1,18 @@
+[33mNextflow 25.10.4 is available - Please consider updating your version to it(B[m
+The following invalid input values have been detected:
+
+* --input (/gpfs/scratch/ajh20fhu/nfcore/nfcore_magpipeline/samplesheet.csv): Validation of file failed:
+	-> Entry 1: Error for field 'short_reads_1' (fastq/X204SC26022514-Z01-F001/01.RawData/NH_12_01/NH_12_01_EKDN260003874-1A_23FVJMLT4_L1_1.fq.gz): the file or directory 'fastq/X204SC26022514-Z01-F001/01.RawData/NH_12_01/NH_12_01_EKDN260003874-1A_23FVJMLT4_L1_1.fq.gz' does not exist (short_reads_1 needs to be a file path with no spaces.
+
+File needs to exist!)
+	-> Entry 1: Error for field 'short_reads_2' (fastq/X204SC26022514-Z01-F001/01.RawData/NH_12_01/NH_12_01_EKDN260003874-1A_23FVJMLT4_L1_2.fq.gz): the file or directory 'fastq/X204SC26022514-Z01-F001/01.RawData/NH_12_01/NH_12_01_EKDN260003874-1A_23FVJMLT4_L1_2.fq.gz' does not exist (short_reads_2 needs to be a file path with no spaces.
+
+File needs to exist!)
+	-> Entry 2: Error for field 'short_reads_1' (fastq/X204SC26022514-Z01-F001/01.RawData/H_13_01/H_13_01_EKDN260003873-1A_23FVJMLT4_L1_1.fq.gz): the file or directory 'fastq/X204SC26022514-Z01-F001/01.RawData/H_13_01/H_13_01_EKDN260003873-1A_23FVJMLT4_L1_1.fq.gz' does not exist (short_reads_1 needs to be a file path with no spaces.
+
+File needs to exist!)
+	-> Entry 2: Error for field 'short_reads_2' (fastq/X204SC26022514-Z01-F001/01.RawData/H_13_01/H_13_01_EKDN260003873-1A_23FVJMLT4_L1_2.fq.gz): the file or directory 'fastq/X204SC26022514-Z01-F001/01.RawData/H_13_01/H_13_01_EKDN260003873-1A_23FVJMLT4_L1_2.fq.gz' does not exist (short_reads_2 needs to be a file path with no spaces.
+
+File needs to exist!)
+
+ -- Check script '/gpfs/home/ajh20fhu/.nextflow/assets/nf-core/mag/subworkflows/nf-core/utils_nfschema_plugin/main.nf' at line: 68 or see '.nextflow.log' file for more details

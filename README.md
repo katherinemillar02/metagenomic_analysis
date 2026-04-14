@@ -1,1 +1,3 @@
-# metagenomic_analysis
+# metagenomic_analyses
+
+batch script and logs

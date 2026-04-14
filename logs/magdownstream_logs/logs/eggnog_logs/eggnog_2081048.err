@@ -1,0 +1,22 @@
+[1;32mFunctional annotation of hits...[0m
+Parsing fasta file /gpfs/scratch/ajh20fhu/nfcore/nfcore_magpipeline_21032026_trial/results/GenomeBinning/MaxBin2/bins/drep_MaxBin2_out/dereplicated_genomes/MEGAHIT-MaxBin2-NH_12_01.001.fa...
+Fasta file /gpfs/scratch/ajh20fhu/nfcore/nfcore_magpipeline_21032026_trial/results/GenomeBinning/MaxBin2/bins/drep_MaxBin2_out/dereplicated_genomes/MEGAHIT-MaxBin2-NH_12_01.001.fa parsing complete.
+[1;32mCreating gff file /gpfs/scratch/ajh20fhu/nfcore/nfcore_magpipeline_21032026_trial/results/GenomeBinning/MaxBin2/bins/drep_MaxBin2_out/dereplicated_genomes/MEGAHIT-MaxBin2-NH_12_01.001_eggnog.emapper.genepred.gff...[0m
+500 541.6075429916382 0.92 q/s (% mem usage: 24.30, % mem avail: 75.74)
+1000 1065.7374758720398 0.94 q/s (% mem usage: 24.30, % mem avail: 75.72)
+1459 1558.4263317584991 0.94 q/s (% mem usage: 24.20, % mem avail: 75.76)
+[1;32mFunctional annotation of hits...[0m
+Parsing fasta file /gpfs/scratch/ajh20fhu/nfcore/nfcore_magpipeline_21032026_trial/results/GenomeBinning/MaxBin2/bins/drep_MaxBin2_out/dereplicated_genomes/MEGAHIT-MaxBin2-NH_12_01.002.fa...
+Fasta file /gpfs/scratch/ajh20fhu/nfcore/nfcore_magpipeline_21032026_trial/results/GenomeBinning/MaxBin2/bins/drep_MaxBin2_out/dereplicated_genomes/MEGAHIT-MaxBin2-NH_12_01.002.fa parsing complete.
+[1;32mCreating gff file /gpfs/scratch/ajh20fhu/nfcore/nfcore_magpipeline_21032026_trial/results/GenomeBinning/MaxBin2/bins/drep_MaxBin2_out/dereplicated_genomes/MEGAHIT-MaxBin2-NH_12_01.002_eggnog.emapper.genepred.gff...[0m
+500 494.00590205192566 1.01 q/s (% mem usage: 24.30, % mem avail: 75.74)
+1000 1003.2174212932587 1.00 q/s (% mem usage: 24.20, % mem avail: 75.81)
+1500 1460.1680932044983 1.03 q/s (% mem usage: 24.20, % mem avail: 75.79)
+1579 1519.122237920761 1.04 q/s (% mem usage: 24.10, % mem avail: 75.90)
+[1;32mFunctional annotation of hits...[0m
+Parsing fasta file /gpfs/scratch/ajh20fhu/nfcore/nfcore_magpipeline_21032026_trial/results/GenomeBinning/MaxBin2/bins/drep_MaxBin2_out/dereplicated_genomes/SPAdes-MaxBin2-H_13_01.003.fa...
+Fasta file /gpfs/scratch/ajh20fhu/nfcore/nfcore_magpipeline_21032026_trial/results/GenomeBinning/MaxBin2/bins/drep_MaxBin2_out/dereplicated_genomes/SPAdes-MaxBin2-H_13_01.003.fa parsing complete.
+[1;32mCreating gff file /gpfs/scratch/ajh20fhu/nfcore/nfcore_magpipeline_21032026_trial/results/GenomeBinning/MaxBin2/bins/drep_MaxBin2_out/dereplicated_genomes/SPAdes-MaxBin2-H_13_01.003_eggnog.emapper.genepred.gff...[0m
+500 484.8430109024048 1.03 q/s (% mem usage: 23.70, % mem avail: 76.26)
+1000 860.2770526409149 1.16 q/s (% mem usage: 23.60, % mem avail: 76.41)
+1039 891.6062006950378 1.17 q/s (% mem usage: 23.50, % mem avail: 76.51)

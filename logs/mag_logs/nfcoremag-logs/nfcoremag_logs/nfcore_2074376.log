@@ -1,0 +1,482 @@
+
+ N E X T F L O W   ~  version 25.04.6
+
+NOTE: Your local project version looks outdated - a different revision is available in the remote repository [0c370baf73]
+Launching `https://github.com/nf-core/mag` [modest_cantor] DSL2 - revision: b52fa53592 [main]
+
+
+------------------------------------------------------
+                                        ,--./,-.
+        ___     __   __   __   ___     /,-._.--~'
+  |\ | |__  __ /  ` /  \ |__) |__         }  {
+  | \| |       \__, \__/ |  \ |___     \`-._,-`-,
+                                        `._,._,'
+  nf-core/mag 5.4.0
+------------------------------------------------------
+
+Input/output options
+  input                   : /gpfs/scratch/ajh20fhu/nfcore/nfcore_magpipeline/samplesheet.csv
+  outdir                  : results
+
+Generic options
+  trace_report_suffix     : 2026-03-20_22-27-03
+
+Quality control for short reads options
+  host_fasta              : /gpfs/scratch/ajh20fhu/medfly_ref/GCF_000347755.3_Ccap_2.1_genomic.fna.gz
+
+Taxonomic profiling options
+  gtdbtk_min_completeness : 50.0
+  gtdbtk_max_contamination: 10.0
+
+Bin quality check options
+  run_busco               : true
+
+Core Nextflow options
+  revision                : main
+  runName                 : modest_cantor
+  launchDir               : /gpfs/scratch/ajh20fhu/scripts
+  workDir                 : /gpfs/scratch/ajh20fhu/scripts/work
+  projectDir              : /gpfs/home/ajh20fhu/.nextflow/assets/nf-core/mag
+  userName                : ajh20fhu
+  profile                 : standard
+  configFiles             : /gpfs/home/ajh20fhu/.nextflow/assets/nf-core/mag/nextflow.config
+
+!! Only displaying parameters that differ from the pipeline defaults !!
+------------------------------------------------------
+
+* The pipeline
+    https://doi.org/10.1093/nargab/lqac007
+
+* The nf-core framework
+    https://doi.org/10.1038/s41587-020-0439-x
+
+* Software dependencies
+    https://github.com/nf-core/mag/blob/main/CITATIONS.md
+
+WARN: The following invalid input values have been detected:
+
+* --gtdbtk_db: /gpfs/scratch/ajh20fhu/gtdbtk_db
+
+
+WARN: [nf-core/mag] You are attempting to run the pipeline without any custom configuration!
+
+This will be dependent on your local compute environment but can be achieved via one or more of the following:
+   (1) Using an existing pipeline profile e.g. `-profile docker` or `-profile singularity`
+   (2) Using an existing nf-core/configs for your Institution e.g. `-profile crick` or `-profile uppmax`
+   (3) Using your own local custom config e.g. `-c /path/to/your/custom.config`
+
+Please refer to the quick start section and usage docs for the pipeline.
+ 
+[-        ] NFC…D_PREPROCESSING:FASTQC_RAW -
+
+[-        ] NFC…D_PREPROCESSING:FASTQC_RAW -
+[-        ] NFC…RTREAD_PREPROCESSING:FASTP -
+[-        ] NFC…BOWTIE2_HOST_REMOVAL_BUILD -
+[-        ] NFC…BOWTIE2_HOST_REMOVAL_ALIGN -
+[-        ] NFC…BOWTIE2_PHIX_REMOVAL_BUILD -
+[-        ] NFC…BOWTIE2_PHIX_REMOVAL_ALIGN -
+[-        ] NFC…EPROCESSING:FASTQC_TRIMMED -
+[-        ] NFC…AD_PREPROCESSING:CAT_FASTQ -
+[-        ] NFC…PREPROCESSING:NANOPLOT_RAW -
+[-        ] NFC…PREPROCESSING:PORECHOP_ABI -
+[-        ] NFC…EAD_PREPROCESSING:NANOLYSE -
+[-        ] NFC…EAD_PREPROCESSING:FILTLONG -
+[-        ] NFC…EMOVAL:MINIMAP2_HOST_INDEX -
+[-        ] NFC…EMOVAL:MINIMAP2_HOST_ALIGN -
+[-        ] NFC…TOOLS_HOSTREMOVED_UNMAPPED -
+[-        ] NFC…SAMTOOLS_HOSTREMOVED_INDEX -
+[-        ] NFC…SAMTOOLS_HOSTREMOVED_STATS -
+[-        ] NFC…OCESSING:NANOPLOT_FILTERED -
+[-        ] NFC…ESSING:CAT_FASTQ_LONGREADS -
+[-        ] NFC…G:ASSEMBLY:POOL_LONG_READS -
+Plus 4 more processes waiting for tasks…
+
+[-        ] NFC…D_PREPROCESSING:FASTQC_RAW -
+[-        ] NFC…RTREAD_PREPROCESSING:FASTP -
+[-        ] NFC…BOWTIE2_HOST_REMOVAL_BUILD -
+[-        ] NFC…BOWTIE2_HOST_REMOVAL_ALIGN -
+[-        ] NFC…BOWTIE2_PHIX_REMOVAL_BUILD -
+[-        ] NFC…BOWTIE2_PHIX_REMOVAL_ALIGN -
+[-        ] NFC…EPROCESSING:FASTQC_TRIMMED -
+[-        ] NFC…AD_PREPROCESSING:CAT_FASTQ -
+[-        ] NFC…PREPROCESSING:NANOPLOT_RAW -
+[-        ] NFC…PREPROCESSING:PORECHOP_ABI -
+[-        ] NFC…EAD_PREPROCESSING:NANOLYSE -
+[-        ] NFC…EAD_PREPROCESSING:FILTLONG -
+[-        ] NFC…EMOVAL:MINIMAP2_HOST_INDEX -
+[-        ] NFC…EMOVAL:MINIMAP2_HOST_ALIGN -
+[-        ] NFC…TOOLS_HOSTREMOVED_UNMAPPED -
+[-        ] NFC…SAMTOOLS_HOSTREMOVED_INDEX -
+[-        ] NFC…SAMTOOLS_HOSTREMOVED_STATS -
+[-        ] NFC…OCESSING:NANOPLOT_FILTERED -
+[-        ] NFC…ESSING:CAT_FASTQ_LONGREADS -
+[-        ] NFC…G:ASSEMBLY:POOL_LONG_READS -
+Plus 25 more processes waiting for tasks…
+
+[-        ] NFC…D_PREPROCESSING:FASTQC_RAW -
+[-        ] NFC…RTREAD_PREPROCESSING:FASTP -
+[-        ] NFC…BOWTIE2_HOST_REMOVAL_BUILD -
+[-        ] NFC…BOWTIE2_HOST_REMOVAL_ALIGN -
+[-        ] NFC…BOWTIE2_PHIX_REMOVAL_BUILD -
+[-        ] NFC…BOWTIE2_PHIX_REMOVAL_ALIGN -
+[-        ] NFC…EPROCESSING:FASTQC_TRIMMED -
+[-        ] NFC…AD_PREPROCESSING:CAT_FASTQ -
+[-        ] NFC…PREPROCESSING:NANOPLOT_RAW -
+[-        ] NFC…PREPROCESSING:PORECHOP_ABI -
+[-        ] NFC…EAD_PREPROCESSING:NANOLYSE -
+[-        ] NFC…EAD_PREPROCESSING:FILTLONG -
+[-        ] NFC…EMOVAL:MINIMAP2_HOST_INDEX -
+[-        ] NFC…EMOVAL:MINIMAP2_HOST_ALIGN -
+[-        ] NFC…TOOLS_HOSTREMOVED_UNMAPPED -
+[-        ] NFC…SAMTOOLS_HOSTREMOVED_INDEX -
+[-        ] NFC…SAMTOOLS_HOSTREMOVED_STATS -
+[-        ] NFC…OCESSING:NANOPLOT_FILTERED -
+[-        ] NFC…ESSING:CAT_FASTQ_LONGREADS -
+[-        ] NFC…G:ASSEMBLY:POOL_LONG_READS -
+Plus 40 more processes waiting for tasks…
+
+[-        ] NFC…D_PREPROCESSING:FASTQC_RAW -
+[-        ] NFC…RTREAD_PREPROCESSING:FASTP -
+[-        ] NFC…BOWTIE2_HOST_REMOVAL_BUILD -
+[-        ] NFC…BOWTIE2_HOST_REMOVAL_ALIGN -
+[-        ] NFC…BOWTIE2_PHIX_REMOVAL_BUILD -
+[-        ] NFC…BOWTIE2_PHIX_REMOVAL_ALIGN -
+[-        ] NFC…EPROCESSING:FASTQC_TRIMMED -
+[-        ] NFC…AD_PREPROCESSING:CAT_FASTQ -
+[-        ] NFC…PREPROCESSING:NANOPLOT_RAW -
+[-        ] NFC…PREPROCESSING:PORECHOP_ABI -
+[-        ] NFC…EAD_PREPROCESSING:NANOLYSE -
+[-        ] NFC…EAD_PREPROCESSING:FILTLONG -
+[-        ] NFC…EMOVAL:MINIMAP2_HOST_INDEX -
+[-        ] NFC…EMOVAL:MINIMAP2_HOST_ALIGN -
+[-        ] NFC…TOOLS_HOSTREMOVED_UNMAPPED -
+[-        ] NFC…SAMTOOLS_HOSTREMOVED_INDEX -
+[-        ] NFC…SAMTOOLS_HOSTREMOVED_STATS -
+[-        ] NFC…OCESSING:NANOPLOT_FILTERED -
+[-        ] NFC…ESSING:CAT_FASTQ_LONGREADS -
+[-        ] NFC…G:ASSEMBLY:POOL_LONG_READS -
+Plus 48 more processes waiting for tasks…
+
+executor >  local (1)
+[-        ] NFC…D_PREPROCESSING:FASTQC_RAW | 0 of 2
+[65/584534] NFC…SSING:FASTP (H_13_01_run0) | 0 of 2
+[-        ] NFC…BOWTIE2_HOST_REMOVAL_BUILD -
+[-        ] NFC…BOWTIE2_HOST_REMOVAL_ALIGN -
+[-        ] NFC…BOWTIE2_PHIX_REMOVAL_BUILD -
+[-        ] NFC…BOWTIE2_PHIX_REMOVAL_ALIGN -
+[-        ] NFC…EPROCESSING:FASTQC_TRIMMED -
+[-        ] NFC…AD_PREPROCESSING:CAT_FASTQ -
+[-        ] NFC…PREPROCESSING:NANOPLOT_RAW -
+[-        ] NFC…PREPROCESSING:PORECHOP_ABI -
+[-        ] NFC…EAD_PREPROCESSING:NANOLYSE -
+[-        ] NFC…EAD_PREPROCESSING:FILTLONG -
+[-        ] NFC…EMOVAL:MINIMAP2_HOST_INDEX -
+[-        ] NFC…EMOVAL:MINIMAP2_HOST_ALIGN -
+[-        ] NFC…TOOLS_HOSTREMOVED_UNMAPPED -
+[-        ] NFC…SAMTOOLS_HOSTREMOVED_INDEX -
+[-        ] NFC…SAMTOOLS_HOSTREMOVED_STATS -
+[-        ] NFC…OCESSING:NANOPLOT_FILTERED -
+[-        ] NFC…ESSING:CAT_FASTQ_LONGREADS -
+[-        ] NFC…G:ASSEMBLY:POOL_LONG_READS -
+Plus 48 more processes waiting for tasks…
+
+executor >  local (2)
+[56/a7292e] NFC…QC_RAW (NH_12_01_run0_raw) | 0 of 2
+[65/584534] NFC…SSING:FASTP (H_13_01_run0) | 0 of 2
+[-        ] NFC…BOWTIE2_HOST_REMOVAL_BUILD -
+[-        ] NFC…BOWTIE2_HOST_REMOVAL_ALIGN -
+[-        ] NFC…BOWTIE2_PHIX_REMOVAL_BUILD -
+[-        ] NFC…BOWTIE2_PHIX_REMOVAL_ALIGN -
+[-        ] NFC…EPROCESSING:FASTQC_TRIMMED -
+[-        ] NFC…AD_PREPROCESSING:CAT_FASTQ -
+[-        ] NFC…PREPROCESSING:NANOPLOT_RAW -
+[-        ] NFC…PREPROCESSING:PORECHOP_ABI -
+[-        ] NFC…EAD_PREPROCESSING:NANOLYSE -
+[-        ] NFC…EAD_PREPROCESSING:FILTLONG -
+[-        ] NFC…EMOVAL:MINIMAP2_HOST_INDEX -
+[-        ] NFC…EMOVAL:MINIMAP2_HOST_ALIGN -
+[-        ] NFC…TOOLS_HOSTREMOVED_UNMAPPED -
+[-        ] NFC…SAMTOOLS_HOSTREMOVED_INDEX -
+[-        ] NFC…SAMTOOLS_HOSTREMOVED_STATS -
+[-        ] NFC…OCESSING:NANOPLOT_FILTERED -
+[-        ] NFC…ESSING:CAT_FASTQ_LONGREADS -
+[-        ] NFC…G:ASSEMBLY:POOL_LONG_READS -
+Plus 48 more processes waiting for tasks…
+ERROR ~ Error executing process > 'NFCORE_MAG:MAG:SHORTREAD_PREPROCESSING:FASTP (H_13_01_run0)'
+
+Caused by:
+  Process `NFCORE_MAG:MAG:SHORTREAD_PREPROCESSING:FASTP (H_13_01_run0)` terminated with an error exit status (127)
+
+
+Command executed:
+
+  [ ! -f  H_13_01_run0_fastp_1.fastq.gz ] && ln -sf H_13_01_EKDN260003873-1A_23FVJMLT4_L1_1.fq.gz H_13_01_run0_fastp_1.fastq.gz
+  [ ! -f  H_13_01_run0_fastp_2.fastq.gz ] && ln -sf H_13_01_EKDN260003873-1A_23FVJMLT4_L1_2.fq.gz H_13_01_run0_fastp_2.fastq.gz
+  fastp \
+      --in1 H_13_01_run0_fastp_1.fastq.gz \
+      --in2 H_13_01_run0_fastp_2.fastq.gz \
+      --out1 H_13_01_run0_fastp_1.fastp.fastq.gz \
+      --out2 H_13_01_run0_fastp_2.fastp.fastq.gz \
+      --json H_13_01_run0_fastp.fastp.json \
+      --html H_13_01_run0_fastp.fastp.html \
+       \
+       \
+       \
+      --thread 6 \
+      --detect_adapter_for_pe \
+      -q 15 --cut_front --cut_tail --cut_mean_quality 15 --length_required 15 \
+      2>| >(tee H_13_01_run0_fastp.fastp.log >&2)
+  
+  cat <<-END_VERSIONS > versions.yml
+  "NFCORE_MAG:MAG:SHORTREAD_PREPROCESSING:FASTP":
+      fastp: $(fastp --version 2>&1 | sed -e "s/fastp //g")
+  END_VERSIONS
+
+Command exit status:
+  127
+
+Command output:
+  (empty)
+
+Command error:
+  .command.sh: line 5: fastp: command not found
+
+Work dir:
+  /gpfs/scratch/ajh20fhu/scripts/work/65/5845345a1d34185d0f3f09e1457a54
+
+Tip: you can replicate the issue by changing to the process work dir and entering the command `bash .command.run`
+
+ -- Check '.nextflow.log' file for details
+
+executor >  local (2)
+[56/a7292e] NFC…QC_RAW (NH_12_01_run0_raw) | 0 of 2
+[65/584534] NFC…SSING:FASTP (H_13_01_run0) | 0 of 2
+[-        ] NFC…BOWTIE2_HOST_REMOVAL_BUILD -
+[-        ] NFC…BOWTIE2_HOST_REMOVAL_ALIGN -
+[-        ] NFC…BOWTIE2_PHIX_REMOVAL_BUILD -
+[-        ] NFC…BOWTIE2_PHIX_REMOVAL_ALIGN -
+[-        ] NFC…EPROCESSING:FASTQC_TRIMMED -
+[-        ] NFC…AD_PREPROCESSING:CAT_FASTQ -
+[-        ] NFC…PREPROCESSING:NANOPLOT_RAW -
+[-        ] NFC…PREPROCESSING:PORECHOP_ABI -
+[-        ] NFC…EAD_PREPROCESSING:NANOLYSE -
+[-        ] NFC…EAD_PREPROCESSING:FILTLONG -
+[-        ] NFC…EMOVAL:MINIMAP2_HOST_INDEX -
+[-        ] NFC…EMOVAL:MINIMAP2_HOST_ALIGN -
+[-        ] NFC…TOOLS_HOSTREMOVED_UNMAPPED -
+[-        ] NFC…SAMTOOLS_HOSTREMOVED_INDEX -
+[-        ] NFC…SAMTOOLS_HOSTREMOVED_STATS -
+[-        ] NFC…OCESSING:NANOPLOT_FILTERED -
+[-        ] NFC…ESSING:CAT_FASTQ_LONGREADS -
+[-        ] NFC…G:ASSEMBLY:POOL_LONG_READS -
+Plus 48 more processes waiting for tasks…
+Execution cancelled -- Finishing pending tasks before exit
+ERROR ~ Error executing process > 'NFCORE_MAG:MAG:SHORTREAD_PREPROCESSING:FASTP (H_13_01_run0)'
+
+Caused by:
+  Process `NFCORE_MAG:MAG:SHORTREAD_PREPROCESSING:FASTP (H_13_01_run0)` terminated with an error exit status (127)
+
+
+Command executed:
+
+  [ ! -f  H_13_01_run0_fastp_1.fastq.gz ] && ln -sf H_13_01_EKDN260003873-1A_23FVJMLT4_L1_1.fq.gz H_13_01_run0_fastp_1.fastq.gz
+  [ ! -f  H_13_01_run0_fastp_2.fastq.gz ] && ln -sf H_13_01_EKDN260003873-1A_23FVJMLT4_L1_2.fq.gz H_13_01_run0_fastp_2.fastq.gz
+  fastp \
+      --in1 H_13_01_run0_fastp_1.fastq.gz \
+      --in2 H_13_01_run0_fastp_2.fastq.gz \
+      --out1 H_13_01_run0_fastp_1.fastp.fastq.gz \
+      --out2 H_13_01_run0_fastp_2.fastp.fastq.gz \
+      --json H_13_01_run0_fastp.fastp.json \
+      --html H_13_01_run0_fastp.fastp.html \
+       \
+       \
+       \
+      --thread 6 \
+      --detect_adapter_for_pe \
+      -q 15 --cut_front --cut_tail --cut_mean_quality 15 --length_required 15 \
+      2>| >(tee H_13_01_run0_fastp.fastp.log >&2)
+  
+  cat <<-END_VERSIONS > versions.yml
+  "NFCORE_MAG:MAG:SHORTREAD_PREPROCESSING:FASTP":
+      fastp: $(fastp --version 2>&1 | sed -e "s/fastp //g")
+  END_VERSIONS
+
+Command exit status:
+  127
+
+Command output:
+  (empty)
+
+Command error:
+  .command.sh: line 5: fastp: command not found
+
+Work dir:
+  /gpfs/scratch/ajh20fhu/scripts/work/65/5845345a1d34185d0f3f09e1457a54
+
+Tip: you can replicate the issue by changing to the process work dir and entering the command `bash .command.run`
+
+ -- Check '.nextflow.log' file for details
+ERROR ~ Pipeline failed. Please refer to troubleshooting docs: https://nf-co.re/docs/usage/troubleshooting
+
+ -- Check '.nextflow.log' file for details
+
+executor >  local (2)
+[56/a7292e] NFC…QC_RAW (NH_12_01_run0_raw) | 0 of 2
+[65/584534] NFC…SSING:FASTP (H_13_01_run0) | 0 of 2
+[-        ] NFC…BOWTIE2_HOST_REMOVAL_BUILD -
+[-        ] NFC…BOWTIE2_HOST_REMOVAL_ALIGN -
+[-        ] NFC…BOWTIE2_PHIX_REMOVAL_BUILD -
+[-        ] NFC…BOWTIE2_PHIX_REMOVAL_ALIGN -
+[-        ] NFC…EPROCESSING:FASTQC_TRIMMED -
+[-        ] NFC…AD_PREPROCESSING:CAT_FASTQ -
+[-        ] NFC…PREPROCESSING:NANOPLOT_RAW -
+[-        ] NFC…PREPROCESSING:PORECHOP_ABI -
+[-        ] NFC…EAD_PREPROCESSING:NANOLYSE -
+[-        ] NFC…EAD_PREPROCESSING:FILTLONG -
+[-        ] NFC…EMOVAL:MINIMAP2_HOST_INDEX -
+[-        ] NFC…EMOVAL:MINIMAP2_HOST_ALIGN -
+[-        ] NFC…TOOLS_HOSTREMOVED_UNMAPPED -
+[-        ] NFC…SAMTOOLS_HOSTREMOVED_INDEX -
+[-        ] NFC…SAMTOOLS_HOSTREMOVED_STATS -
+[-        ] NFC…OCESSING:NANOPLOT_FILTERED -
+[-        ] NFC…ESSING:CAT_FASTQ_LONGREADS -
+[-        ] NFC…G:ASSEMBLY:POOL_LONG_READS -
+Plus 48 more processes waiting for tasks…
+Execution cancelled -- Finishing pending tasks before exit
+-[nf-core/mag] Pipeline completed with errors-
+ERROR ~ Error executing process > 'NFCORE_MAG:MAG:SHORTREAD_PREPROCESSING:FASTP (H_13_01_run0)'
+
+Caused by:
+  Process `NFCORE_MAG:MAG:SHORTREAD_PREPROCESSING:FASTP (H_13_01_run0)` terminated with an error exit status (127)
+
+
+Command executed:
+
+  [ ! -f  H_13_01_run0_fastp_1.fastq.gz ] && ln -sf H_13_01_EKDN260003873-1A_23FVJMLT4_L1_1.fq.gz H_13_01_run0_fastp_1.fastq.gz
+  [ ! -f  H_13_01_run0_fastp_2.fastq.gz ] && ln -sf H_13_01_EKDN260003873-1A_23FVJMLT4_L1_2.fq.gz H_13_01_run0_fastp_2.fastq.gz
+  fastp \
+      --in1 H_13_01_run0_fastp_1.fastq.gz \
+      --in2 H_13_01_run0_fastp_2.fastq.gz \
+      --out1 H_13_01_run0_fastp_1.fastp.fastq.gz \
+      --out2 H_13_01_run0_fastp_2.fastp.fastq.gz \
+      --json H_13_01_run0_fastp.fastp.json \
+      --html H_13_01_run0_fastp.fastp.html \
+       \
+       \
+       \
+      --thread 6 \
+      --detect_adapter_for_pe \
+      -q 15 --cut_front --cut_tail --cut_mean_quality 15 --length_required 15 \
+      2>| >(tee H_13_01_run0_fastp.fastp.log >&2)
+  
+  cat <<-END_VERSIONS > versions.yml
+  "NFCORE_MAG:MAG:SHORTREAD_PREPROCESSING:FASTP":
+      fastp: $(fastp --version 2>&1 | sed -e "s/fastp //g")
+  END_VERSIONS
+
+Command exit status:
+  127
+
+Command output:
+  (empty)
+
+Command error:
+  .command.sh: line 5: fastp: command not found
+
+Work dir:
+  /gpfs/scratch/ajh20fhu/scripts/work/65/5845345a1d34185d0f3f09e1457a54
+
+Tip: you can replicate the issue by changing to the process work dir and entering the command `bash .command.run`
+
+ -- Check '.nextflow.log' file for details
+ERROR ~ Pipeline failed. Please refer to troubleshooting docs: https://nf-co.re/docs/usage/troubleshooting
+
+ -- Check '.nextflow.log' file for details
+
+executor >  local (2)
+[56/a7292e] NFC…QC_RAW (NH_12_01_run0_raw) | 0 of 2
+[65/584534] NFC…SSING:FASTP (H_13_01_run0) | 0 of 2
+[-        ] NFC…BOWTIE2_HOST_REMOVAL_BUILD -
+[-        ] NFC…BOWTIE2_HOST_REMOVAL_ALIGN -
+[-        ] NFC…BOWTIE2_PHIX_REMOVAL_BUILD -
+[-        ] NFC…BOWTIE2_PHIX_REMOVAL_ALIGN -
+[-        ] NFC…EPROCESSING:FASTQC_TRIMMED -
+[-        ] NFC…AD_PREPROCESSING:CAT_FASTQ -
+[-        ] NFC…PREPROCESSING:NANOPLOT_RAW -
+[-        ] NFC…PREPROCESSING:PORECHOP_ABI -
+[-        ] NFC…EAD_PREPROCESSING:NANOLYSE -
+[-        ] NFC…EAD_PREPROCESSING:FILTLONG -
+[-        ] NFC…EMOVAL:MINIMAP2_HOST_INDEX -
+[-        ] NFC…EMOVAL:MINIMAP2_HOST_ALIGN -
+[-        ] NFC…TOOLS_HOSTREMOVED_UNMAPPED -
+[-        ] NFC…SAMTOOLS_HOSTREMOVED_INDEX -
+[-        ] NFC…SAMTOOLS_HOSTREMOVED_STATS -
+[-        ] NFC…OCESSING:NANOPLOT_FILTERED -
+[-        ] NFC…ESSING:CAT_FASTQ_LONGREADS -
+[-        ] NFC…G:ASSEMBLY:POOL_LONG_READS -
+Plus 48 more processes waiting for tasks…
+Execution cancelled -- Finishing pending tasks before exit
+-[nf-core/mag] Pipeline completed with errors-
+ERROR ~ Error executing process > 'NFCORE_MAG:MAG:SHORTREAD_PREPROCESSING:FASTP (H_13_01_run0)'
+
+Caused by:
+  Process `NFCORE_MAG:MAG:SHORTREAD_PREPROCESSING:FASTP (H_13_01_run0)` terminated with an error exit status (127)
+
+
+Command executed:
+
+  [ ! -f  H_13_01_run0_fastp_1.fastq.gz ] && ln -sf H_13_01_EKDN260003873-1A_23FVJMLT4_L1_1.fq.gz H_13_01_run0_fastp_1.fastq.gz
+  [ ! -f  H_13_01_run0_fastp_2.fastq.gz ] && ln -sf H_13_01_EKDN260003873-1A_23FVJMLT4_L1_2.fq.gz H_13_01_run0_fastp_2.fastq.gz
+  fastp \
+      --in1 H_13_01_run0_fastp_1.fastq.gz \
+      --in2 H_13_01_run0_fastp_2.fastq.gz \
+      --out1 H_13_01_run0_fastp_1.fastp.fastq.gz \
+      --out2 H_13_01_run0_fastp_2.fastp.fastq.gz \
+      --json H_13_01_run0_fastp.fastp.json \
+      --html H_13_01_run0_fastp.fastp.html \
+       \
+       \
+       \
+      --thread 6 \
+      --detect_adapter_for_pe \
+      -q 15 --cut_front --cut_tail --cut_mean_quality 15 --length_required 15 \
+      2>| >(tee H_13_01_run0_fastp.fastp.log >&2)
+  
+  cat <<-END_VERSIONS > versions.yml
+  "NFCORE_MAG:MAG:SHORTREAD_PREPROCESSING:FASTP":
+      fastp: $(fastp --version 2>&1 | sed -e "s/fastp //g")
+  END_VERSIONS
+
+Command exit status:
+  127
+
+Command output:
+  (empty)
+
+Command error:
+  .command.sh: line 5: fastp: command not found
+
+Work dir:
+  /gpfs/scratch/ajh20fhu/scripts/work/65/5845345a1d34185d0f3f09e1457a54
+
+Tip: you can replicate the issue by changing to the process work dir and entering the command `bash .command.run`
+
+ -- Check '.nextflow.log' file for details
+ERROR ~ Pipeline failed. Please refer to troubleshooting docs: https://nf-co.re/docs/usage/troubleshooting
+
+ -- Check '.nextflow.log' file for details
+Staging foreign file: https://data.gtdb.aau.ecogenomic.org/releases/release226/226.0/auxillary_files/gtdbtk_package/full_package/gtdbtk_r226_data.tar.gz
+Waiting for file transfers to complete (1 files)
+Waiting for file transfers to complete (1 files)
+Waiting for file transfers to complete (1 files)
+Waiting for file transfers to complete (1 files)
+Waiting for file transfers to complete (1 files)
+Waiting for file transfers to complete (1 files)
+Waiting for file transfers to complete (1 files)
+Waiting for file transfers to complete (1 files)
+Waiting for file transfers to complete (1 files)
+Waiting for file transfers to complete (1 files)
+Waiting for file transfers to complete (1 files)
+Waiting for file transfers to complete (1 files)
+Waiting for file transfers to complete (1 files)
+

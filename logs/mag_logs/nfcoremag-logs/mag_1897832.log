@@ -1,0 +1,1994 @@
+
+ N E X T F L O W   ~  version 25.04.6
+
+Launching `https://github.com/nf-core/mag` [reverent_cantor] DSL2 - revision: b52fa53592 [main]
+
+
+------------------------------------------------------
+                                        ,--./,-.
+        ___     __   __   __   ___     /,-._.--~'
+  |\ | |__  __ /  ` /  \ |__) |__         }  {
+  | \| |       \__, \__/ |  \ |___     \`-._,-`-,
+                                        `._,._,'
+  nf-core/mag 5.4.0
+------------------------------------------------------
+
+Input/output options
+  input                   : /gpfs/home/ajh20fhu/medfly_metagenomics/mag_project/samplesheet.csv
+  outdir                  : results
+
+Generic options
+  trace_report_suffix     : 2026-02-27_11-31-01
+
+Taxonomic profiling options
+  gtdbtk_min_completeness : 50.0
+  gtdbtk_max_contamination: 10.0
+
+Bin quality check options
+  run_busco               : true
+
+Core Nextflow options
+  revision                : main
+  runName                 : reverent_cantor
+  containerEngine         : apptainer
+  launchDir               : /gpfs/home/ajh20fhu/medfly_metagenomics/mag_project
+  workDir                 : /gpfs/home/ajh20fhu/medfly_metagenomics/mag_project/work
+  projectDir              : /gpfs/home/ajh20fhu/.nextflow/assets/nf-core/mag
+  userName                : ajh20fhu
+  profile                 : standard
+  configFiles             : /gpfs/home/ajh20fhu/.nextflow/assets/nf-core/mag/nextflow.config, /gpfs/home/ajh20fhu/medfly_metagenomics/mag_project/nextflow.config, /gpfs/home/ajh20fhu/medfly_metagenomics/mag_project/nextflow.config
+
+!! Only displaying parameters that differ from the pipeline defaults !!
+------------------------------------------------------
+
+* The pipeline
+    https://doi.org/10.1093/nargab/lqac007
+
+* The nf-core framework
+    https://doi.org/10.1038/s41587-020-0439-x
+
+* Software dependencies
+    https://github.com/nf-core/mag/blob/main/CITATIONS.md
+
+[-        ] NFC…D_PREPROCESSING:FASTQC_RAW -
+[-        ] NFC…RTREAD_PREPROCESSING:FASTP -
+[-        ] NFC…BOWTIE2_PHIX_REMOVAL_BUILD -
+[-        ] NFC…BOWTIE2_PHIX_REMOVAL_ALIGN -
+[-        ] NFC…EPROCESSING:FASTQC_TRIMMED -
+[-        ] NFC…AD_PREPROCESSING:CAT_FASTQ -
+[-        ] NFC…PREPROCESSING:NANOPLOT_RAW -
+
+[-        ] NFC…D_PREPROCESSING:FASTQC_RAW -
+[-        ] NFC…RTREAD_PREPROCESSING:FASTP -
+[-        ] NFC…BOWTIE2_PHIX_REMOVAL_BUILD -
+[-        ] NFC…BOWTIE2_PHIX_REMOVAL_ALIGN -
+[-        ] NFC…EPROCESSING:FASTQC_TRIMMED -
+[-        ] NFC…AD_PREPROCESSING:CAT_FASTQ -
+[-        ] NFC…PREPROCESSING:NANOPLOT_RAW -
+[-        ] NFC…PREPROCESSING:PORECHOP_ABI -
+[-        ] NFC…EAD_PREPROCESSING:NANOLYSE -
+[-        ] NFC…EAD_PREPROCESSING:FILTLONG -
+[-        ] NFC…OCESSING:NANOPLOT_FILTERED -
+[-        ] NFC…ESSING:CAT_FASTQ_LONGREADS -
+[-        ] NFC…G:ASSEMBLY:POOL_LONG_READS -
+[-        ] NFC…RTREAD_ASSEMBLY:METASPADES -
+[-        ] NFC…SHORTREAD_ASSEMBLY:MEGAHIT -
+[-        ] NFC…_ASSEMBLY:METASPADESHYBRID -
+[-        ] NFC…BLY:LONGREAD_ASSEMBLY:FLYE -
+[-        ] NFC…READ_ASSEMBLY:METAMDBG_ASM -
+[-        ] NFC…UNZIP_SHORTREAD_ASSEMBLIES -
+[-        ] NFC…GUNZIP_LONGREAD_ASSEMBLIES -
+Plus 3 more processes waiting for tasks…
+
+[-        ] NFC…D_PREPROCESSING:FASTQC_RAW -
+[-        ] NFC…RTREAD_PREPROCESSING:FASTP -
+[-        ] NFC…BOWTIE2_PHIX_REMOVAL_BUILD -
+[-        ] NFC…BOWTIE2_PHIX_REMOVAL_ALIGN -
+[-        ] NFC…EPROCESSING:FASTQC_TRIMMED -
+[-        ] NFC…AD_PREPROCESSING:CAT_FASTQ -
+[-        ] NFC…PREPROCESSING:NANOPLOT_RAW -
+[-        ] NFC…PREPROCESSING:PORECHOP_ABI -
+[-        ] NFC…EAD_PREPROCESSING:NANOLYSE -
+[-        ] NFC…EAD_PREPROCESSING:FILTLONG -
+[-        ] NFC…OCESSING:NANOPLOT_FILTERED -
+[-        ] NFC…ESSING:CAT_FASTQ_LONGREADS -
+[-        ] NFC…G:ASSEMBLY:POOL_LONG_READS -
+[-        ] NFC…RTREAD_ASSEMBLY:METASPADES -
+[-        ] NFC…SHORTREAD_ASSEMBLY:MEGAHIT -
+[-        ] NFC…_ASSEMBLY:METASPADESHYBRID -
+[-        ] NFC…BLY:LONGREAD_ASSEMBLY:FLYE -
+[-        ] NFC…READ_ASSEMBLY:METAMDBG_ASM -
+[-        ] NFC…UNZIP_SHORTREAD_ASSEMBLIES -
+[-        ] NFC…GUNZIP_LONGREAD_ASSEMBLIES -
+Plus 16 more processes waiting for tasks…
+
+[-        ] NFC…D_PREPROCESSING:FASTQC_RAW -
+[-        ] NFC…RTREAD_PREPROCESSING:FASTP -
+[-        ] NFC…BOWTIE2_PHIX_REMOVAL_BUILD -
+[-        ] NFC…BOWTIE2_PHIX_REMOVAL_ALIGN -
+[-        ] NFC…EPROCESSING:FASTQC_TRIMMED -
+[-        ] NFC…AD_PREPROCESSING:CAT_FASTQ -
+[-        ] NFC…PREPROCESSING:NANOPLOT_RAW -
+[-        ] NFC…PREPROCESSING:PORECHOP_ABI -
+[-        ] NFC…EAD_PREPROCESSING:NANOLYSE -
+[-        ] NFC…EAD_PREPROCESSING:FILTLONG -
+[-        ] NFC…OCESSING:NANOPLOT_FILTERED -
+[-        ] NFC…ESSING:CAT_FASTQ_LONGREADS -
+[-        ] NFC…G:ASSEMBLY:POOL_LONG_READS -
+[-        ] NFC…RTREAD_ASSEMBLY:METASPADES -
+[-        ] NFC…SHORTREAD_ASSEMBLY:MEGAHIT -
+[-        ] NFC…_ASSEMBLY:METASPADESHYBRID -
+[-        ] NFC…BLY:LONGREAD_ASSEMBLY:FLYE -
+[-        ] NFC…READ_ASSEMBLY:METAMDBG_ASM -
+[-        ] NFC…UNZIP_SHORTREAD_ASSEMBLIES -
+[-        ] NFC…GUNZIP_LONGREAD_ASSEMBLIES -
+Plus 29 more processes waiting for tasks…
+
+[-        ] NFC…D_PREPROCESSING:FASTQC_RAW -
+[-        ] NFC…RTREAD_PREPROCESSING:FASTP -
+[-        ] NFC…BOWTIE2_PHIX_REMOVAL_BUILD -
+[-        ] NFC…BOWTIE2_PHIX_REMOVAL_ALIGN -
+[-        ] NFC…EPROCESSING:FASTQC_TRIMMED -
+[-        ] NFC…AD_PREPROCESSING:CAT_FASTQ -
+[-        ] NFC…PREPROCESSING:NANOPLOT_RAW -
+[-        ] NFC…PREPROCESSING:PORECHOP_ABI -
+[-        ] NFC…EAD_PREPROCESSING:NANOLYSE -
+[-        ] NFC…EAD_PREPROCESSING:FILTLONG -
+[-        ] NFC…OCESSING:NANOPLOT_FILTERED -
+[-        ] NFC…ESSING:CAT_FASTQ_LONGREADS -
+[-        ] NFC…G:ASSEMBLY:POOL_LONG_READS -
+[-        ] NFC…RTREAD_ASSEMBLY:METASPADES -
+[-        ] NFC…SHORTREAD_ASSEMBLY:MEGAHIT -
+[-        ] NFC…_ASSEMBLY:METASPADESHYBRID -
+[-        ] NFC…BLY:LONGREAD_ASSEMBLY:FLYE -
+[-        ] NFC…READ_ASSEMBLY:METAMDBG_ASM -
+[-        ] NFC…UNZIP_SHORTREAD_ASSEMBLIES -
+[-        ] NFC…GUNZIP_LONGREAD_ASSEMBLIES -
+Plus 37 more processes waiting for tasks…
+
+[-        ] NFC…D_PREPROCESSING:FASTQC_RAW -
+[-        ] NFC…RTREAD_PREPROCESSING:FASTP -
+[-        ] NFC…BOWTIE2_PHIX_REMOVAL_BUILD -
+[-        ] NFC…BOWTIE2_PHIX_REMOVAL_ALIGN -
+[-        ] NFC…EPROCESSING:FASTQC_TRIMMED -
+[-        ] NFC…AD_PREPROCESSING:CAT_FASTQ -
+[-        ] NFC…PREPROCESSING:NANOPLOT_RAW -
+[-        ] NFC…PREPROCESSING:PORECHOP_ABI -
+[-        ] NFC…EAD_PREPROCESSING:NANOLYSE -
+[-        ] NFC…EAD_PREPROCESSING:FILTLONG -
+[-        ] NFC…OCESSING:NANOPLOT_FILTERED -
+[-        ] NFC…ESSING:CAT_FASTQ_LONGREADS -
+[-        ] NFC…G:ASSEMBLY:POOL_LONG_READS -
+[-        ] NFC…RTREAD_ASSEMBLY:METASPADES -
+[-        ] NFC…SHORTREAD_ASSEMBLY:MEGAHIT -
+[-        ] NFC…_ASSEMBLY:METASPADESHYBRID -
+[-        ] NFC…BLY:LONGREAD_ASSEMBLY:FLYE -
+[-        ] NFC…READ_ASSEMBLY:METAMDBG_ASM -
+[-        ] NFC…UNZIP_SHORTREAD_ASSEMBLIES -
+[-        ] NFC…GUNZIP_LONGREAD_ASSEMBLIES -
+Plus 41 more processes waiting for tasks…
+
+[-        ] NFC…D_PREPROCESSING:FASTQC_RAW -
+[-        ] NFC…RTREAD_PREPROCESSING:FASTP -
+[-        ] NFC…BOWTIE2_PHIX_REMOVAL_BUILD -
+[-        ] NFC…BOWTIE2_PHIX_REMOVAL_ALIGN -
+[-        ] NFC…EPROCESSING:FASTQC_TRIMMED -
+[-        ] NFC…AD_PREPROCESSING:CAT_FASTQ -
+[-        ] NFC…PREPROCESSING:NANOPLOT_RAW -
+[-        ] NFC…PREPROCESSING:PORECHOP_ABI -
+[-        ] NFC…EAD_PREPROCESSING:NANOLYSE -
+[-        ] NFC…EAD_PREPROCESSING:FILTLONG -
+[-        ] NFC…OCESSING:NANOPLOT_FILTERED -
+[-        ] NFC…ESSING:CAT_FASTQ_LONGREADS -
+[-        ] NFC…G:ASSEMBLY:POOL_LONG_READS -
+[-        ] NFC…RTREAD_ASSEMBLY:METASPADES -
+[-        ] NFC…SHORTREAD_ASSEMBLY:MEGAHIT -
+[-        ] NFC…_ASSEMBLY:METASPADESHYBRID -
+[-        ] NFC…BLY:LONGREAD_ASSEMBLY:FLYE -
+[-        ] NFC…READ_ASSEMBLY:METAMDBG_ASM -
+[-        ] NFC…UNZIP_SHORTREAD_ASSEMBLIES -
+[-        ] NFC…GUNZIP_LONGREAD_ASSEMBLIES -
+Plus 41 more processes waiting for tasks…
+Pulling Apptainer image docker://quay.io/biocontainers/fastqc:0.12.1--hdfd78af_0 [cache /gpfs/home/ajh20fhu/medfly_metagenomics/mag_project/work/singularity/quay.io-biocontainers-fastqc-0.12.1--hdfd78af_0.img]
+Pulling Apptainer image docker://community.wave.seqera.io/library/fastp:1.0.1--c8b87fe62dcc103c [cache /gpfs/home/ajh20fhu/medfly_metagenomics/mag_project/work/singularity/community.wave.seqera.io-library-fastp-1.0.1--c8b87fe62dcc103c.img]
+WARN: Apptainer cache directory has not been defined -- Remote image will be stored in the path: /gpfs/home/ajh20fhu/medfly_metagenomics/mag_project/work/singularity -- Use the environment variable NXF_APPTAINER_CACHEDIR to specify a different location
+
+[-        ] NFC…D_PREPROCESSING:FASTQC_RAW -
+[-        ] NFC…RTREAD_PREPROCESSING:FASTP -
+[-        ] NFC…BOWTIE2_PHIX_REMOVAL_BUILD -
+[-        ] NFC…BOWTIE2_PHIX_REMOVAL_ALIGN -
+[-        ] NFC…EPROCESSING:FASTQC_TRIMMED -
+[-        ] NFC…AD_PREPROCESSING:CAT_FASTQ -
+[-        ] NFC…PREPROCESSING:NANOPLOT_RAW -
+[-        ] NFC…PREPROCESSING:PORECHOP_ABI -
+[-        ] NFC…EAD_PREPROCESSING:NANOLYSE -
+[-        ] NFC…EAD_PREPROCESSING:FILTLONG -
+[-        ] NFC…OCESSING:NANOPLOT_FILTERED -
+[-        ] NFC…ESSING:CAT_FASTQ_LONGREADS -
+[-        ] NFC…G:ASSEMBLY:POOL_LONG_READS -
+[-        ] NFC…RTREAD_ASSEMBLY:METASPADES -
+[-        ] NFC…SHORTREAD_ASSEMBLY:MEGAHIT -
+[-        ] NFC…_ASSEMBLY:METASPADESHYBRID -
+[-        ] NFC…BLY:LONGREAD_ASSEMBLY:FLYE -
+[-        ] NFC…READ_ASSEMBLY:METAMDBG_ASM -
+[-        ] NFC…UNZIP_SHORTREAD_ASSEMBLIES -
+[-        ] NFC…GUNZIP_LONGREAD_ASSEMBLIES -
+Plus 41 more processes waiting for tasks…
+Pulling Apptainer image docker://quay.io/biocontainers/fastqc:0.12.1--hdfd78af_0 [cache /gpfs/home/ajh20fhu/medfly_metagenomics/mag_project/work/singularity/quay.io-biocontainers-fastqc-0.12.1--hdfd78af_0.img]
+Pulling Apptainer image docker://community.wave.seqera.io/library/fastp:1.0.1--c8b87fe62dcc103c [cache /gpfs/home/ajh20fhu/medfly_metagenomics/mag_project/work/singularity/community.wave.seqera.io-library-fastp-1.0.1--c8b87fe62dcc103c.img]
+Staging foreign file: https://data.gtdb.aau.ecogenomic.org/releases/release226/226.0/auxillary_files/gtdbtk_package/full_package/gtdbtk_r226_data.tar.gz
+WARN: Apptainer cache directory has not been defined -- Remote image will be stored in the path: /gpfs/home/ajh20fhu/medfly_metagenomics/mag_project/work/singularity -- Use the environment variable NXF_APPTAINER_CACHEDIR to specify a different location
+
+[-        ] NFC…D_PREPROCESSING:FASTQC_RAW -
+[-        ] NFC…RTREAD_PREPROCESSING:FASTP | 0 of 2
+[-        ] NFC…BOWTIE2_PHIX_REMOVAL_BUILD -
+[-        ] NFC…BOWTIE2_PHIX_REMOVAL_ALIGN -
+[-        ] NFC…EPROCESSING:FASTQC_TRIMMED -
+[-        ] NFC…AD_PREPROCESSING:CAT_FASTQ -
+[-        ] NFC…PREPROCESSING:NANOPLOT_RAW -
+[-        ] NFC…PREPROCESSING:PORECHOP_ABI -
+[-        ] NFC…EAD_PREPROCESSING:NANOLYSE -
+[-        ] NFC…EAD_PREPROCESSING:FILTLONG -
+[-        ] NFC…OCESSING:NANOPLOT_FILTERED -
+[-        ] NFC…ESSING:CAT_FASTQ_LONGREADS -
+[-        ] NFC…G:ASSEMBLY:POOL_LONG_READS -
+[-        ] NFC…RTREAD_ASSEMBLY:METASPADES -
+[-        ] NFC…SHORTREAD_ASSEMBLY:MEGAHIT -
+[-        ] NFC…_ASSEMBLY:METASPADESHYBRID -
+[-        ] NFC…BLY:LONGREAD_ASSEMBLY:FLYE -
+[-        ] NFC…READ_ASSEMBLY:METAMDBG_ASM -
+[-        ] NFC…UNZIP_SHORTREAD_ASSEMBLIES -
+[-        ] NFC…GUNZIP_LONGREAD_ASSEMBLIES -
+Plus 41 more processes waiting for tasks…
+Pulling Apptainer image docker://quay.io/biocontainers/fastqc:0.12.1--hdfd78af_0 [cache /gpfs/home/ajh20fhu/medfly_metagenomics/mag_project/work/singularity/quay.io-biocontainers-fastqc-0.12.1--hdfd78af_0.img]
+Pulling Apptainer image docker://community.wave.seqera.io/library/fastp:1.0.1--c8b87fe62dcc103c [cache /gpfs/home/ajh20fhu/medfly_metagenomics/mag_project/work/singularity/community.wave.seqera.io-library-fastp-1.0.1--c8b87fe62dcc103c.img]
+Staging foreign file: https://data.gtdb.aau.ecogenomic.org/releases/release226/226.0/auxillary_files/gtdbtk_package/full_package/gtdbtk_r226_data.tar.gz
+WARN: Apptainer cache directory has not been defined -- Remote image will be stored in the path: /gpfs/home/ajh20fhu/medfly_metagenomics/mag_project/work/singularity -- Use the environment variable NXF_APPTAINER_CACHEDIR to specify a different location
+
+executor >  slurm (2)
+[-        ] NFC…D_PREPROCESSING:FASTQC_RAW -
+[a4/95cb59] NFC…SSING:FASTP (H_13_01_run0) | 0 of 2
+[-        ] NFC…BOWTIE2_PHIX_REMOVAL_BUILD -
+[-        ] NFC…BOWTIE2_PHIX_REMOVAL_ALIGN -
+[-        ] NFC…EPROCESSING:FASTQC_TRIMMED -
+[-        ] NFC…AD_PREPROCESSING:CAT_FASTQ -
+[-        ] NFC…PREPROCESSING:NANOPLOT_RAW -
+[-        ] NFC…PREPROCESSING:PORECHOP_ABI -
+[-        ] NFC…EAD_PREPROCESSING:NANOLYSE -
+[-        ] NFC…EAD_PREPROCESSING:FILTLONG -
+[-        ] NFC…OCESSING:NANOPLOT_FILTERED -
+[-        ] NFC…ESSING:CAT_FASTQ_LONGREADS -
+[-        ] NFC…G:ASSEMBLY:POOL_LONG_READS -
+[-        ] NFC…RTREAD_ASSEMBLY:METASPADES -
+[-        ] NFC…SHORTREAD_ASSEMBLY:MEGAHIT -
+[-        ] NFC…_ASSEMBLY:METASPADESHYBRID -
+[-        ] NFC…BLY:LONGREAD_ASSEMBLY:FLYE -
+[-        ] NFC…READ_ASSEMBLY:METAMDBG_ASM -
+[-        ] NFC…UNZIP_SHORTREAD_ASSEMBLIES -
+[-        ] NFC…GUNZIP_LONGREAD_ASSEMBLIES -
+Plus 41 more processes waiting for tasks…
+Pulling Apptainer image docker://quay.io/biocontainers/fastqc:0.12.1--hdfd78af_0 [cache /gpfs/home/ajh20fhu/medfly_metagenomics/mag_project/work/singularity/quay.io-biocontainers-fastqc-0.12.1--hdfd78af_0.img]
+Pulling Apptainer image docker://community.wave.seqera.io/library/fastp:1.0.1--c8b87fe62dcc103c [cache /gpfs/home/ajh20fhu/medfly_metagenomics/mag_project/work/singularity/community.wave.seqera.io-library-fastp-1.0.1--c8b87fe62dcc103c.img]
+Staging foreign file: https://data.gtdb.aau.ecogenomic.org/releases/release226/226.0/auxillary_files/gtdbtk_package/full_package/gtdbtk_r226_data.tar.gz
+WARN: Apptainer cache directory has not been defined -- Remote image will be stored in the path: /gpfs/home/ajh20fhu/medfly_metagenomics/mag_project/work/singularity -- Use the environment variable NXF_APPTAINER_CACHEDIR to specify a different location
+
+executor >  slurm (2)
+[-        ] NFC…D_PREPROCESSING:FASTQC_RAW -
+[a4/95cb59] NFC…SSING:FASTP (H_13_01_run0) | 0 of 2
+[-        ] NFC…BOWTIE2_PHIX_REMOVAL_BUILD -
+[-        ] NFC…BOWTIE2_PHIX_REMOVAL_ALIGN -
+[-        ] NFC…EPROCESSING:FASTQC_TRIMMED -
+[-        ] NFC…AD_PREPROCESSING:CAT_FASTQ -
+[-        ] NFC…PREPROCESSING:NANOPLOT_RAW -
+[-        ] NFC…PREPROCESSING:PORECHOP_ABI -
+[-        ] NFC…EAD_PREPROCESSING:NANOLYSE -
+[-        ] NFC…EAD_PREPROCESSING:FILTLONG -
+[-        ] NFC…OCESSING:NANOPLOT_FILTERED -
+[-        ] NFC…ESSING:CAT_FASTQ_LONGREADS -
+[-        ] NFC…G:ASSEMBLY:POOL_LONG_READS -
+[-        ] NFC…RTREAD_ASSEMBLY:METASPADES -
+[-        ] NFC…SHORTREAD_ASSEMBLY:MEGAHIT -
+[-        ] NFC…_ASSEMBLY:METASPADESHYBRID -
+[-        ] NFC…BLY:LONGREAD_ASSEMBLY:FLYE -
+[-        ] NFC…READ_ASSEMBLY:METAMDBG_ASM -
+[-        ] NFC…UNZIP_SHORTREAD_ASSEMBLIES -
+[-        ] NFC…GUNZIP_LONGREAD_ASSEMBLIES -
+Plus 41 more processes waiting for tasks…
+Pulling Apptainer image docker://quay.io/biocontainers/fastqc:0.12.1--hdfd78af_0 [cache /gpfs/home/ajh20fhu/medfly_metagenomics/mag_project/work/singularity/quay.io-biocontainers-fastqc-0.12.1--hdfd78af_0.img]
+Pulling Apptainer image docker://community.wave.seqera.io/library/fastp:1.0.1--c8b87fe62dcc103c [cache /gpfs/home/ajh20fhu/medfly_metagenomics/mag_project/work/singularity/community.wave.seqera.io-library-fastp-1.0.1--c8b87fe62dcc103c.img]
+Staging foreign file: https://data.gtdb.aau.ecogenomic.org/releases/release226/226.0/auxillary_files/gtdbtk_package/full_package/gtdbtk_r226_data.tar.gz
+WARN: Apptainer cache directory has not been defined -- Remote image will be stored in the path: /gpfs/home/ajh20fhu/medfly_metagenomics/mag_project/work/singularity -- Use the environment variable NXF_APPTAINER_CACHEDIR to specify a different location
+
+executor >  slurm (3)
+[8e/b98ca6] NFC…QC_RAW (NH_12_01_run0_raw) | 0 of 2
+[a4/95cb59] NFC…SSING:FASTP (H_13_01_run0) | 0 of 2
+[-        ] NFC…BOWTIE2_PHIX_REMOVAL_BUILD -
+[-        ] NFC…BOWTIE2_PHIX_REMOVAL_ALIGN -
+[-        ] NFC…EPROCESSING:FASTQC_TRIMMED -
+[-        ] NFC…AD_PREPROCESSING:CAT_FASTQ -
+[-        ] NFC…PREPROCESSING:NANOPLOT_RAW -
+[-        ] NFC…PREPROCESSING:PORECHOP_ABI -
+[-        ] NFC…EAD_PREPROCESSING:NANOLYSE -
+[-        ] NFC…EAD_PREPROCESSING:FILTLONG -
+[-        ] NFC…OCESSING:NANOPLOT_FILTERED -
+[-        ] NFC…ESSING:CAT_FASTQ_LONGREADS -
+[-        ] NFC…G:ASSEMBLY:POOL_LONG_READS -
+[-        ] NFC…RTREAD_ASSEMBLY:METASPADES -
+[-        ] NFC…SHORTREAD_ASSEMBLY:MEGAHIT -
+[-        ] NFC…_ASSEMBLY:METASPADESHYBRID -
+[-        ] NFC…BLY:LONGREAD_ASSEMBLY:FLYE -
+[-        ] NFC…READ_ASSEMBLY:METAMDBG_ASM -
+[-        ] NFC…UNZIP_SHORTREAD_ASSEMBLIES -
+[-        ] NFC…GUNZIP_LONGREAD_ASSEMBLIES -
+Plus 41 more processes waiting for tasks…
+Pulling Apptainer image docker://quay.io/biocontainers/fastqc:0.12.1--hdfd78af_0 [cache /gpfs/home/ajh20fhu/medfly_metagenomics/mag_project/work/singularity/quay.io-biocontainers-fastqc-0.12.1--hdfd78af_0.img]
+Pulling Apptainer image docker://community.wave.seqera.io/library/fastp:1.0.1--c8b87fe62dcc103c [cache /gpfs/home/ajh20fhu/medfly_metagenomics/mag_project/work/singularity/community.wave.seqera.io-library-fastp-1.0.1--c8b87fe62dcc103c.img]
+Staging foreign file: https://data.gtdb.aau.ecogenomic.org/releases/release226/226.0/auxillary_files/gtdbtk_package/full_package/gtdbtk_r226_data.tar.gz
+WARN: Apptainer cache directory has not been defined -- Remote image will be stored in the path: /gpfs/home/ajh20fhu/medfly_metagenomics/mag_project/work/singularity -- Use the environment variable NXF_APPTAINER_CACHEDIR to specify a different location
+
+executor >  slurm (4)
+[49/8b34cc] NFC…TQC_RAW (H_13_01_run0_raw) | 0 of 2
+[a4/95cb59] NFC…SSING:FASTP (H_13_01_run0) | 0 of 2
+[-        ] NFC…BOWTIE2_PHIX_REMOVAL_BUILD -
+[-        ] NFC…BOWTIE2_PHIX_REMOVAL_ALIGN -
+[-        ] NFC…EPROCESSING:FASTQC_TRIMMED -
+[-        ] NFC…AD_PREPROCESSING:CAT_FASTQ -
+[-        ] NFC…PREPROCESSING:NANOPLOT_RAW -
+[-        ] NFC…PREPROCESSING:PORECHOP_ABI -
+[-        ] NFC…EAD_PREPROCESSING:NANOLYSE -
+[-        ] NFC…EAD_PREPROCESSING:FILTLONG -
+[-        ] NFC…OCESSING:NANOPLOT_FILTERED -
+[-        ] NFC…ESSING:CAT_FASTQ_LONGREADS -
+[-        ] NFC…G:ASSEMBLY:POOL_LONG_READS -
+[-        ] NFC…RTREAD_ASSEMBLY:METASPADES -
+[-        ] NFC…SHORTREAD_ASSEMBLY:MEGAHIT -
+[-        ] NFC…_ASSEMBLY:METASPADESHYBRID -
+[-        ] NFC…BLY:LONGREAD_ASSEMBLY:FLYE -
+[-        ] NFC…READ_ASSEMBLY:METAMDBG_ASM -
+[-        ] NFC…UNZIP_SHORTREAD_ASSEMBLIES -
+[-        ] NFC…GUNZIP_LONGREAD_ASSEMBLIES -
+Plus 41 more processes waiting for tasks…
+Pulling Apptainer image docker://quay.io/biocontainers/fastqc:0.12.1--hdfd78af_0 [cache /gpfs/home/ajh20fhu/medfly_metagenomics/mag_project/work/singularity/quay.io-biocontainers-fastqc-0.12.1--hdfd78af_0.img]
+Pulling Apptainer image docker://community.wave.seqera.io/library/fastp:1.0.1--c8b87fe62dcc103c [cache /gpfs/home/ajh20fhu/medfly_metagenomics/mag_project/work/singularity/community.wave.seqera.io-library-fastp-1.0.1--c8b87fe62dcc103c.img]
+Staging foreign file: https://data.gtdb.aau.ecogenomic.org/releases/release226/226.0/auxillary_files/gtdbtk_package/full_package/gtdbtk_r226_data.tar.gz
+WARN: Apptainer cache directory has not been defined -- Remote image will be stored in the path: /gpfs/home/ajh20fhu/medfly_metagenomics/mag_project/work/singularity -- Use the environment variable NXF_APPTAINER_CACHEDIR to specify a different location
+
+executor >  slurm (4)
+[49/8b34cc] NFC…TQC_RAW (H_13_01_run0_raw) | 0 of 2
+[a4/95cb59] NFC…SSING:FASTP (H_13_01_run0) | 0 of 2
+[-        ] NFC…BOWTIE2_PHIX_REMOVAL_BUILD -
+[-        ] NFC…BOWTIE2_PHIX_REMOVAL_ALIGN -
+[-        ] NFC…EPROCESSING:FASTQC_TRIMMED -
+[-        ] NFC…AD_PREPROCESSING:CAT_FASTQ -
+[-        ] NFC…PREPROCESSING:NANOPLOT_RAW -
+[-        ] NFC…PREPROCESSING:PORECHOP_ABI -
+[-        ] NFC…EAD_PREPROCESSING:NANOLYSE -
+[-        ] NFC…EAD_PREPROCESSING:FILTLONG -
+[-        ] NFC…OCESSING:NANOPLOT_FILTERED -
+[-        ] NFC…ESSING:CAT_FASTQ_LONGREADS -
+[-        ] NFC…G:ASSEMBLY:POOL_LONG_READS -
+[-        ] NFC…RTREAD_ASSEMBLY:METASPADES -
+[-        ] NFC…SHORTREAD_ASSEMBLY:MEGAHIT -
+[-        ] NFC…_ASSEMBLY:METASPADESHYBRID -
+[-        ] NFC…BLY:LONGREAD_ASSEMBLY:FLYE -
+[-        ] NFC…READ_ASSEMBLY:METAMDBG_ASM -
+[-        ] NFC…UNZIP_SHORTREAD_ASSEMBLIES -
+[-        ] NFC…GUNZIP_LONGREAD_ASSEMBLIES -
+Plus 41 more processes waiting for tasks…
+Pulling Apptainer image docker://quay.io/biocontainers/fastqc:0.12.1--hdfd78af_0 [cache /gpfs/home/ajh20fhu/medfly_metagenomics/mag_project/work/singularity/quay.io-biocontainers-fastqc-0.12.1--hdfd78af_0.img]
+Pulling Apptainer image docker://community.wave.seqera.io/library/fastp:1.0.1--c8b87fe62dcc103c [cache /gpfs/home/ajh20fhu/medfly_metagenomics/mag_project/work/singularity/community.wave.seqera.io-library-fastp-1.0.1--c8b87fe62dcc103c.img]
+Staging foreign file: https://data.gtdb.aau.ecogenomic.org/releases/release226/226.0/auxillary_files/gtdbtk_package/full_package/gtdbtk_r226_data.tar.gz
+WARN: Apptainer cache directory has not been defined -- Remote image will be stored in the path: /gpfs/home/ajh20fhu/medfly_metagenomics/mag_project/work/singularity -- Use the environment variable NXF_APPTAINER_CACHEDIR to specify a different location
+
+executor >  slurm (4)
+[49/8b34cc] NFC…TQC_RAW (H_13_01_run0_raw) | 0 of 2
+[74/3ad915] NFC…SING:FASTP (NH_12_01_run0) | 1 of 2
+[-        ] NFC…BOWTIE2_PHIX_REMOVAL_BUILD -
+[-        ] NFC…BOWTIE2_PHIX_REMOVAL_ALIGN -
+[-        ] NFC…EPROCESSING:FASTQC_TRIMMED -
+[-        ] NFC…AD_PREPROCESSING:CAT_FASTQ -
+[-        ] NFC…PREPROCESSING:NANOPLOT_RAW -
+[-        ] NFC…PREPROCESSING:PORECHOP_ABI -
+[-        ] NFC…EAD_PREPROCESSING:NANOLYSE -
+[-        ] NFC…EAD_PREPROCESSING:FILTLONG -
+[-        ] NFC…OCESSING:NANOPLOT_FILTERED -
+[-        ] NFC…ESSING:CAT_FASTQ_LONGREADS -
+[-        ] NFC…G:ASSEMBLY:POOL_LONG_READS -
+[-        ] NFC…RTREAD_ASSEMBLY:METASPADES -
+[-        ] NFC…SHORTREAD_ASSEMBLY:MEGAHIT -
+[-        ] NFC…_ASSEMBLY:METASPADESHYBRID -
+[-        ] NFC…BLY:LONGREAD_ASSEMBLY:FLYE -
+[-        ] NFC…READ_ASSEMBLY:METAMDBG_ASM -
+[-        ] NFC…UNZIP_SHORTREAD_ASSEMBLIES -
+[-        ] NFC…GUNZIP_LONGREAD_ASSEMBLIES -
+Plus 41 more processes waiting for tasks…
+Pulling Apptainer image docker://quay.io/biocontainers/bowtie2:2.4.2--py38h1c8e9b9_1 [cache /gpfs/home/ajh20fhu/medfly_metagenomics/mag_project/work/singularity/quay.io-biocontainers-bowtie2-2.4.2--py38h1c8e9b9_1.img]
+
+
+
+WARN: Apptainer cache directory has not been defined -- Remote image will be stored in the path: /gpfs/home/ajh20fhu/medfly_metagenomics/mag_project/work/singularity -- Use the environment variable NXF_APPTAINER_CACHEDIR to specify a different location
+
+
+executor >  slurm (4)
+[49/8b34cc] NFC…TQC_RAW (H_13_01_run0_raw) | 0 of 2
+[a4/95cb59] NFC…SSING:FASTP (H_13_01_run0) | 2 of 2 ✔
+[-        ] NFC…BOWTIE2_PHIX_REMOVAL_BUILD -
+[-        ] NFC…BOWTIE2_PHIX_REMOVAL_ALIGN -
+[-        ] NFC…EPROCESSING:FASTQC_TRIMMED -
+[-        ] NFC…AD_PREPROCESSING:CAT_FASTQ -
+[-        ] NFC…PREPROCESSING:NANOPLOT_RAW -
+[-        ] NFC…PREPROCESSING:PORECHOP_ABI -
+[-        ] NFC…EAD_PREPROCESSING:NANOLYSE -
+[-        ] NFC…EAD_PREPROCESSING:FILTLONG -
+[-        ] NFC…OCESSING:NANOPLOT_FILTERED -
+[-        ] NFC…ESSING:CAT_FASTQ_LONGREADS -
+[-        ] NFC…G:ASSEMBLY:POOL_LONG_READS -
+[-        ] NFC…RTREAD_ASSEMBLY:METASPADES -
+[-        ] NFC…SHORTREAD_ASSEMBLY:MEGAHIT -
+[-        ] NFC…_ASSEMBLY:METASPADESHYBRID -
+[-        ] NFC…BLY:LONGREAD_ASSEMBLY:FLYE -
+[-        ] NFC…READ_ASSEMBLY:METAMDBG_ASM -
+[-        ] NFC…UNZIP_SHORTREAD_ASSEMBLIES -
+[-        ] NFC…GUNZIP_LONGREAD_ASSEMBLIES -
+Plus 41 more processes waiting for tasks…
+Pulling Apptainer image docker://quay.io/biocontainers/bowtie2:2.4.2--py38h1c8e9b9_1 [cache /gpfs/home/ajh20fhu/medfly_metagenomics/mag_project/work/singularity/quay.io-biocontainers-bowtie2-2.4.2--py38h1c8e9b9_1.img]
+WARN: Apptainer cache directory has not been defined -- Remote image will be stored in the path: /gpfs/home/ajh20fhu/medfly_metagenomics/mag_project/work/singularity -- Use the environment variable NXF_APPTAINER_CACHEDIR to specify a different location
+
+
+
+
+
+executor >  slurm (4)
+[8e/b98ca6] NFC…QC_RAW (NH_12_01_run0_raw) | 1 of 2
+[a4/95cb59] NFC…SSING:FASTP (H_13_01_run0) | 2 of 2 ✔
+[-        ] NFC…BOWTIE2_PHIX_REMOVAL_BUILD -
+[-        ] NFC…BOWTIE2_PHIX_REMOVAL_ALIGN -
+[-        ] NFC…EPROCESSING:FASTQC_TRIMMED -
+[-        ] NFC…AD_PREPROCESSING:CAT_FASTQ -
+[-        ] NFC…PREPROCESSING:NANOPLOT_RAW -
+[-        ] NFC…PREPROCESSING:PORECHOP_ABI -
+[-        ] NFC…EAD_PREPROCESSING:NANOLYSE -
+[-        ] NFC…EAD_PREPROCESSING:FILTLONG -
+[-        ] NFC…OCESSING:NANOPLOT_FILTERED -
+[-        ] NFC…ESSING:CAT_FASTQ_LONGREADS -
+[-        ] NFC…G:ASSEMBLY:POOL_LONG_READS -
+[-        ] NFC…RTREAD_ASSEMBLY:METASPADES -
+[-        ] NFC…SHORTREAD_ASSEMBLY:MEGAHIT -
+[-        ] NFC…_ASSEMBLY:METASPADESHYBRID -
+[-        ] NFC…BLY:LONGREAD_ASSEMBLY:FLYE -
+[-        ] NFC…READ_ASSEMBLY:METAMDBG_ASM -
+[-        ] NFC…UNZIP_SHORTREAD_ASSEMBLIES -
+[-        ] NFC…GUNZIP_LONGREAD_ASSEMBLIES -
+Plus 41 more processes waiting for tasks…
+Pulling Apptainer image docker://quay.io/biocontainers/bowtie2:2.4.2--py38h1c8e9b9_1 [cache /gpfs/home/ajh20fhu/medfly_metagenomics/mag_project/work/singularity/quay.io-biocontainers-bowtie2-2.4.2--py38h1c8e9b9_1.img]
+WARN: Apptainer cache directory has not been defined -- Remote image will be stored in the path: /gpfs/home/ajh20fhu/medfly_metagenomics/mag_project/work/singularity -- Use the environment variable NXF_APPTAINER_CACHEDIR to specify a different location
+
+executor >  slurm (4)
+[49/8b34cc] NFC…TQC_RAW (H_13_01_run0_raw) | 2 of 2 ✔
+[a4/95cb59] NFC…SSING:FASTP (H_13_01_run0) | 2 of 2 ✔
+[-        ] NFC…BOWTIE2_PHIX_REMOVAL_BUILD -
+[-        ] NFC…BOWTIE2_PHIX_REMOVAL_ALIGN -
+[-        ] NFC…EPROCESSING:FASTQC_TRIMMED -
+[-        ] NFC…AD_PREPROCESSING:CAT_FASTQ -
+[-        ] NFC…PREPROCESSING:NANOPLOT_RAW -
+[-        ] NFC…PREPROCESSING:PORECHOP_ABI -
+[-        ] NFC…EAD_PREPROCESSING:NANOLYSE -
+[-        ] NFC…EAD_PREPROCESSING:FILTLONG -
+[-        ] NFC…OCESSING:NANOPLOT_FILTERED -
+[-        ] NFC…ESSING:CAT_FASTQ_LONGREADS -
+[-        ] NFC…G:ASSEMBLY:POOL_LONG_READS -
+[-        ] NFC…RTREAD_ASSEMBLY:METASPADES -
+[-        ] NFC…SHORTREAD_ASSEMBLY:MEGAHIT -
+[-        ] NFC…_ASSEMBLY:METASPADESHYBRID -
+[-        ] NFC…BLY:LONGREAD_ASSEMBLY:FLYE -
+[-        ] NFC…READ_ASSEMBLY:METAMDBG_ASM -
+[-        ] NFC…UNZIP_SHORTREAD_ASSEMBLIES -
+[-        ] NFC…GUNZIP_LONGREAD_ASSEMBLIES -
+Plus 41 more processes waiting for tasks…
+Pulling Apptainer image docker://quay.io/biocontainers/bowtie2:2.4.2--py38h1c8e9b9_1 [cache /gpfs/home/ajh20fhu/medfly_metagenomics/mag_project/work/singularity/quay.io-biocontainers-bowtie2-2.4.2--py38h1c8e9b9_1.img]
+WARN: Apptainer cache directory has not been defined -- Remote image will be stored in the path: /gpfs/home/ajh20fhu/medfly_metagenomics/mag_project/work/singularity -- Use the environment variable NXF_APPTAINER_CACHEDIR to specify a different location
+
+executor >  slurm (5)
+[49/8b34cc] NFC…TQC_RAW (H_13_01_run0_raw) | 2 of 2 ✔
+[a4/95cb59] NFC…SSING:FASTP (H_13_01_run0) | 2 of 2 ✔
+[1f/4b6160] NFC…SM259684v1_genomic.fna.gz) | 0 of 1
+[-        ] NFC…BOWTIE2_PHIX_REMOVAL_ALIGN -
+[-        ] NFC…EPROCESSING:FASTQC_TRIMMED -
+[-        ] NFC…AD_PREPROCESSING:CAT_FASTQ -
+[-        ] NFC…PREPROCESSING:NANOPLOT_RAW -
+[-        ] NFC…PREPROCESSING:PORECHOP_ABI -
+[-        ] NFC…EAD_PREPROCESSING:NANOLYSE -
+[-        ] NFC…EAD_PREPROCESSING:FILTLONG -
+[-        ] NFC…OCESSING:NANOPLOT_FILTERED -
+[-        ] NFC…ESSING:CAT_FASTQ_LONGREADS -
+[-        ] NFC…G:ASSEMBLY:POOL_LONG_READS -
+[-        ] NFC…RTREAD_ASSEMBLY:METASPADES -
+[-        ] NFC…SHORTREAD_ASSEMBLY:MEGAHIT -
+[-        ] NFC…_ASSEMBLY:METASPADESHYBRID -
+[-        ] NFC…BLY:LONGREAD_ASSEMBLY:FLYE -
+[-        ] NFC…READ_ASSEMBLY:METAMDBG_ASM -
+[-        ] NFC…UNZIP_SHORTREAD_ASSEMBLIES -
+[-        ] NFC…GUNZIP_LONGREAD_ASSEMBLIES -
+Plus 41 more processes waiting for tasks…
+Pulling Apptainer image docker://quay.io/biocontainers/bowtie2:2.4.2--py38h1c8e9b9_1 [cache /gpfs/home/ajh20fhu/medfly_metagenomics/mag_project/work/singularity/quay.io-biocontainers-bowtie2-2.4.2--py38h1c8e9b9_1.img]
+WARN: Apptainer cache directory has not been defined -- Remote image will be stored in the path: /gpfs/home/ajh20fhu/medfly_metagenomics/mag_project/work/singularity -- Use the environment variable NXF_APPTAINER_CACHEDIR to specify a different location
+
+executor >  slurm (5)
+[49/8b34cc] NFC…TQC_RAW (H_13_01_run0_raw) | 2 of 2 ✔
+[a4/95cb59] NFC…SSING:FASTP (H_13_01_run0) | 2 of 2 ✔
+[1f/4b6160] NFC…SM259684v1_genomic.fna.gz) | 0 of 1
+[-        ] NFC…BOWTIE2_PHIX_REMOVAL_ALIGN -
+[-        ] NFC…EPROCESSING:FASTQC_TRIMMED -
+[-        ] NFC…AD_PREPROCESSING:CAT_FASTQ -
+[-        ] NFC…PREPROCESSING:NANOPLOT_RAW -
+[-        ] NFC…PREPROCESSING:PORECHOP_ABI -
+[-        ] NFC…EAD_PREPROCESSING:NANOLYSE -
+[-        ] NFC…EAD_PREPROCESSING:FILTLONG -
+[-        ] NFC…OCESSING:NANOPLOT_FILTERED -
+[-        ] NFC…ESSING:CAT_FASTQ_LONGREADS -
+[-        ] NFC…G:ASSEMBLY:POOL_LONG_READS -
+[-        ] NFC…RTREAD_ASSEMBLY:METASPADES -
+[-        ] NFC…SHORTREAD_ASSEMBLY:MEGAHIT -
+[-        ] NFC…_ASSEMBLY:METASPADESHYBRID -
+[-        ] NFC…BLY:LONGREAD_ASSEMBLY:FLYE -
+[-        ] NFC…READ_ASSEMBLY:METAMDBG_ASM -
+[-        ] NFC…UNZIP_SHORTREAD_ASSEMBLIES -
+[-        ] NFC…GUNZIP_LONGREAD_ASSEMBLIES -
+Plus 41 more processes waiting for tasks…
+
+
+
+executor >  slurm (7)
+[49/8b34cc] NFC…TQC_RAW (H_13_01_run0_raw) | 2 of 2 ✔
+[a4/95cb59] NFC…SSING:FASTP (H_13_01_run0) | 2 of 2 ✔
+[1f/4b6160] NFC…SM259684v1_genomic.fna.gz) | 1 of 1 ✔
+[11/a12255] NFC…OVAL_ALIGN (NH_12_01_run0) | 0 of 2
+[-        ] NFC…EPROCESSING:FASTQC_TRIMMED -
+[-        ] NFC…AD_PREPROCESSING:CAT_FASTQ -
+[-        ] NFC…PREPROCESSING:NANOPLOT_RAW -
+[-        ] NFC…PREPROCESSING:PORECHOP_ABI -
+[-        ] NFC…EAD_PREPROCESSING:NANOLYSE -
+[-        ] NFC…EAD_PREPROCESSING:FILTLONG -
+[-        ] NFC…OCESSING:NANOPLOT_FILTERED -
+[-        ] NFC…ESSING:CAT_FASTQ_LONGREADS -
+[-        ] NFC…G:ASSEMBLY:POOL_LONG_READS -
+[-        ] NFC…RTREAD_ASSEMBLY:METASPADES -
+[-        ] NFC…SHORTREAD_ASSEMBLY:MEGAHIT -
+[-        ] NFC…_ASSEMBLY:METASPADESHYBRID -
+[-        ] NFC…BLY:LONGREAD_ASSEMBLY:FLYE -
+[-        ] NFC…READ_ASSEMBLY:METAMDBG_ASM -
+[-        ] NFC…UNZIP_SHORTREAD_ASSEMBLIES -
+[-        ] NFC…GUNZIP_LONGREAD_ASSEMBLIES -
+Plus 41 more processes waiting for tasks…
+
+
+
+executor >  slurm (7)
+[49/8b34cc] NFC…TQC_RAW (H_13_01_run0_raw) | 2 of 2 ✔
+[a4/95cb59] NFC…SSING:FASTP (H_13_01_run0) | 2 of 2 ✔
+[1f/4b6160] NFC…SM259684v1_genomic.fna.gz) | 1 of 1 ✔
+[11/a12255] NFC…OVAL_ALIGN (NH_12_01_run0) | 0 of 2
+[-        ] NFC…EPROCESSING:FASTQC_TRIMMED -
+[-        ] NFC…AD_PREPROCESSING:CAT_FASTQ -
+[-        ] NFC…PREPROCESSING:NANOPLOT_RAW -
+[-        ] NFC…PREPROCESSING:PORECHOP_ABI -
+[-        ] NFC…EAD_PREPROCESSING:NANOLYSE -
+[-        ] NFC…EAD_PREPROCESSING:FILTLONG -
+[-        ] NFC…OCESSING:NANOPLOT_FILTERED -
+[-        ] NFC…ESSING:CAT_FASTQ_LONGREADS -
+[-        ] NFC…G:ASSEMBLY:POOL_LONG_READS -
+[-        ] NFC…RTREAD_ASSEMBLY:METASPADES -
+[-        ] NFC…SHORTREAD_ASSEMBLY:MEGAHIT -
+[-        ] NFC…_ASSEMBLY:METASPADESHYBRID -
+[-        ] NFC…BLY:LONGREAD_ASSEMBLY:FLYE -
+[-        ] NFC…READ_ASSEMBLY:METAMDBG_ASM -
+[-        ] NFC…UNZIP_SHORTREAD_ASSEMBLIES -
+[-        ] NFC…GUNZIP_LONGREAD_ASSEMBLIES -
+Plus 41 more processes waiting for tasks…
+
+executor >  slurm (7)
+[49/8b34cc] NFC…TQC_RAW (H_13_01_run0_raw) | 2 of 2 ✔
+[a4/95cb59] NFC…SSING:FASTP (H_13_01_run0) | 2 of 2 ✔
+[1f/4b6160] NFC…SM259684v1_genomic.fna.gz) | 1 of 1 ✔
+[11/a12255] NFC…OVAL_ALIGN (NH_12_01_run0) | 1 of 2
+[-        ] NFC…EPROCESSING:FASTQC_TRIMMED | 0 of 1
+[-        ] NFC…AD_PREPROCESSING:CAT_FASTQ -
+[-        ] NFC…PREPROCESSING:NANOPLOT_RAW -
+[-        ] NFC…PREPROCESSING:PORECHOP_ABI -
+[-        ] NFC…EAD_PREPROCESSING:NANOLYSE -
+[-        ] NFC…EAD_PREPROCESSING:FILTLONG -
+[-        ] NFC…OCESSING:NANOPLOT_FILTERED -
+[-        ] NFC…ESSING:CAT_FASTQ_LONGREADS -
+[-        ] NFC…G:ASSEMBLY:POOL_LONG_READS -
+[-        ] NFC…RTREAD_ASSEMBLY:METASPADES -
+[-        ] NFC…SHORTREAD_ASSEMBLY:MEGAHIT -
+[-        ] NFC…_ASSEMBLY:METASPADESHYBRID -
+[-        ] NFC…BLY:LONGREAD_ASSEMBLY:FLYE -
+[-        ] NFC…READ_ASSEMBLY:METAMDBG_ASM -
+[-        ] NFC…UNZIP_SHORTREAD_ASSEMBLIES -
+[-        ] NFC…GUNZIP_LONGREAD_ASSEMBLIES -
+Plus 41 more processes waiting for tasks…
+
+executor >  slurm (8)
+[49/8b34cc] NFC…TQC_RAW (H_13_01_run0_raw) | 2 of 2 ✔
+[a4/95cb59] NFC…SSING:FASTP (H_13_01_run0) | 2 of 2 ✔
+[1f/4b6160] NFC…SM259684v1_genomic.fna.gz) | 1 of 1 ✔
+[11/a12255] NFC…OVAL_ALIGN (NH_12_01_run0) | 1 of 2
+[c2/302664] NFC…QC_TRIMMED (NH_12_01_run0) | 0 of 1
+[-        ] NFC…AD_PREPROCESSING:CAT_FASTQ -
+[-        ] NFC…PREPROCESSING:NANOPLOT_RAW -
+[-        ] NFC…PREPROCESSING:PORECHOP_ABI -
+[-        ] NFC…EAD_PREPROCESSING:NANOLYSE -
+[-        ] NFC…EAD_PREPROCESSING:FILTLONG -
+[-        ] NFC…OCESSING:NANOPLOT_FILTERED -
+[-        ] NFC…ESSING:CAT_FASTQ_LONGREADS -
+[-        ] NFC…G:ASSEMBLY:POOL_LONG_READS -
+[-        ] NFC…RTREAD_ASSEMBLY:METASPADES -
+[-        ] NFC…SHORTREAD_ASSEMBLY:MEGAHIT -
+[-        ] NFC…_ASSEMBLY:METASPADESHYBRID -
+[-        ] NFC…BLY:LONGREAD_ASSEMBLY:FLYE -
+[-        ] NFC…READ_ASSEMBLY:METAMDBG_ASM -
+[-        ] NFC…UNZIP_SHORTREAD_ASSEMBLIES -
+[-        ] NFC…GUNZIP_LONGREAD_ASSEMBLIES -
+Plus 41 more processes waiting for tasks…
+
+executor >  slurm (8)
+[49/8b34cc] NFC…TQC_RAW (H_13_01_run0_raw) | 2 of 2 ✔
+[a4/95cb59] NFC…SSING:FASTP (H_13_01_run0) | 2 of 2 ✔
+[1f/4b6160] NFC…SM259684v1_genomic.fna.gz) | 1 of 1 ✔
+[11/a12255] NFC…OVAL_ALIGN (NH_12_01_run0) | 1 of 2
+[c2/302664] NFC…QC_TRIMMED (NH_12_01_run0) | 0 of 1
+[-        ] NFC…AD_PREPROCESSING:CAT_FASTQ -
+[-        ] NFC…PREPROCESSING:NANOPLOT_RAW -
+[-        ] NFC…PREPROCESSING:PORECHOP_ABI -
+[-        ] NFC…EAD_PREPROCESSING:NANOLYSE -
+[-        ] NFC…EAD_PREPROCESSING:FILTLONG -
+[-        ] NFC…OCESSING:NANOPLOT_FILTERED -
+[-        ] NFC…ESSING:CAT_FASTQ_LONGREADS -
+[-        ] NFC…G:ASSEMBLY:POOL_LONG_READS -
+[-        ] NFC…RTREAD_ASSEMBLY:METASPADES -
+[-        ] NFC…SHORTREAD_ASSEMBLY:MEGAHIT -
+[-        ] NFC…_ASSEMBLY:METASPADESHYBRID -
+[-        ] NFC…BLY:LONGREAD_ASSEMBLY:FLYE -
+[-        ] NFC…READ_ASSEMBLY:METAMDBG_ASM -
+[-        ] NFC…UNZIP_SHORTREAD_ASSEMBLIES -
+[-        ] NFC…GUNZIP_LONGREAD_ASSEMBLIES -
+Plus 41 more processes waiting for tasks…
+
+executor >  slurm (8)
+[49/8b34cc] NFC…TQC_RAW (H_13_01_run0_raw) | 2 of 2 ✔
+[a4/95cb59] NFC…SSING:FASTP (H_13_01_run0) | 2 of 2 ✔
+[1f/4b6160] NFC…SM259684v1_genomic.fna.gz) | 1 of 1 ✔
+[11/a12255] NFC…OVAL_ALIGN (NH_12_01_run0) | 1 of 2
+[c2/302664] NFC…QC_TRIMMED (NH_12_01_run0) | 1 of 1
+[-        ] NFC…AD_PREPROCESSING:CAT_FASTQ -
+[-        ] NFC…PREPROCESSING:NANOPLOT_RAW -
+[-        ] NFC…PREPROCESSING:PORECHOP_ABI -
+[-        ] NFC…EAD_PREPROCESSING:NANOLYSE -
+[-        ] NFC…EAD_PREPROCESSING:FILTLONG -
+[-        ] NFC…OCESSING:NANOPLOT_FILTERED -
+[-        ] NFC…ESSING:CAT_FASTQ_LONGREADS -
+[-        ] NFC…G:ASSEMBLY:POOL_LONG_READS -
+[-        ] NFC…RTREAD_ASSEMBLY:METASPADES -
+[-        ] NFC…SHORTREAD_ASSEMBLY:MEGAHIT -
+[-        ] NFC…_ASSEMBLY:METASPADESHYBRID -
+[-        ] NFC…BLY:LONGREAD_ASSEMBLY:FLYE -
+[-        ] NFC…READ_ASSEMBLY:METAMDBG_ASM -
+[-        ] NFC…UNZIP_SHORTREAD_ASSEMBLIES -
+[-        ] NFC…GUNZIP_LONGREAD_ASSEMBLIES -
+Plus 41 more processes waiting for tasks…
+
+executor >  slurm (8)
+[49/8b34cc] NFC…TQC_RAW (H_13_01_run0_raw) | 2 of 2 ✔
+[a4/95cb59] NFC…SSING:FASTP (H_13_01_run0) | 2 of 2 ✔
+[1f/4b6160] NFC…SM259684v1_genomic.fna.gz) | 1 of 1 ✔
+[2c/c6309e] NFC…MOVAL_ALIGN (H_13_01_run0) | 2 of 2 ✔
+[c2/302664] NFC…QC_TRIMMED (NH_12_01_run0) | 1 of 2
+[-        ] NFC…AD_PREPROCESSING:CAT_FASTQ -
+[-        ] NFC…PREPROCESSING:NANOPLOT_RAW -
+[-        ] NFC…PREPROCESSING:PORECHOP_ABI -
+[-        ] NFC…EAD_PREPROCESSING:NANOLYSE -
+[-        ] NFC…EAD_PREPROCESSING:FILTLONG -
+[-        ] NFC…OCESSING:NANOPLOT_FILTERED -
+[-        ] NFC…ESSING:CAT_FASTQ_LONGREADS -
+[-        ] NFC…G:ASSEMBLY:POOL_LONG_READS -
+[-        ] NFC…RTREAD_ASSEMBLY:METASPADES -
+[-        ] NFC…SHORTREAD_ASSEMBLY:MEGAHIT -
+[-        ] NFC…_ASSEMBLY:METASPADESHYBRID -
+[-        ] NFC…BLY:LONGREAD_ASSEMBLY:FLYE -
+[-        ] NFC…READ_ASSEMBLY:METAMDBG_ASM -
+[-        ] NFC…UNZIP_SHORTREAD_ASSEMBLIES -
+[-        ] NFC…GUNZIP_LONGREAD_ASSEMBLIES -
+Plus 41 more processes waiting for tasks…
+Pulling Apptainer image docker://community.wave.seqera.io/library/megahit_pigz:87a590163e594224 [cache /gpfs/home/ajh20fhu/medfly_metagenomics/mag_project/work/singularity/community.wave.seqera.io-library-megahit_pigz-87a590163e594224.img]
+Pulling Apptainer image docker://community.wave.seqera.io/library/spades:4.1.0--77799c52e1d1054a [cache /gpfs/home/ajh20fhu/medfly_metagenomics/mag_project/work/singularity/community.wave.seqera.io-library-spades-4.1.0--77799c52e1d1054a.img]
+WARN: Apptainer cache directory has not been defined -- Remote image will be stored in the path: /gpfs/home/ajh20fhu/medfly_metagenomics/mag_project/work/singularity -- Use the environment variable NXF_APPTAINER_CACHEDIR to specify a different location
+
+executor >  slurm (9)
+[49/8b34cc] NFC…TQC_RAW (H_13_01_run0_raw) | 2 of 2 ✔
+[a4/95cb59] NFC…SSING:FASTP (H_13_01_run0) | 2 of 2 ✔
+[1f/4b6160] NFC…SM259684v1_genomic.fna.gz) | 1 of 1 ✔
+[2c/c6309e] NFC…MOVAL_ALIGN (H_13_01_run0) | 2 of 2 ✔
+[f4/aec404] NFC…TQC_TRIMMED (H_13_01_run0) | 1 of 2
+[-        ] NFC…AD_PREPROCESSING:CAT_FASTQ -
+[-        ] NFC…PREPROCESSING:NANOPLOT_RAW -
+[-        ] NFC…PREPROCESSING:PORECHOP_ABI -
+[-        ] NFC…EAD_PREPROCESSING:NANOLYSE -
+[-        ] NFC…EAD_PREPROCESSING:FILTLONG -
+[-        ] NFC…OCESSING:NANOPLOT_FILTERED -
+[-        ] NFC…ESSING:CAT_FASTQ_LONGREADS -
+[-        ] NFC…G:ASSEMBLY:POOL_LONG_READS -
+[-        ] NFC…RTREAD_ASSEMBLY:METASPADES -
+[-        ] NFC…SHORTREAD_ASSEMBLY:MEGAHIT -
+[-        ] NFC…_ASSEMBLY:METASPADESHYBRID -
+[-        ] NFC…BLY:LONGREAD_ASSEMBLY:FLYE -
+[-        ] NFC…READ_ASSEMBLY:METAMDBG_ASM -
+[-        ] NFC…UNZIP_SHORTREAD_ASSEMBLIES -
+[-        ] NFC…GUNZIP_LONGREAD_ASSEMBLIES -
+Plus 41 more processes waiting for tasks…
+Pulling Apptainer image docker://community.wave.seqera.io/library/megahit_pigz:87a590163e594224 [cache /gpfs/home/ajh20fhu/medfly_metagenomics/mag_project/work/singularity/community.wave.seqera.io-library-megahit_pigz-87a590163e594224.img]
+Pulling Apptainer image docker://community.wave.seqera.io/library/spades:4.1.0--77799c52e1d1054a [cache /gpfs/home/ajh20fhu/medfly_metagenomics/mag_project/work/singularity/community.wave.seqera.io-library-spades-4.1.0--77799c52e1d1054a.img]
+WARN: Apptainer cache directory has not been defined -- Remote image will be stored in the path: /gpfs/home/ajh20fhu/medfly_metagenomics/mag_project/work/singularity -- Use the environment variable NXF_APPTAINER_CACHEDIR to specify a different location
+
+executor >  slurm (9)
+[49/8b34cc] NFC…TQC_RAW (H_13_01_run0_raw) | 2 of 2 ✔
+[a4/95cb59] NFC…SSING:FASTP (H_13_01_run0) | 2 of 2 ✔
+[1f/4b6160] NFC…SM259684v1_genomic.fna.gz) | 1 of 1 ✔
+[2c/c6309e] NFC…MOVAL_ALIGN (H_13_01_run0) | 2 of 2 ✔
+[f4/aec404] NFC…TQC_TRIMMED (H_13_01_run0) | 1 of 2
+[-        ] NFC…AD_PREPROCESSING:CAT_FASTQ -
+[-        ] NFC…PREPROCESSING:NANOPLOT_RAW -
+[-        ] NFC…PREPROCESSING:PORECHOP_ABI -
+[-        ] NFC…EAD_PREPROCESSING:NANOLYSE -
+[-        ] NFC…EAD_PREPROCESSING:FILTLONG -
+[-        ] NFC…OCESSING:NANOPLOT_FILTERED -
+[-        ] NFC…ESSING:CAT_FASTQ_LONGREADS -
+[-        ] NFC…G:ASSEMBLY:POOL_LONG_READS -
+[-        ] NFC…RTREAD_ASSEMBLY:METASPADES -
+[-        ] NFC…SHORTREAD_ASSEMBLY:MEGAHIT -
+[-        ] NFC…_ASSEMBLY:METASPADESHYBRID -
+[-        ] NFC…BLY:LONGREAD_ASSEMBLY:FLYE -
+[-        ] NFC…READ_ASSEMBLY:METAMDBG_ASM -
+[-        ] NFC…UNZIP_SHORTREAD_ASSEMBLIES -
+[-        ] NFC…GUNZIP_LONGREAD_ASSEMBLIES -
+Plus 41 more processes waiting for tasks…
+Pulling Apptainer image docker://community.wave.seqera.io/library/megahit_pigz:87a590163e594224 [cache /gpfs/home/ajh20fhu/medfly_metagenomics/mag_project/work/singularity/community.wave.seqera.io-library-megahit_pigz-87a590163e594224.img]
+Pulling Apptainer image docker://community.wave.seqera.io/library/spades:4.1.0--77799c52e1d1054a [cache /gpfs/home/ajh20fhu/medfly_metagenomics/mag_project/work/singularity/community.wave.seqera.io-library-spades-4.1.0--77799c52e1d1054a.img]
+WARN: Apptainer cache directory has not been defined -- Remote image will be stored in the path: /gpfs/home/ajh20fhu/medfly_metagenomics/mag_project/work/singularity -- Use the environment variable NXF_APPTAINER_CACHEDIR to specify a different location
+
+executor >  slurm (9)
+[49/8b34cc] NFC…TQC_RAW (H_13_01_run0_raw) | 2 of 2 ✔
+[a4/95cb59] NFC…SSING:FASTP (H_13_01_run0) | 2 of 2 ✔
+[1f/4b6160] NFC…SM259684v1_genomic.fna.gz) | 1 of 1 ✔
+[2c/c6309e] NFC…MOVAL_ALIGN (H_13_01_run0) | 2 of 2 ✔
+[f4/aec404] NFC…TQC_TRIMMED (H_13_01_run0) | 1 of 2
+[-        ] NFC…AD_PREPROCESSING:CAT_FASTQ -
+[-        ] NFC…PREPROCESSING:NANOPLOT_RAW -
+[-        ] NFC…PREPROCESSING:PORECHOP_ABI -
+[-        ] NFC…EAD_PREPROCESSING:NANOLYSE -
+[-        ] NFC…EAD_PREPROCESSING:FILTLONG -
+[-        ] NFC…OCESSING:NANOPLOT_FILTERED -
+[-        ] NFC…ESSING:CAT_FASTQ_LONGREADS -
+[-        ] NFC…G:ASSEMBLY:POOL_LONG_READS -
+[-        ] NFC…RTREAD_ASSEMBLY:METASPADES -
+[-        ] NFC…SHORTREAD_ASSEMBLY:MEGAHIT | 0 of 2
+[-        ] NFC…_ASSEMBLY:METASPADESHYBRID -
+[-        ] NFC…BLY:LONGREAD_ASSEMBLY:FLYE -
+[-        ] NFC…READ_ASSEMBLY:METAMDBG_ASM -
+[-        ] NFC…UNZIP_SHORTREAD_ASSEMBLIES -
+[-        ] NFC…GUNZIP_LONGREAD_ASSEMBLIES -
+Plus 41 more processes waiting for tasks…
+Pulling Apptainer image docker://community.wave.seqera.io/library/megahit_pigz:87a590163e594224 [cache /gpfs/home/ajh20fhu/medfly_metagenomics/mag_project/work/singularity/community.wave.seqera.io-library-megahit_pigz-87a590163e594224.img]
+Pulling Apptainer image docker://community.wave.seqera.io/library/spades:4.1.0--77799c52e1d1054a [cache /gpfs/home/ajh20fhu/medfly_metagenomics/mag_project/work/singularity/community.wave.seqera.io-library-spades-4.1.0--77799c52e1d1054a.img]
+WARN: Apptainer cache directory has not been defined -- Remote image will be stored in the path: /gpfs/home/ajh20fhu/medfly_metagenomics/mag_project/work/singularity -- Use the environment variable NXF_APPTAINER_CACHEDIR to specify a different location
+
+executor >  slurm (11)
+[49/8b34cc] NFC…TQC_RAW (H_13_01_run0_raw) | 2 of 2 ✔
+[a4/95cb59] NFC…SSING:FASTP (H_13_01_run0) | 2 of 2 ✔
+[1f/4b6160] NFC…SM259684v1_genomic.fna.gz) | 1 of 1 ✔
+[2c/c6309e] NFC…MOVAL_ALIGN (H_13_01_run0) | 2 of 2 ✔
+[f4/aec404] NFC…TQC_TRIMMED (H_13_01_run0) | 1 of 2
+[-        ] NFC…AD_PREPROCESSING:CAT_FASTQ -
+[-        ] NFC…PREPROCESSING:NANOPLOT_RAW -
+[-        ] NFC…PREPROCESSING:PORECHOP_ABI -
+[-        ] NFC…EAD_PREPROCESSING:NANOLYSE -
+[-        ] NFC…EAD_PREPROCESSING:FILTLONG -
+[-        ] NFC…OCESSING:NANOPLOT_FILTERED -
+[-        ] NFC…ESSING:CAT_FASTQ_LONGREADS -
+[-        ] NFC…G:ASSEMBLY:POOL_LONG_READS -
+[-        ] NFC…RTREAD_ASSEMBLY:METASPADES -
+[46/a83cfb] NFC…ASSEMBLY:MEGAHIT (H_13_01) | 0 of 2
+[-        ] NFC…_ASSEMBLY:METASPADESHYBRID -
+[-        ] NFC…BLY:LONGREAD_ASSEMBLY:FLYE -
+[-        ] NFC…READ_ASSEMBLY:METAMDBG_ASM -
+[-        ] NFC…UNZIP_SHORTREAD_ASSEMBLIES -
+[-        ] NFC…GUNZIP_LONGREAD_ASSEMBLIES -
+Plus 41 more processes waiting for tasks…
+Pulling Apptainer image docker://community.wave.seqera.io/library/megahit_pigz:87a590163e594224 [cache /gpfs/home/ajh20fhu/medfly_metagenomics/mag_project/work/singularity/community.wave.seqera.io-library-megahit_pigz-87a590163e594224.img]
+Pulling Apptainer image docker://community.wave.seqera.io/library/spades:4.1.0--77799c52e1d1054a [cache /gpfs/home/ajh20fhu/medfly_metagenomics/mag_project/work/singularity/community.wave.seqera.io-library-spades-4.1.0--77799c52e1d1054a.img]
+WARN: Apptainer cache directory has not been defined -- Remote image will be stored in the path: /gpfs/home/ajh20fhu/medfly_metagenomics/mag_project/work/singularity -- Use the environment variable NXF_APPTAINER_CACHEDIR to specify a different location
+
+executor >  slurm (13)
+[49/8b34cc] NFC…TQC_RAW (H_13_01_run0_raw) | 2 of 2 ✔
+[a4/95cb59] NFC…SSING:FASTP (H_13_01_run0) | 2 of 2 ✔
+[1f/4b6160] NFC…SM259684v1_genomic.fna.gz) | 1 of 1 ✔
+[2c/c6309e] NFC…MOVAL_ALIGN (H_13_01_run0) | 2 of 2 ✔
+[f4/aec404] NFC…TQC_TRIMMED (H_13_01_run0) | 1 of 2
+[-        ] NFC…AD_PREPROCESSING:CAT_FASTQ -
+[-        ] NFC…PREPROCESSING:NANOPLOT_RAW -
+[-        ] NFC…PREPROCESSING:PORECHOP_ABI -
+[-        ] NFC…EAD_PREPROCESSING:NANOLYSE -
+[-        ] NFC…EAD_PREPROCESSING:FILTLONG -
+[-        ] NFC…OCESSING:NANOPLOT_FILTERED -
+[-        ] NFC…ESSING:CAT_FASTQ_LONGREADS -
+[-        ] NFC…G:ASSEMBLY:POOL_LONG_READS -
+[72/36a727] NFC…MBLY:METASPADES (NH_12_01) | 0 of 2
+[46/a83cfb] NFC…ASSEMBLY:MEGAHIT (H_13_01) | 0 of 2
+[-        ] NFC…_ASSEMBLY:METASPADESHYBRID -
+[-        ] NFC…BLY:LONGREAD_ASSEMBLY:FLYE -
+[-        ] NFC…READ_ASSEMBLY:METAMDBG_ASM -
+[-        ] NFC…UNZIP_SHORTREAD_ASSEMBLIES -
+[-        ] NFC…GUNZIP_LONGREAD_ASSEMBLIES -
+Plus 41 more processes waiting for tasks…
+
+
+
+
+executor >  slurm (13)
+[49/8b34cc] NFC…TQC_RAW (H_13_01_run0_raw) | 2 of 2 ✔
+[a4/95cb59] NFC…SSING:FASTP (H_13_01_run0) | 2 of 2 ✔
+[1f/4b6160] NFC…SM259684v1_genomic.fna.gz) | 1 of 1 ✔
+[2c/c6309e] NFC…MOVAL_ALIGN (H_13_01_run0) | 2 of 2 ✔
+[f4/aec404] NFC…TQC_TRIMMED (H_13_01_run0) | 1 of 2
+[-        ] NFC…AD_PREPROCESSING:CAT_FASTQ -
+[-        ] NFC…PREPROCESSING:NANOPLOT_RAW -
+[-        ] NFC…PREPROCESSING:PORECHOP_ABI -
+[-        ] NFC…EAD_PREPROCESSING:NANOLYSE -
+[-        ] NFC…EAD_PREPROCESSING:FILTLONG -
+[-        ] NFC…OCESSING:NANOPLOT_FILTERED -
+[-        ] NFC…ESSING:CAT_FASTQ_LONGREADS -
+[-        ] NFC…G:ASSEMBLY:POOL_LONG_READS -
+[72/36a727] NFC…MBLY:METASPADES (NH_12_01) | 0 of 2
+[46/a83cfb] NFC…ASSEMBLY:MEGAHIT (H_13_01) | 0 of 2
+[-        ] NFC…_ASSEMBLY:METASPADESHYBRID -
+[-        ] NFC…BLY:LONGREAD_ASSEMBLY:FLYE -
+[-        ] NFC…READ_ASSEMBLY:METAMDBG_ASM -
+[-        ] NFC…UNZIP_SHORTREAD_ASSEMBLIES -
+[-        ] NFC…GUNZIP_LONGREAD_ASSEMBLIES -
+Plus 41 more processes waiting for tasks…
+
+
+
+
+executor >  slurm (13)
+[49/8b34cc] NFC…TQC_RAW (H_13_01_run0_raw) | 2 of 2 ✔
+[a4/95cb59] NFC…SSING:FASTP (H_13_01_run0) | 2 of 2 ✔
+[1f/4b6160] NFC…SM259684v1_genomic.fna.gz) | 1 of 1 ✔
+[2c/c6309e] NFC…MOVAL_ALIGN (H_13_01_run0) | 2 of 2 ✔
+[f4/aec404] NFC…TQC_TRIMMED (H_13_01_run0) | 1 of 2
+[-        ] NFC…AD_PREPROCESSING:CAT_FASTQ -
+[-        ] NFC…PREPROCESSING:NANOPLOT_RAW -
+[-        ] NFC…PREPROCESSING:PORECHOP_ABI -
+[-        ] NFC…EAD_PREPROCESSING:NANOLYSE -
+[-        ] NFC…EAD_PREPROCESSING:FILTLONG -
+[-        ] NFC…OCESSING:NANOPLOT_FILTERED -
+[-        ] NFC…ESSING:CAT_FASTQ_LONGREADS -
+[-        ] NFC…G:ASSEMBLY:POOL_LONG_READS -
+[72/36a727] NFC…MBLY:METASPADES (NH_12_01) | 0 of 2
+[46/a83cfb] NFC…ASSEMBLY:MEGAHIT (H_13_01) | 0 of 2
+[-        ] NFC…_ASSEMBLY:METASPADESHYBRID -
+[-        ] NFC…BLY:LONGREAD_ASSEMBLY:FLYE -
+[-        ] NFC…READ_ASSEMBLY:METAMDBG_ASM -
+[-        ] NFC…UNZIP_SHORTREAD_ASSEMBLIES -
+[-        ] NFC…GUNZIP_LONGREAD_ASSEMBLIES -
+Plus 41 more processes waiting for tasks…
+
+executor >  slurm (13)
+[49/8b34cc] NFC…TQC_RAW (H_13_01_run0_raw) | 2 of 2 ✔
+[a4/95cb59] NFC…SSING:FASTP (H_13_01_run0) | 2 of 2 ✔
+[1f/4b6160] NFC…SM259684v1_genomic.fna.gz) | 1 of 1 ✔
+[2c/c6309e] NFC…MOVAL_ALIGN (H_13_01_run0) | 2 of 2 ✔
+[f4/aec404] NFC…TQC_TRIMMED (H_13_01_run0) | 2 of 2 ✔
+[-        ] NFC…AD_PREPROCESSING:CAT_FASTQ -
+[-        ] NFC…PREPROCESSING:NANOPLOT_RAW -
+[-        ] NFC…PREPROCESSING:PORECHOP_ABI -
+[-        ] NFC…EAD_PREPROCESSING:NANOLYSE -
+[-        ] NFC…EAD_PREPROCESSING:FILTLONG -
+[-        ] NFC…OCESSING:NANOPLOT_FILTERED -
+[-        ] NFC…ESSING:CAT_FASTQ_LONGREADS -
+[-        ] NFC…G:ASSEMBLY:POOL_LONG_READS -
+[72/36a727] NFC…MBLY:METASPADES (NH_12_01) | 0 of 2
+[46/a83cfb] NFC…ASSEMBLY:MEGAHIT (H_13_01) | 0 of 2
+[-        ] NFC…_ASSEMBLY:METASPADESHYBRID -
+[-        ] NFC…BLY:LONGREAD_ASSEMBLY:FLYE -
+[-        ] NFC…READ_ASSEMBLY:METAMDBG_ASM -
+[-        ] NFC…UNZIP_SHORTREAD_ASSEMBLIES -
+[-        ] NFC…GUNZIP_LONGREAD_ASSEMBLIES -
+Plus 41 more processes waiting for tasks…
+
+executor >  slurm (13)
+[49/8b34cc] NFC…TQC_RAW (H_13_01_run0_raw) | 2 of 2 ✔
+[a4/95cb59] NFC…SSING:FASTP (H_13_01_run0) | 2 of 2 ✔
+[1f/4b6160] NFC…SM259684v1_genomic.fna.gz) | 1 of 1 ✔
+[2c/c6309e] NFC…MOVAL_ALIGN (H_13_01_run0) | 2 of 2 ✔
+[f4/aec404] NFC…TQC_TRIMMED (H_13_01_run0) | 2 of 2 ✔
+[-        ] NFC…AD_PREPROCESSING:CAT_FASTQ -
+[-        ] NFC…PREPROCESSING:NANOPLOT_RAW -
+[-        ] NFC…PREPROCESSING:PORECHOP_ABI -
+[-        ] NFC…EAD_PREPROCESSING:NANOLYSE -
+[-        ] NFC…EAD_PREPROCESSING:FILTLONG -
+[-        ] NFC…OCESSING:NANOPLOT_FILTERED -
+[-        ] NFC…ESSING:CAT_FASTQ_LONGREADS -
+[-        ] NFC…G:ASSEMBLY:POOL_LONG_READS -
+[72/36a727] NFC…MBLY:METASPADES (NH_12_01) | 0 of 2
+[c0/b756c2] NFC…SSEMBLY:MEGAHIT (NH_12_01) | 1 of 2
+[-        ] NFC…_ASSEMBLY:METASPADESHYBRID -
+[-        ] NFC…BLY:LONGREAD_ASSEMBLY:FLYE -
+[-        ] NFC…READ_ASSEMBLY:METAMDBG_ASM -
+[-        ] NFC…UNZIP_SHORTREAD_ASSEMBLIES -
+[-        ] NFC…GUNZIP_LONGREAD_ASSEMBLIES -
+Plus 41 more processes waiting for tasks…
+Pulling Apptainer image docker://community.wave.seqera.io/library/coreutils_grep_gzip_lbzip2_pruned:838ba80435a629f8 [cache /gpfs/home/ajh20fhu/medfly_metagenomics/mag_project/work/singularity/community.wave.seqera.io-library-coreutils_grep_gzip_lbzip2_pruned-838ba80435a629f8.img]
+WARN: Apptainer cache directory has not been defined -- Remote image will be stored in the path: /gpfs/home/ajh20fhu/medfly_metagenomics/mag_project/work/singularity -- Use the environment variable NXF_APPTAINER_CACHEDIR to specify a different location
+
+executor >  slurm (14)
+[49/8b34cc] NFC…TQC_RAW (H_13_01_run0_raw) | 2 of 2 ✔
+[a4/95cb59] NFC…SSING:FASTP (H_13_01_run0) | 2 of 2 ✔
+[1f/4b6160] NFC…SM259684v1_genomic.fna.gz) | 1 of 1 ✔
+[2c/c6309e] NFC…MOVAL_ALIGN (H_13_01_run0) | 2 of 2 ✔
+[f4/aec404] NFC…TQC_TRIMMED (H_13_01_run0) | 2 of 2 ✔
+[-        ] NFC…AD_PREPROCESSING:CAT_FASTQ -
+[-        ] NFC…PREPROCESSING:NANOPLOT_RAW -
+[-        ] NFC…PREPROCESSING:PORECHOP_ABI -
+[-        ] NFC…EAD_PREPROCESSING:NANOLYSE -
+[-        ] NFC…EAD_PREPROCESSING:FILTLONG -
+[-        ] NFC…OCESSING:NANOPLOT_FILTERED -
+[-        ] NFC…ESSING:CAT_FASTQ_LONGREADS -
+[-        ] NFC…G:ASSEMBLY:POOL_LONG_READS -
+[72/36a727] NFC…MBLY:METASPADES (NH_12_01) | 0 of 2
+[c0/b756c2] NFC…SSEMBLY:MEGAHIT (NH_12_01) | 1 of 2
+[-        ] NFC…_ASSEMBLY:METASPADESHYBRID -
+[-        ] NFC…BLY:LONGREAD_ASSEMBLY:FLYE -
+[-        ] NFC…READ_ASSEMBLY:METAMDBG_ASM -
+[8a/36cf29] NFC…IT-NH_12_01.contigs.fa.gz) | 0 of 1
+[-        ] NFC…GUNZIP_LONGREAD_ASSEMBLIES -
+Plus 41 more processes waiting for tasks…
+Pulling Apptainer image docker://community.wave.seqera.io/library/coreutils_grep_gzip_lbzip2_pruned:838ba80435a629f8 [cache /gpfs/home/ajh20fhu/medfly_metagenomics/mag_project/work/singularity/community.wave.seqera.io-library-coreutils_grep_gzip_lbzip2_pruned-838ba80435a629f8.img]
+WARN: Apptainer cache directory has not been defined -- Remote image will be stored in the path: /gpfs/home/ajh20fhu/medfly_metagenomics/mag_project/work/singularity -- Use the environment variable NXF_APPTAINER_CACHEDIR to specify a different location
+
+executor >  slurm (14)
+[49/8b34cc] NFC…TQC_RAW (H_13_01_run0_raw) | 2 of 2 ✔
+[a4/95cb59] NFC…SSING:FASTP (H_13_01_run0) | 2 of 2 ✔
+[1f/4b6160] NFC…SM259684v1_genomic.fna.gz) | 1 of 1 ✔
+[2c/c6309e] NFC…MOVAL_ALIGN (H_13_01_run0) | 2 of 2 ✔
+[f4/aec404] NFC…TQC_TRIMMED (H_13_01_run0) | 2 of 2 ✔
+[-        ] NFC…AD_PREPROCESSING:CAT_FASTQ -
+[-        ] NFC…PREPROCESSING:NANOPLOT_RAW -
+[-        ] NFC…PREPROCESSING:PORECHOP_ABI -
+[-        ] NFC…EAD_PREPROCESSING:NANOLYSE -
+[-        ] NFC…EAD_PREPROCESSING:FILTLONG -
+[-        ] NFC…OCESSING:NANOPLOT_FILTERED -
+[-        ] NFC…ESSING:CAT_FASTQ_LONGREADS -
+[-        ] NFC…G:ASSEMBLY:POOL_LONG_READS -
+[72/36a727] NFC…MBLY:METASPADES (NH_12_01) | 0 of 2
+[c0/b756c2] NFC…SSEMBLY:MEGAHIT (NH_12_01) | 1 of 2
+[-        ] NFC…_ASSEMBLY:METASPADESHYBRID -
+[-        ] NFC…BLY:LONGREAD_ASSEMBLY:FLYE -
+[-        ] NFC…READ_ASSEMBLY:METAMDBG_ASM -
+[8a/36cf29] NFC…IT-NH_12_01.contigs.fa.gz) | 0 of 1
+[-        ] NFC…GUNZIP_LONGREAD_ASSEMBLIES -
+Plus 41 more processes waiting for tasks…
+
+
+
+executor >  slurm (15)
+[49/8b34cc] NFC…TQC_RAW (H_13_01_run0_raw) | 2 of 2 ✔
+[a4/95cb59] NFC…SSING:FASTP (H_13_01_run0) | 2 of 2 ✔
+[1f/4b6160] NFC…SM259684v1_genomic.fna.gz) | 1 of 1 ✔
+[2c/c6309e] NFC…MOVAL_ALIGN (H_13_01_run0) | 2 of 2 ✔
+[f4/aec404] NFC…TQC_TRIMMED (H_13_01_run0) | 2 of 2 ✔
+[-        ] NFC…AD_PREPROCESSING:CAT_FASTQ -
+[-        ] NFC…PREPROCESSING:NANOPLOT_RAW -
+[-        ] NFC…PREPROCESSING:PORECHOP_ABI -
+[-        ] NFC…EAD_PREPROCESSING:NANOLYSE -
+[-        ] NFC…EAD_PREPROCESSING:FILTLONG -
+[-        ] NFC…OCESSING:NANOPLOT_FILTERED -
+[-        ] NFC…ESSING:CAT_FASTQ_LONGREADS -
+[-        ] NFC…G:ASSEMBLY:POOL_LONG_READS -
+[72/36a727] NFC…MBLY:METASPADES (NH_12_01) | 0 of 2
+[c0/b756c2] NFC…SSEMBLY:MEGAHIT (NH_12_01) | 1 of 2
+[-        ] NFC…_ASSEMBLY:METASPADESHYBRID -
+[-        ] NFC…BLY:LONGREAD_ASSEMBLY:FLYE -
+[-        ] NFC…READ_ASSEMBLY:METAMDBG_ASM -
+[8a/36cf29] NFC…IT-NH_12_01.contigs.fa.gz) | 1 of 1
+[-        ] NFC…GUNZIP_LONGREAD_ASSEMBLIES -
+[e6/2da913] NFC…Y_BUILD (MEGAHIT-NH_12_01) | 0 of 1
+Plus 40 more processes waiting for tasks…
+Pulling Apptainer image docker://quay.io/biocontainers/mulled-v2-2e442ba7b07bfa102b9cf8fac6221263cd746ab8:57f05cfa73f769d6ed6d54144cb3aa2a6a6b17e0-0 [cache /gpfs/home/ajh20fhu/medfly_metagenomics/mag_project/work/singularity/quay.io-biocontainers-mulled-v2-2e442ba7b07bfa102b9cf8fac6221263cd746ab8-57f05cfa73f769d6ed6d54144cb3aa2a6a6b17e0-0.img]
+Pulling Apptainer image docker://quay.io/biocontainers/quast:5.0.2--py37pl526hb5aa323_2 [cache /gpfs/home/ajh20fhu/medfly_metagenomics/mag_project/work/singularity/quay.io-biocontainers-quast-5.0.2--py37pl526hb5aa323_2.img]
+
+executor >  slurm (16)
+[49/8b34cc] NFC…TQC_RAW (H_13_01_run0_raw) | 2 of 2 ✔
+[a4/95cb59] NFC…SSING:FASTP (H_13_01_run0) | 2 of 2 ✔
+[1f/4b6160] NFC…SM259684v1_genomic.fna.gz) | 1 of 1 ✔
+[2c/c6309e] NFC…MOVAL_ALIGN (H_13_01_run0) | 2 of 2 ✔
+[f4/aec404] NFC…TQC_TRIMMED (H_13_01_run0) | 2 of 2 ✔
+[-        ] NFC…AD_PREPROCESSING:CAT_FASTQ -
+[-        ] NFC…PREPROCESSING:NANOPLOT_RAW -
+[-        ] NFC…PREPROCESSING:PORECHOP_ABI -
+[-        ] NFC…EAD_PREPROCESSING:NANOLYSE -
+[-        ] NFC…EAD_PREPROCESSING:FILTLONG -
+[-        ] NFC…OCESSING:NANOPLOT_FILTERED -
+[-        ] NFC…ESSING:CAT_FASTQ_LONGREADS -
+[-        ] NFC…G:ASSEMBLY:POOL_LONG_READS -
+[72/36a727] NFC…MBLY:METASPADES (NH_12_01) | 0 of 2
+[c0/b756c2] NFC…SSEMBLY:MEGAHIT (NH_12_01) | 1 of 2
+[-        ] NFC…_ASSEMBLY:METASPADESHYBRID -
+[-        ] NFC…BLY:LONGREAD_ASSEMBLY:FLYE -
+[-        ] NFC…READ_ASSEMBLY:METAMDBG_ASM -
+[8a/36cf29] NFC…IT-NH_12_01.contigs.fa.gz) | 1 of 1
+[-        ] NFC…GUNZIP_LONGREAD_ASSEMBLIES -
+[dd/47d734] NFC…AG:MAG:PRODIGAL (NH_12_01) | 0 of 1
+[e6/2da913] NFC…Y_BUILD (MEGAHIT-NH_12_01) | 0 of 1
+Plus 39 more processes waiting for tasks…
+Pulling Apptainer image docker://quay.io/biocontainers/mulled-v2-2e442ba7b07bfa102b9cf8fac6221263cd746ab8:57f05cfa73f769d6ed6d54144cb3aa2a6a6b17e0-0 [cache /gpfs/home/ajh20fhu/medfly_metagenomics/mag_project/work/singularity/quay.io-biocontainers-mulled-v2-2e442ba7b07bfa102b9cf8fac6221263cd746ab8-57f05cfa73f769d6ed6d54144cb3aa2a6a6b17e0-0.img]
+Pulling Apptainer image docker://quay.io/biocontainers/quast:5.0.2--py37pl526hb5aa323_2 [cache /gpfs/home/ajh20fhu/medfly_metagenomics/mag_project/work/singularity/quay.io-biocontainers-quast-5.0.2--py37pl526hb5aa323_2.img]
+
+executor >  slurm (16)
+[49/8b34cc] NFC…TQC_RAW (H_13_01_run0_raw) | 2 of 2 ✔
+[a4/95cb59] NFC…SSING:FASTP (H_13_01_run0) | 2 of 2 ✔
+[1f/4b6160] NFC…SM259684v1_genomic.fna.gz) | 1 of 1 ✔
+[2c/c6309e] NFC…MOVAL_ALIGN (H_13_01_run0) | 2 of 2 ✔
+[f4/aec404] NFC…TQC_TRIMMED (H_13_01_run0) | 2 of 2 ✔
+[-        ] NFC…AD_PREPROCESSING:CAT_FASTQ -
+[-        ] NFC…PREPROCESSING:NANOPLOT_RAW -
+[-        ] NFC…PREPROCESSING:PORECHOP_ABI -
+[-        ] NFC…EAD_PREPROCESSING:NANOLYSE -
+[-        ] NFC…EAD_PREPROCESSING:FILTLONG -
+[-        ] NFC…OCESSING:NANOPLOT_FILTERED -
+[-        ] NFC…ESSING:CAT_FASTQ_LONGREADS -
+[-        ] NFC…G:ASSEMBLY:POOL_LONG_READS -
+[72/36a727] NFC…MBLY:METASPADES (NH_12_01) | 0 of 2
+[c0/b756c2] NFC…SSEMBLY:MEGAHIT (NH_12_01) | 1 of 2
+[-        ] NFC…_ASSEMBLY:METASPADESHYBRID -
+[-        ] NFC…BLY:LONGREAD_ASSEMBLY:FLYE -
+[-        ] NFC…READ_ASSEMBLY:METAMDBG_ASM -
+[8a/36cf29] NFC…IT-NH_12_01.contigs.fa.gz) | 1 of 1
+[-        ] NFC…GUNZIP_LONGREAD_ASSEMBLIES -
+[dd/47d734] NFC…AG:MAG:PRODIGAL (NH_12_01) | 0 of 1
+[e6/2da913] NFC…Y_BUILD (MEGAHIT-NH_12_01) | 0 of 1
+Plus 39 more processes waiting for tasks…
+Pulling Apptainer image docker://quay.io/biocontainers/mulled-v2-2e442ba7b07bfa102b9cf8fac6221263cd746ab8:57f05cfa73f769d6ed6d54144cb3aa2a6a6b17e0-0 [cache /gpfs/home/ajh20fhu/medfly_metagenomics/mag_project/work/singularity/quay.io-biocontainers-mulled-v2-2e442ba7b07bfa102b9cf8fac6221263cd746ab8-57f05cfa73f769d6ed6d54144cb3aa2a6a6b17e0-0.img]
+Pulling Apptainer image docker://quay.io/biocontainers/quast:5.0.2--py37pl526hb5aa323_2 [cache /gpfs/home/ajh20fhu/medfly_metagenomics/mag_project/work/singularity/quay.io-biocontainers-quast-5.0.2--py37pl526hb5aa323_2.img]
+
+executor >  slurm (16)
+[49/8b34cc] NFC…TQC_RAW (H_13_01_run0_raw) | 2 of 2 ✔
+[a4/95cb59] NFC…SSING:FASTP (H_13_01_run0) | 2 of 2 ✔
+[1f/4b6160] NFC…SM259684v1_genomic.fna.gz) | 1 of 1 ✔
+[2c/c6309e] NFC…MOVAL_ALIGN (H_13_01_run0) | 2 of 2 ✔
+[f4/aec404] NFC…TQC_TRIMMED (H_13_01_run0) | 2 of 2 ✔
+[-        ] NFC…AD_PREPROCESSING:CAT_FASTQ -
+[-        ] NFC…PREPROCESSING:NANOPLOT_RAW -
+[-        ] NFC…PREPROCESSING:PORECHOP_ABI -
+[-        ] NFC…EAD_PREPROCESSING:NANOLYSE -
+[-        ] NFC…EAD_PREPROCESSING:FILTLONG -
+[-        ] NFC…OCESSING:NANOPLOT_FILTERED -
+[-        ] NFC…ESSING:CAT_FASTQ_LONGREADS -
+[-        ] NFC…G:ASSEMBLY:POOL_LONG_READS -
+[72/36a727] NFC…MBLY:METASPADES (NH_12_01) | 0 of 2
+[c0/b756c2] NFC…SSEMBLY:MEGAHIT (NH_12_01) | 1 of 2
+[-        ] NFC…_ASSEMBLY:METASPADESHYBRID -
+[-        ] NFC…BLY:LONGREAD_ASSEMBLY:FLYE -
+[-        ] NFC…READ_ASSEMBLY:METAMDBG_ASM -
+[8a/36cf29] NFC…IT-NH_12_01.contigs.fa.gz) | 1 of 1
+[-        ] NFC…GUNZIP_LONGREAD_ASSEMBLIES -
+[dd/47d734] NFC…AG:MAG:PRODIGAL (NH_12_01) | 0 of 1
+[e6/2da913] NFC…Y_BUILD (MEGAHIT-NH_12_01) | 0 of 1
+Plus 39 more processes waiting for tasks…
+Pulling Apptainer image docker://quay.io/biocontainers/mulled-v2-2e442ba7b07bfa102b9cf8fac6221263cd746ab8:57f05cfa73f769d6ed6d54144cb3aa2a6a6b17e0-0 [cache /gpfs/home/ajh20fhu/medfly_metagenomics/mag_project/work/singularity/quay.io-biocontainers-mulled-v2-2e442ba7b07bfa102b9cf8fac6221263cd746ab8-57f05cfa73f769d6ed6d54144cb3aa2a6a6b17e0-0.img]
+Pulling Apptainer image docker://quay.io/biocontainers/quast:5.0.2--py37pl526hb5aa323_2 [cache /gpfs/home/ajh20fhu/medfly_metagenomics/mag_project/work/singularity/quay.io-biocontainers-quast-5.0.2--py37pl526hb5aa323_2.img]
+
+executor >  slurm (16)
+[49/8b34cc] NFC…TQC_RAW (H_13_01_run0_raw) | 2 of 2 ✔
+[a4/95cb59] NFC…SSING:FASTP (H_13_01_run0) | 2 of 2 ✔
+[1f/4b6160] NFC…SM259684v1_genomic.fna.gz) | 1 of 1 ✔
+[2c/c6309e] NFC…MOVAL_ALIGN (H_13_01_run0) | 2 of 2 ✔
+[f4/aec404] NFC…TQC_TRIMMED (H_13_01_run0) | 2 of 2 ✔
+[-        ] NFC…AD_PREPROCESSING:CAT_FASTQ -
+[-        ] NFC…PREPROCESSING:NANOPLOT_RAW -
+[-        ] NFC…PREPROCESSING:PORECHOP_ABI -
+[-        ] NFC…EAD_PREPROCESSING:NANOLYSE -
+[-        ] NFC…EAD_PREPROCESSING:FILTLONG -
+[-        ] NFC…OCESSING:NANOPLOT_FILTERED -
+[-        ] NFC…ESSING:CAT_FASTQ_LONGREADS -
+[-        ] NFC…G:ASSEMBLY:POOL_LONG_READS -
+[72/36a727] NFC…MBLY:METASPADES (NH_12_01) | 0 of 2
+[c0/b756c2] NFC…SSEMBLY:MEGAHIT (NH_12_01) | 1 of 2
+[-        ] NFC…_ASSEMBLY:METASPADESHYBRID -
+[-        ] NFC…BLY:LONGREAD_ASSEMBLY:FLYE -
+[-        ] NFC…READ_ASSEMBLY:METAMDBG_ASM -
+[8a/36cf29] NFC…IT-NH_12_01.contigs.fa.gz) | 1 of 1
+[-        ] NFC…GUNZIP_LONGREAD_ASSEMBLIES -
+[dd/47d734] NFC…AG:MAG:PRODIGAL (NH_12_01) | 0 of 1
+[e6/2da913] NFC…Y_BUILD (MEGAHIT-NH_12_01) | 1 of 1
+Plus 39 more processes waiting for tasks…
+Pulling Apptainer image docker://quay.io/biocontainers/mulled-v2-ac74a7f02cebcfcc07d8e8d1d750af9c83b4d45a:577a697be67b5ae9b16f637fd723b8263a3898b3-0 [cache /gpfs/home/ajh20fhu/medfly_metagenomics/mag_project/work/singularity/quay.io-biocontainers-mulled-v2-ac74a7f02cebcfcc07d8e8d1d750af9c83b4d45a-577a697be67b5ae9b16f637fd723b8263a3898b3-0.img]
+
+
+WARN: Apptainer cache directory has not been defined -- Remote image will be stored in the path: /gpfs/home/ajh20fhu/medfly_metagenomics/mag_project/work/singularity -- Use the environment variable NXF_APPTAINER_CACHEDIR to specify a different location
+
+executor >  slurm (17)
+[49/8b34cc] NFC…TQC_RAW (H_13_01_run0_raw) | 2 of 2 ✔
+[a4/95cb59] NFC…SSING:FASTP (H_13_01_run0) | 2 of 2 ✔
+[1f/4b6160] NFC…SM259684v1_genomic.fna.gz) | 1 of 1 ✔
+[2c/c6309e] NFC…MOVAL_ALIGN (H_13_01_run0) | 2 of 2 ✔
+[f4/aec404] NFC…TQC_TRIMMED (H_13_01_run0) | 2 of 2 ✔
+[-        ] NFC…AD_PREPROCESSING:CAT_FASTQ -
+[-        ] NFC…PREPROCESSING:NANOPLOT_RAW -
+[-        ] NFC…PREPROCESSING:PORECHOP_ABI -
+[-        ] NFC…EAD_PREPROCESSING:NANOLYSE -
+[-        ] NFC…EAD_PREPROCESSING:FILTLONG -
+[-        ] NFC…OCESSING:NANOPLOT_FILTERED -
+[-        ] NFC…ESSING:CAT_FASTQ_LONGREADS -
+[-        ] NFC…G:ASSEMBLY:POOL_LONG_READS -
+[72/36a727] NFC…MBLY:METASPADES (NH_12_01) | 0 of 2
+[c0/b756c2] NFC…SSEMBLY:MEGAHIT (NH_12_01) | 1 of 2
+[-        ] NFC…_ASSEMBLY:METASPADESHYBRID -
+[-        ] NFC…BLY:LONGREAD_ASSEMBLY:FLYE -
+[-        ] NFC…READ_ASSEMBLY:METAMDBG_ASM -
+[8a/36cf29] NFC…IT-NH_12_01.contigs.fa.gz) | 1 of 1
+[-        ] NFC…GUNZIP_LONGREAD_ASSEMBLIES -
+[dd/47d734] NFC…AG:MAG:PRODIGAL (NH_12_01) | 0 of 1
+[e6/2da913] NFC…Y_BUILD (MEGAHIT-NH_12_01) | 1 of 1
+[41/bffd80] NFC…MEGAHIT-NH_12_01-NH_12_01) | 0 of 1
+Plus 38 more processes waiting for tasks…
+Pulling Apptainer image docker://quay.io/biocontainers/mulled-v2-ac74a7f02cebcfcc07d8e8d1d750af9c83b4d45a:577a697be67b5ae9b16f637fd723b8263a3898b3-0 [cache /gpfs/home/ajh20fhu/medfly_metagenomics/mag_project/work/singularity/quay.io-biocontainers-mulled-v2-ac74a7f02cebcfcc07d8e8d1d750af9c83b4d45a-577a697be67b5ae9b16f637fd723b8263a3898b3-0.img]
+WARN: Apptainer cache directory has not been defined -- Remote image will be stored in the path: /gpfs/home/ajh20fhu/medfly_metagenomics/mag_project/work/singularity -- Use the environment variable NXF_APPTAINER_CACHEDIR to specify a different location
+
+
+executor >  slurm (17)
+[49/8b34cc] NFC…TQC_RAW (H_13_01_run0_raw) | 2 of 2 ✔
+[a4/95cb59] NFC…SSING:FASTP (H_13_01_run0) | 2 of 2 ✔
+[1f/4b6160] NFC…SM259684v1_genomic.fna.gz) | 1 of 1 ✔
+[2c/c6309e] NFC…MOVAL_ALIGN (H_13_01_run0) | 2 of 2 ✔
+[f4/aec404] NFC…TQC_TRIMMED (H_13_01_run0) | 2 of 2 ✔
+[-        ] NFC…AD_PREPROCESSING:CAT_FASTQ -
+[-        ] NFC…PREPROCESSING:NANOPLOT_RAW -
+[-        ] NFC…PREPROCESSING:PORECHOP_ABI -
+[-        ] NFC…EAD_PREPROCESSING:NANOLYSE -
+[-        ] NFC…EAD_PREPROCESSING:FILTLONG -
+[-        ] NFC…OCESSING:NANOPLOT_FILTERED -
+[-        ] NFC…ESSING:CAT_FASTQ_LONGREADS -
+[-        ] NFC…G:ASSEMBLY:POOL_LONG_READS -
+[72/36a727] NFC…MBLY:METASPADES (NH_12_01) | 0 of 2
+[c0/b756c2] NFC…SSEMBLY:MEGAHIT (NH_12_01) | 1 of 2
+[-        ] NFC…_ASSEMBLY:METASPADESHYBRID -
+[-        ] NFC…BLY:LONGREAD_ASSEMBLY:FLYE -
+[-        ] NFC…READ_ASSEMBLY:METAMDBG_ASM -
+[8a/36cf29] NFC…IT-NH_12_01.contigs.fa.gz) | 1 of 1
+[-        ] NFC…GUNZIP_LONGREAD_ASSEMBLIES -
+[dd/47d734] NFC…AG:MAG:PRODIGAL (NH_12_01) | 0 of 1
+[e6/2da913] NFC…Y_BUILD (MEGAHIT-NH_12_01) | 1 of 1
+[41/bffd80] NFC…MEGAHIT-NH_12_01-NH_12_01) | 0 of 1
+Plus 38 more processes waiting for tasks…
+Pulling Apptainer image docker://quay.io/biocontainers/mulled-v2-ac74a7f02cebcfcc07d8e8d1d750af9c83b4d45a:577a697be67b5ae9b16f637fd723b8263a3898b3-0 [cache /gpfs/home/ajh20fhu/medfly_metagenomics/mag_project/work/singularity/quay.io-biocontainers-mulled-v2-ac74a7f02cebcfcc07d8e8d1d750af9c83b4d45a-577a697be67b5ae9b16f637fd723b8263a3898b3-0.img]
+WARN: Apptainer cache directory has not been defined -- Remote image will be stored in the path: /gpfs/home/ajh20fhu/medfly_metagenomics/mag_project/work/singularity -- Use the environment variable NXF_APPTAINER_CACHEDIR to specify a different location
+
+executor >  slurm (18)
+[49/8b34cc] NFC…TQC_RAW (H_13_01_run0_raw) | 2 of 2 ✔
+[a4/95cb59] NFC…SSING:FASTP (H_13_01_run0) | 2 of 2 ✔
+[1f/4b6160] NFC…SM259684v1_genomic.fna.gz) | 1 of 1 ✔
+[2c/c6309e] NFC…MOVAL_ALIGN (H_13_01_run0) | 2 of 2 ✔
+[f4/aec404] NFC…TQC_TRIMMED (H_13_01_run0) | 2 of 2 ✔
+[-        ] NFC…AD_PREPROCESSING:CAT_FASTQ -
+[-        ] NFC…PREPROCESSING:NANOPLOT_RAW -
+[-        ] NFC…PREPROCESSING:PORECHOP_ABI -
+[-        ] NFC…EAD_PREPROCESSING:NANOLYSE -
+[-        ] NFC…EAD_PREPROCESSING:FILTLONG -
+[-        ] NFC…OCESSING:NANOPLOT_FILTERED -
+[-        ] NFC…ESSING:CAT_FASTQ_LONGREADS -
+[-        ] NFC…G:ASSEMBLY:POOL_LONG_READS -
+[72/36a727] NFC…MBLY:METASPADES (NH_12_01) | 0 of 2
+[c0/b756c2] NFC…SSEMBLY:MEGAHIT (NH_12_01) | 1 of 2
+[-        ] NFC…_ASSEMBLY:METASPADESHYBRID -
+[-        ] NFC…BLY:LONGREAD_ASSEMBLY:FLYE -
+[-        ] NFC…READ_ASSEMBLY:METAMDBG_ASM -
+[8a/36cf29] NFC…IT-NH_12_01.contigs.fa.gz) | 1 of 1
+[-        ] NFC…GUNZIP_LONGREAD_ASSEMBLIES -
+[43/640137] NFC…G:QUAST (MEGAHIT-NH_12_01) | 0 of 1
+[dd/47d734] NFC…AG:MAG:PRODIGAL (NH_12_01) | 0 of 1
+[e6/2da913] NFC…Y_BUILD (MEGAHIT-NH_12_01) | 1 of 1
+[41/bffd80] NFC…MEGAHIT-NH_12_01-NH_12_01) | 0 of 1
+Plus 37 more processes waiting for tasks…
+
+
+
+executor >  slurm (18)
+[49/8b34cc] NFC…TQC_RAW (H_13_01_run0_raw) | 2 of 2 ✔
+[a4/95cb59] NFC…SSING:FASTP (H_13_01_run0) | 2 of 2 ✔
+[1f/4b6160] NFC…SM259684v1_genomic.fna.gz) | 1 of 1 ✔
+[2c/c6309e] NFC…MOVAL_ALIGN (H_13_01_run0) | 2 of 2 ✔
+[f4/aec404] NFC…TQC_TRIMMED (H_13_01_run0) | 2 of 2 ✔
+[-        ] NFC…AD_PREPROCESSING:CAT_FASTQ -
+[-        ] NFC…PREPROCESSING:NANOPLOT_RAW -
+[-        ] NFC…PREPROCESSING:PORECHOP_ABI -
+[-        ] NFC…EAD_PREPROCESSING:NANOLYSE -
+[-        ] NFC…EAD_PREPROCESSING:FILTLONG -
+[-        ] NFC…OCESSING:NANOPLOT_FILTERED -
+[-        ] NFC…ESSING:CAT_FASTQ_LONGREADS -
+[-        ] NFC…G:ASSEMBLY:POOL_LONG_READS -
+[72/36a727] NFC…MBLY:METASPADES (NH_12_01) | 0 of 2
+[c0/b756c2] NFC…SSEMBLY:MEGAHIT (NH_12_01) | 1 of 2
+[-        ] NFC…_ASSEMBLY:METASPADESHYBRID -
+[-        ] NFC…BLY:LONGREAD_ASSEMBLY:FLYE -
+[-        ] NFC…READ_ASSEMBLY:METAMDBG_ASM -
+[8a/36cf29] NFC…IT-NH_12_01.contigs.fa.gz) | 1 of 1
+[-        ] NFC…GUNZIP_LONGREAD_ASSEMBLIES -
+[43/640137] NFC…G:QUAST (MEGAHIT-NH_12_01) | 0 of 1
+[dd/47d734] NFC…AG:MAG:PRODIGAL (NH_12_01) | 0 of 1
+[e6/2da913] NFC…Y_BUILD (MEGAHIT-NH_12_01) | 1 of 1
+[41/bffd80] NFC…MEGAHIT-NH_12_01-NH_12_01) | 0 of 1
+Plus 37 more processes waiting for tasks…
+
+
+
+executor >  slurm (18)
+[49/8b34cc] NFC…TQC_RAW (H_13_01_run0_raw) | 2 of 2 ✔
+[a4/95cb59] NFC…SSING:FASTP (H_13_01_run0) | 2 of 2 ✔
+[1f/4b6160] NFC…SM259684v1_genomic.fna.gz) | 1 of 1 ✔
+[2c/c6309e] NFC…MOVAL_ALIGN (H_13_01_run0) | 2 of 2 ✔
+[f4/aec404] NFC…TQC_TRIMMED (H_13_01_run0) | 2 of 2 ✔
+[-        ] NFC…AD_PREPROCESSING:CAT_FASTQ -
+[-        ] NFC…PREPROCESSING:NANOPLOT_RAW -
+[-        ] NFC…PREPROCESSING:PORECHOP_ABI -
+[-        ] NFC…EAD_PREPROCESSING:NANOLYSE -
+[-        ] NFC…EAD_PREPROCESSING:FILTLONG -
+[-        ] NFC…OCESSING:NANOPLOT_FILTERED -
+[-        ] NFC…ESSING:CAT_FASTQ_LONGREADS -
+[-        ] NFC…G:ASSEMBLY:POOL_LONG_READS -
+[72/36a727] NFC…MBLY:METASPADES (NH_12_01) | 0 of 2
+[c0/b756c2] NFC…SSEMBLY:MEGAHIT (NH_12_01) | 1 of 2
+[-        ] NFC…_ASSEMBLY:METASPADESHYBRID -
+[-        ] NFC…BLY:LONGREAD_ASSEMBLY:FLYE -
+[-        ] NFC…READ_ASSEMBLY:METAMDBG_ASM -
+[8a/36cf29] NFC…IT-NH_12_01.contigs.fa.gz) | 1 of 1
+[-        ] NFC…GUNZIP_LONGREAD_ASSEMBLIES -
+[43/640137] NFC…G:QUAST (MEGAHIT-NH_12_01) | 1 of 1
+[dd/47d734] NFC…AG:MAG:PRODIGAL (NH_12_01) | 0 of 1
+[e6/2da913] NFC…Y_BUILD (MEGAHIT-NH_12_01) | 1 of 1
+[41/bffd80] NFC…MEGAHIT-NH_12_01-NH_12_01) | 0 of 1
+Plus 37 more processes waiting for tasks…
+
+executor >  slurm (18)
+[49/8b34cc] NFC…TQC_RAW (H_13_01_run0_raw) | 2 of 2 ✔
+[a4/95cb59] NFC…SSING:FASTP (H_13_01_run0) | 2 of 2 ✔
+[1f/4b6160] NFC…SM259684v1_genomic.fna.gz) | 1 of 1 ✔
+[2c/c6309e] NFC…MOVAL_ALIGN (H_13_01_run0) | 2 of 2 ✔
+[f4/aec404] NFC…TQC_TRIMMED (H_13_01_run0) | 2 of 2 ✔
+[-        ] NFC…AD_PREPROCESSING:CAT_FASTQ -
+[-        ] NFC…PREPROCESSING:NANOPLOT_RAW -
+[-        ] NFC…PREPROCESSING:PORECHOP_ABI -
+[-        ] NFC…EAD_PREPROCESSING:NANOLYSE -
+[-        ] NFC…EAD_PREPROCESSING:FILTLONG -
+[-        ] NFC…OCESSING:NANOPLOT_FILTERED -
+[-        ] NFC…ESSING:CAT_FASTQ_LONGREADS -
+[-        ] NFC…G:ASSEMBLY:POOL_LONG_READS -
+[72/36a727] NFC…MBLY:METASPADES (NH_12_01) | 0 of 2
+[c0/b756c2] NFC…SSEMBLY:MEGAHIT (NH_12_01) | 1 of 2
+[-        ] NFC…_ASSEMBLY:METASPADESHYBRID -
+[-        ] NFC…BLY:LONGREAD_ASSEMBLY:FLYE -
+[-        ] NFC…READ_ASSEMBLY:METAMDBG_ASM -
+[8a/36cf29] NFC…IT-NH_12_01.contigs.fa.gz) | 1 of 1
+[-        ] NFC…GUNZIP_LONGREAD_ASSEMBLIES -
+[43/640137] NFC…G:QUAST (MEGAHIT-NH_12_01) | 1 of 1
+[dd/47d734] NFC…AG:MAG:PRODIGAL (NH_12_01) | 1 of 1
+[e6/2da913] NFC…Y_BUILD (MEGAHIT-NH_12_01) | 1 of 1
+[41/bffd80] NFC…MEGAHIT-NH_12_01-NH_12_01) | 0 of 1
+Plus 37 more processes waiting for tasks…
+
+executor >  slurm (19)
+[49/8b34cc] NFC…TQC_RAW (H_13_01_run0_raw) | 2 of 2 ✔
+[a4/95cb59] NFC…SSING:FASTP (H_13_01_run0) | 2 of 2 ✔
+[1f/4b6160] NFC…SM259684v1_genomic.fna.gz) | 1 of 1 ✔
+[2c/c6309e] NFC…MOVAL_ALIGN (H_13_01_run0) | 2 of 2 ✔
+[f4/aec404] NFC…TQC_TRIMMED (H_13_01_run0) | 2 of 2 ✔
+[-        ] NFC…AD_PREPROCESSING:CAT_FASTQ -
+[-        ] NFC…PREPROCESSING:NANOPLOT_RAW -
+[-        ] NFC…PREPROCESSING:PORECHOP_ABI -
+[-        ] NFC…EAD_PREPROCESSING:NANOLYSE -
+[-        ] NFC…EAD_PREPROCESSING:FILTLONG -
+[-        ] NFC…OCESSING:NANOPLOT_FILTERED -
+[-        ] NFC…ESSING:CAT_FASTQ_LONGREADS -
+[-        ] NFC…G:ASSEMBLY:POOL_LONG_READS -
+[72/36a727] NFC…MBLY:METASPADES (NH_12_01) | 0 of 2
+[46/a83cfb] NFC…ASSEMBLY:MEGAHIT (H_13_01) | 2 of 2 ✔
+[-        ] NFC…_ASSEMBLY:METASPADESHYBRID -
+[-        ] NFC…BLY:LONGREAD_ASSEMBLY:FLYE -
+[-        ] NFC…READ_ASSEMBLY:METAMDBG_ASM -
+[7b/7cb546] NFC…HIT-H_13_01.contigs.fa.gz) | 1 of 2
+[-        ] NFC…GUNZIP_LONGREAD_ASSEMBLIES -
+[43/640137] NFC…G:QUAST (MEGAHIT-NH_12_01) | 1 of 1
+[dd/47d734] NFC…AG:MAG:PRODIGAL (NH_12_01) | 1 of 1
+[e6/2da913] NFC…Y_BUILD (MEGAHIT-NH_12_01) | 1 of 1
+[41/bffd80] NFC…MEGAHIT-NH_12_01-NH_12_01) | 0 of 1
+Plus 37 more processes waiting for tasks…
+
+executor >  slurm (19)
+[49/8b34cc] NFC…TQC_RAW (H_13_01_run0_raw) | 2 of 2 ✔
+[a4/95cb59] NFC…SSING:FASTP (H_13_01_run0) | 2 of 2 ✔
+[1f/4b6160] NFC…SM259684v1_genomic.fna.gz) | 1 of 1 ✔
+[2c/c6309e] NFC…MOVAL_ALIGN (H_13_01_run0) | 2 of 2 ✔
+[f4/aec404] NFC…TQC_TRIMMED (H_13_01_run0) | 2 of 2 ✔
+[-        ] NFC…AD_PREPROCESSING:CAT_FASTQ -
+[-        ] NFC…PREPROCESSING:NANOPLOT_RAW -
+[-        ] NFC…PREPROCESSING:PORECHOP_ABI -
+[-        ] NFC…EAD_PREPROCESSING:NANOLYSE -
+[-        ] NFC…EAD_PREPROCESSING:FILTLONG -
+[-        ] NFC…OCESSING:NANOPLOT_FILTERED -
+[-        ] NFC…ESSING:CAT_FASTQ_LONGREADS -
+[-        ] NFC…G:ASSEMBLY:POOL_LONG_READS -
+[72/36a727] NFC…MBLY:METASPADES (NH_12_01) | 0 of 2
+[46/a83cfb] NFC…ASSEMBLY:MEGAHIT (H_13_01) | 2 of 2 ✔
+[-        ] NFC…_ASSEMBLY:METASPADESHYBRID -
+[-        ] NFC…BLY:LONGREAD_ASSEMBLY:FLYE -
+[-        ] NFC…READ_ASSEMBLY:METAMDBG_ASM -
+[7b/7cb546] NFC…HIT-H_13_01.contigs.fa.gz) | 1 of 2
+[-        ] NFC…GUNZIP_LONGREAD_ASSEMBLIES -
+[43/640137] NFC…G:QUAST (MEGAHIT-NH_12_01) | 1 of 1
+[dd/47d734] NFC…AG:MAG:PRODIGAL (NH_12_01) | 1 of 1
+[e6/2da913] NFC…Y_BUILD (MEGAHIT-NH_12_01) | 1 of 1
+[41/bffd80] NFC…MEGAHIT-NH_12_01-NH_12_01) | 0 of 1
+Plus 37 more processes waiting for tasks…
+
+executor >  slurm (22)
+[49/8b34cc] NFC…TQC_RAW (H_13_01_run0_raw) | 2 of 2 ✔
+[a4/95cb59] NFC…SSING:FASTP (H_13_01_run0) | 2 of 2 ✔
+[1f/4b6160] NFC…SM259684v1_genomic.fna.gz) | 1 of 1 ✔
+[2c/c6309e] NFC…MOVAL_ALIGN (H_13_01_run0) | 2 of 2 ✔
+[f4/aec404] NFC…TQC_TRIMMED (H_13_01_run0) | 2 of 2 ✔
+[-        ] NFC…AD_PREPROCESSING:CAT_FASTQ -
+[-        ] NFC…PREPROCESSING:NANOPLOT_RAW -
+[-        ] NFC…PREPROCESSING:PORECHOP_ABI -
+[-        ] NFC…EAD_PREPROCESSING:NANOLYSE -
+[-        ] NFC…EAD_PREPROCESSING:FILTLONG -
+[-        ] NFC…OCESSING:NANOPLOT_FILTERED -
+[-        ] NFC…ESSING:CAT_FASTQ_LONGREADS -
+[-        ] NFC…G:ASSEMBLY:POOL_LONG_READS -
+[72/36a727] NFC…MBLY:METASPADES (NH_12_01) | 0 of 2
+[46/a83cfb] NFC…ASSEMBLY:MEGAHIT (H_13_01) | 2 of 2 ✔
+[-        ] NFC…_ASSEMBLY:METASPADESHYBRID -
+[-        ] NFC…BLY:LONGREAD_ASSEMBLY:FLYE -
+[-        ] NFC…READ_ASSEMBLY:METAMDBG_ASM -
+[7b/7cb546] NFC…HIT-H_13_01.contigs.fa.gz) | 2 of 2
+[-        ] NFC…GUNZIP_LONGREAD_ASSEMBLIES -
+[68/b21068] NFC…AG:QUAST (MEGAHIT-H_13_01) | 1 of 2
+[b2/387685] NFC…MAG:MAG:PRODIGAL (H_13_01) | 1 of 2
+[b0/f0c415] NFC…LY_BUILD (MEGAHIT-H_13_01) | 1 of 2
+[41/bffd80] NFC…MEGAHIT-NH_12_01-NH_12_01) | 0 of 1
+Plus 37 more processes waiting for tasks…
+
+executor >  slurm (22)
+[49/8b34cc] NFC…TQC_RAW (H_13_01_run0_raw) | 2 of 2 ✔
+[a4/95cb59] NFC…SSING:FASTP (H_13_01_run0) | 2 of 2 ✔
+[1f/4b6160] NFC…SM259684v1_genomic.fna.gz) | 1 of 1 ✔
+[2c/c6309e] NFC…MOVAL_ALIGN (H_13_01_run0) | 2 of 2 ✔
+[f4/aec404] NFC…TQC_TRIMMED (H_13_01_run0) | 2 of 2 ✔
+[-        ] NFC…AD_PREPROCESSING:CAT_FASTQ -
+[-        ] NFC…PREPROCESSING:NANOPLOT_RAW -
+[-        ] NFC…PREPROCESSING:PORECHOP_ABI -
+[-        ] NFC…EAD_PREPROCESSING:NANOLYSE -
+[-        ] NFC…EAD_PREPROCESSING:FILTLONG -
+[-        ] NFC…OCESSING:NANOPLOT_FILTERED -
+[-        ] NFC…ESSING:CAT_FASTQ_LONGREADS -
+[-        ] NFC…G:ASSEMBLY:POOL_LONG_READS -
+[72/36a727] NFC…MBLY:METASPADES (NH_12_01) | 0 of 2
+[46/a83cfb] NFC…ASSEMBLY:MEGAHIT (H_13_01) | 2 of 2 ✔
+[-        ] NFC…_ASSEMBLY:METASPADESHYBRID -
+[-        ] NFC…BLY:LONGREAD_ASSEMBLY:FLYE -
+[-        ] NFC…READ_ASSEMBLY:METAMDBG_ASM -
+[7b/7cb546] NFC…HIT-H_13_01.contigs.fa.gz) | 2 of 2
+[-        ] NFC…GUNZIP_LONGREAD_ASSEMBLIES -
+[68/b21068] NFC…AG:QUAST (MEGAHIT-H_13_01) | 1 of 2
+[b2/387685] NFC…MAG:MAG:PRODIGAL (H_13_01) | 1 of 2
+[b0/f0c415] NFC…LY_BUILD (MEGAHIT-H_13_01) | 1 of 2
+[41/bffd80] NFC…MEGAHIT-NH_12_01-NH_12_01) | 0 of 1
+Plus 37 more processes waiting for tasks…
+
+executor >  slurm (22)
+[49/8b34cc] NFC…TQC_RAW (H_13_01_run0_raw) | 2 of 2 ✔
+[a4/95cb59] NFC…SSING:FASTP (H_13_01_run0) | 2 of 2 ✔
+[1f/4b6160] NFC…SM259684v1_genomic.fna.gz) | 1 of 1 ✔
+[2c/c6309e] NFC…MOVAL_ALIGN (H_13_01_run0) | 2 of 2 ✔
+[f4/aec404] NFC…TQC_TRIMMED (H_13_01_run0) | 2 of 2 ✔
+[-        ] NFC…AD_PREPROCESSING:CAT_FASTQ -
+[-        ] NFC…PREPROCESSING:NANOPLOT_RAW -
+[-        ] NFC…PREPROCESSING:PORECHOP_ABI -
+[-        ] NFC…EAD_PREPROCESSING:NANOLYSE -
+[-        ] NFC…EAD_PREPROCESSING:FILTLONG -
+[-        ] NFC…OCESSING:NANOPLOT_FILTERED -
+[-        ] NFC…ESSING:CAT_FASTQ_LONGREADS -
+[-        ] NFC…G:ASSEMBLY:POOL_LONG_READS -
+[72/36a727] NFC…MBLY:METASPADES (NH_12_01) | 0 of 2
+[46/a83cfb] NFC…ASSEMBLY:MEGAHIT (H_13_01) | 2 of 2 ✔
+[-        ] NFC…_ASSEMBLY:METASPADESHYBRID -
+[-        ] NFC…BLY:LONGREAD_ASSEMBLY:FLYE -
+[-        ] NFC…READ_ASSEMBLY:METAMDBG_ASM -
+[7b/7cb546] NFC…HIT-H_13_01.contigs.fa.gz) | 2 of 2
+[-        ] NFC…GUNZIP_LONGREAD_ASSEMBLIES -
+[68/b21068] NFC…AG:QUAST (MEGAHIT-H_13_01) | 2 of 2
+[b2/387685] NFC…MAG:MAG:PRODIGAL (H_13_01) | 1 of 2
+[b0/f0c415] NFC…LY_BUILD (MEGAHIT-H_13_01) | 1 of 2
+[41/bffd80] NFC…MEGAHIT-NH_12_01-NH_12_01) | 0 of 1
+Plus 37 more processes waiting for tasks…
+
+executor >  slurm (22)
+[49/8b34cc] NFC…TQC_RAW (H_13_01_run0_raw) | 2 of 2 ✔
+[a4/95cb59] NFC…SSING:FASTP (H_13_01_run0) | 2 of 2 ✔
+[1f/4b6160] NFC…SM259684v1_genomic.fna.gz) | 1 of 1 ✔
+[2c/c6309e] NFC…MOVAL_ALIGN (H_13_01_run0) | 2 of 2 ✔
+[f4/aec404] NFC…TQC_TRIMMED (H_13_01_run0) | 2 of 2 ✔
+[-        ] NFC…AD_PREPROCESSING:CAT_FASTQ -
+[-        ] NFC…PREPROCESSING:NANOPLOT_RAW -
+[-        ] NFC…PREPROCESSING:PORECHOP_ABI -
+[-        ] NFC…EAD_PREPROCESSING:NANOLYSE -
+[-        ] NFC…EAD_PREPROCESSING:FILTLONG -
+[-        ] NFC…OCESSING:NANOPLOT_FILTERED -
+[-        ] NFC…ESSING:CAT_FASTQ_LONGREADS -
+[-        ] NFC…G:ASSEMBLY:POOL_LONG_READS -
+[72/36a727] NFC…MBLY:METASPADES (NH_12_01) | 0 of 2
+[46/a83cfb] NFC…ASSEMBLY:MEGAHIT (H_13_01) | 2 of 2 ✔
+[-        ] NFC…_ASSEMBLY:METASPADESHYBRID -
+[-        ] NFC…BLY:LONGREAD_ASSEMBLY:FLYE -
+[-        ] NFC…READ_ASSEMBLY:METAMDBG_ASM -
+[7b/7cb546] NFC…HIT-H_13_01.contigs.fa.gz) | 2 of 2
+[-        ] NFC…GUNZIP_LONGREAD_ASSEMBLIES -
+[68/b21068] NFC…AG:QUAST (MEGAHIT-H_13_01) | 2 of 2
+[b2/387685] NFC…MAG:MAG:PRODIGAL (H_13_01) | 1 of 2
+[b0/f0c415] NFC…LY_BUILD (MEGAHIT-H_13_01) | 2 of 2
+[41/bffd80] NFC…MEGAHIT-NH_12_01-NH_12_01) | 0 of 2
+Plus 37 more processes waiting for tasks…
+
+executor >  slurm (23)
+[49/8b34cc] NFC…TQC_RAW (H_13_01_run0_raw) | 2 of 2 ✔
+[a4/95cb59] NFC…SSING:FASTP (H_13_01_run0) | 2 of 2 ✔
+[1f/4b6160] NFC…SM259684v1_genomic.fna.gz) | 1 of 1 ✔
+[2c/c6309e] NFC…MOVAL_ALIGN (H_13_01_run0) | 2 of 2 ✔
+[f4/aec404] NFC…TQC_TRIMMED (H_13_01_run0) | 2 of 2 ✔
+[-        ] NFC…AD_PREPROCESSING:CAT_FASTQ -
+[-        ] NFC…PREPROCESSING:NANOPLOT_RAW -
+[-        ] NFC…PREPROCESSING:PORECHOP_ABI -
+[-        ] NFC…EAD_PREPROCESSING:NANOLYSE -
+[-        ] NFC…EAD_PREPROCESSING:FILTLONG -
+[-        ] NFC…OCESSING:NANOPLOT_FILTERED -
+[-        ] NFC…ESSING:CAT_FASTQ_LONGREADS -
+[-        ] NFC…G:ASSEMBLY:POOL_LONG_READS -
+[72/36a727] NFC…MBLY:METASPADES (NH_12_01) | 0 of 2
+[46/a83cfb] NFC…ASSEMBLY:MEGAHIT (H_13_01) | 2 of 2 ✔
+[-        ] NFC…_ASSEMBLY:METASPADESHYBRID -
+[-        ] NFC…BLY:LONGREAD_ASSEMBLY:FLYE -
+[-        ] NFC…READ_ASSEMBLY:METAMDBG_ASM -
+[7b/7cb546] NFC…HIT-H_13_01.contigs.fa.gz) | 2 of 2
+[-        ] NFC…GUNZIP_LONGREAD_ASSEMBLIES -
+[68/b21068] NFC…AG:QUAST (MEGAHIT-H_13_01) | 2 of 2
+[b2/387685] NFC…MAG:MAG:PRODIGAL (H_13_01) | 1 of 2
+[b0/f0c415] NFC…LY_BUILD (MEGAHIT-H_13_01) | 2 of 2
+[21/3fd303] NFC… (MEGAHIT-H_13_01-H_13_01) | 0 of 2
+Plus 37 more processes waiting for tasks…
+
+executor >  slurm (23)
+[49/8b34cc] NFC…TQC_RAW (H_13_01_run0_raw) | 2 of 2 ✔
+[a4/95cb59] NFC…SSING:FASTP (H_13_01_run0) | 2 of 2 ✔
+[1f/4b6160] NFC…SM259684v1_genomic.fna.gz) | 1 of 1 ✔
+[2c/c6309e] NFC…MOVAL_ALIGN (H_13_01_run0) | 2 of 2 ✔
+[f4/aec404] NFC…TQC_TRIMMED (H_13_01_run0) | 2 of 2 ✔
+[-        ] NFC…AD_PREPROCESSING:CAT_FASTQ -
+[-        ] NFC…PREPROCESSING:NANOPLOT_RAW -
+[-        ] NFC…PREPROCESSING:PORECHOP_ABI -
+[-        ] NFC…EAD_PREPROCESSING:NANOLYSE -
+[-        ] NFC…EAD_PREPROCESSING:FILTLONG -
+[-        ] NFC…OCESSING:NANOPLOT_FILTERED -
+[-        ] NFC…ESSING:CAT_FASTQ_LONGREADS -
+[-        ] NFC…G:ASSEMBLY:POOL_LONG_READS -
+[72/36a727] NFC…MBLY:METASPADES (NH_12_01) | 0 of 2
+[46/a83cfb] NFC…ASSEMBLY:MEGAHIT (H_13_01) | 2 of 2 ✔
+[-        ] NFC…_ASSEMBLY:METASPADESHYBRID -
+[-        ] NFC…BLY:LONGREAD_ASSEMBLY:FLYE -
+[-        ] NFC…READ_ASSEMBLY:METAMDBG_ASM -
+[7b/7cb546] NFC…HIT-H_13_01.contigs.fa.gz) | 2 of 2
+[-        ] NFC…GUNZIP_LONGREAD_ASSEMBLIES -
+[68/b21068] NFC…AG:QUAST (MEGAHIT-H_13_01) | 2 of 2
+[b2/387685] NFC…MAG:MAG:PRODIGAL (H_13_01) | 1 of 2
+[b0/f0c415] NFC…LY_BUILD (MEGAHIT-H_13_01) | 2 of 2
+[21/3fd303] NFC… (MEGAHIT-H_13_01-H_13_01) | 0 of 2
+Plus 37 more processes waiting for tasks…
+
+executor >  slurm (23)
+[49/8b34cc] NFC…TQC_RAW (H_13_01_run0_raw) | 2 of 2 ✔
+[a4/95cb59] NFC…SSING:FASTP (H_13_01_run0) | 2 of 2 ✔
+[1f/4b6160] NFC…SM259684v1_genomic.fna.gz) | 1 of 1 ✔
+[2c/c6309e] NFC…MOVAL_ALIGN (H_13_01_run0) | 2 of 2 ✔
+[f4/aec404] NFC…TQC_TRIMMED (H_13_01_run0) | 2 of 2 ✔
+[-        ] NFC…AD_PREPROCESSING:CAT_FASTQ -
+[-        ] NFC…PREPROCESSING:NANOPLOT_RAW -
+[-        ] NFC…PREPROCESSING:PORECHOP_ABI -
+[-        ] NFC…EAD_PREPROCESSING:NANOLYSE -
+[-        ] NFC…EAD_PREPROCESSING:FILTLONG -
+[-        ] NFC…OCESSING:NANOPLOT_FILTERED -
+[-        ] NFC…ESSING:CAT_FASTQ_LONGREADS -
+[-        ] NFC…G:ASSEMBLY:POOL_LONG_READS -
+[72/36a727] NFC…MBLY:METASPADES (NH_12_01) | 0 of 2
+[46/a83cfb] NFC…ASSEMBLY:MEGAHIT (H_13_01) | 2 of 2 ✔
+[-        ] NFC…_ASSEMBLY:METASPADESHYBRID -
+[-        ] NFC…BLY:LONGREAD_ASSEMBLY:FLYE -
+[-        ] NFC…READ_ASSEMBLY:METAMDBG_ASM -
+[7b/7cb546] NFC…HIT-H_13_01.contigs.fa.gz) | 2 of 2
+[-        ] NFC…GUNZIP_LONGREAD_ASSEMBLIES -
+[68/b21068] NFC…AG:QUAST (MEGAHIT-H_13_01) | 2 of 2
+[b2/387685] NFC…MAG:MAG:PRODIGAL (H_13_01) | 2 of 2
+[b0/f0c415] NFC…LY_BUILD (MEGAHIT-H_13_01) | 2 of 2
+[21/3fd303] NFC… (MEGAHIT-H_13_01-H_13_01) | 0 of 2
+Plus 37 more processes waiting for tasks…
+
+executor >  slurm (23)
+[49/8b34cc] NFC…TQC_RAW (H_13_01_run0_raw) | 2 of 2 ✔
+[a4/95cb59] NFC…SSING:FASTP (H_13_01_run0) | 2 of 2 ✔
+[1f/4b6160] NFC…SM259684v1_genomic.fna.gz) | 1 of 1 ✔
+[2c/c6309e] NFC…MOVAL_ALIGN (H_13_01_run0) | 2 of 2 ✔
+[f4/aec404] NFC…TQC_TRIMMED (H_13_01_run0) | 2 of 2 ✔
+[-        ] NFC…AD_PREPROCESSING:CAT_FASTQ -
+[-        ] NFC…PREPROCESSING:NANOPLOT_RAW -
+[-        ] NFC…PREPROCESSING:PORECHOP_ABI -
+[-        ] NFC…EAD_PREPROCESSING:NANOLYSE -
+[-        ] NFC…EAD_PREPROCESSING:FILTLONG -
+[-        ] NFC…OCESSING:NANOPLOT_FILTERED -
+[-        ] NFC…ESSING:CAT_FASTQ_LONGREADS -
+[-        ] NFC…G:ASSEMBLY:POOL_LONG_READS -
+[72/36a727] NFC…MBLY:METASPADES (NH_12_01) | 0 of 2
+[46/a83cfb] NFC…ASSEMBLY:MEGAHIT (H_13_01) | 2 of 2 ✔
+[-        ] NFC…_ASSEMBLY:METASPADESHYBRID -
+[-        ] NFC…BLY:LONGREAD_ASSEMBLY:FLYE -
+[-        ] NFC…READ_ASSEMBLY:METAMDBG_ASM -
+[7b/7cb546] NFC…HIT-H_13_01.contigs.fa.gz) | 2 of 2
+[-        ] NFC…GUNZIP_LONGREAD_ASSEMBLIES -
+[68/b21068] NFC…AG:QUAST (MEGAHIT-H_13_01) | 2 of 2
+[b2/387685] NFC…MAG:MAG:PRODIGAL (H_13_01) | 2 of 2
+[b0/f0c415] NFC…LY_BUILD (MEGAHIT-H_13_01) | 2 of 2
+[41/bffd80] NFC…MEGAHIT-NH_12_01-NH_12_01) | 1 of 2
+Plus 37 more processes waiting for tasks…
+
+executor >  slurm (23)
+[49/8b34cc] NFC…TQC_RAW (H_13_01_run0_raw) | 2 of 2 ✔
+[a4/95cb59] NFC…SSING:FASTP (H_13_01_run0) | 2 of 2 ✔
+[1f/4b6160] NFC…SM259684v1_genomic.fna.gz) | 1 of 1 ✔
+[2c/c6309e] NFC…MOVAL_ALIGN (H_13_01_run0) | 2 of 2 ✔
+[f4/aec404] NFC…TQC_TRIMMED (H_13_01_run0) | 2 of 2 ✔
+[-        ] NFC…AD_PREPROCESSING:CAT_FASTQ -
+[-        ] NFC…PREPROCESSING:NANOPLOT_RAW -
+[-        ] NFC…PREPROCESSING:PORECHOP_ABI -
+[-        ] NFC…EAD_PREPROCESSING:NANOLYSE -
+[-        ] NFC…EAD_PREPROCESSING:FILTLONG -
+[-        ] NFC…OCESSING:NANOPLOT_FILTERED -
+[-        ] NFC…ESSING:CAT_FASTQ_LONGREADS -
+[-        ] NFC…G:ASSEMBLY:POOL_LONG_READS -
+[72/36a727] NFC…MBLY:METASPADES (NH_12_01) | 0 of 2
+[46/a83cfb] NFC…ASSEMBLY:MEGAHIT (H_13_01) | 2 of 2 ✔
+[-        ] NFC…_ASSEMBLY:METASPADESHYBRID -
+[-        ] NFC…BLY:LONGREAD_ASSEMBLY:FLYE -
+[-        ] NFC…READ_ASSEMBLY:METAMDBG_ASM -
+[7b/7cb546] NFC…HIT-H_13_01.contigs.fa.gz) | 2 of 2
+[-        ] NFC…GUNZIP_LONGREAD_ASSEMBLIES -
+[68/b21068] NFC…AG:QUAST (MEGAHIT-H_13_01) | 2 of 2
+[b2/387685] NFC…MAG:MAG:PRODIGAL (H_13_01) | 2 of 2
+[b0/f0c415] NFC…LY_BUILD (MEGAHIT-H_13_01) | 2 of 2
+[21/3fd303] NFC… (MEGAHIT-H_13_01-H_13_01) | 2 of 2
+Plus 37 more processes waiting for tasks…
+
+executor >  slurm (23)
+[49/8b34cc] NFC…TQC_RAW (H_13_01_run0_raw) | 2 of 2 ✔
+[a4/95cb59] NFC…SSING:FASTP (H_13_01_run0) | 2 of 2 ✔
+[1f/4b6160] NFC…SM259684v1_genomic.fna.gz) | 1 of 1 ✔
+[2c/c6309e] NFC…MOVAL_ALIGN (H_13_01_run0) | 2 of 2 ✔
+[f4/aec404] NFC…TQC_TRIMMED (H_13_01_run0) | 2 of 2 ✔
+[-        ] NFC…AD_PREPROCESSING:CAT_FASTQ -
+[-        ] NFC…PREPROCESSING:NANOPLOT_RAW -
+[-        ] NFC…PREPROCESSING:PORECHOP_ABI -
+[-        ] NFC…EAD_PREPROCESSING:NANOLYSE -
+[-        ] NFC…EAD_PREPROCESSING:FILTLONG -
+[-        ] NFC…OCESSING:NANOPLOT_FILTERED -
+[-        ] NFC…ESSING:CAT_FASTQ_LONGREADS -
+[-        ] NFC…G:ASSEMBLY:POOL_LONG_READS -
+[72/36a727] NFC…MBLY:METASPADES (NH_12_01) | 0 of 2
+[46/a83cfb] NFC…ASSEMBLY:MEGAHIT (H_13_01) | 2 of 2 ✔
+[-        ] NFC…_ASSEMBLY:METASPADESHYBRID -
+[-        ] NFC…BLY:LONGREAD_ASSEMBLY:FLYE -
+[-        ] NFC…READ_ASSEMBLY:METAMDBG_ASM -
+[7b/7cb546] NFC…HIT-H_13_01.contigs.fa.gz) | 2 of 2
+[-        ] NFC…GUNZIP_LONGREAD_ASSEMBLIES -
+[68/b21068] NFC…AG:QUAST (MEGAHIT-H_13_01) | 2 of 2
+[b2/387685] NFC…MAG:MAG:PRODIGAL (H_13_01) | 2 of 2
+[b0/f0c415] NFC…LY_BUILD (MEGAHIT-H_13_01) | 2 of 2
+[21/3fd303] NFC… (MEGAHIT-H_13_01-H_13_01) | 2 of 2
+Plus 37 more processes waiting for tasks…
+ERROR ~ Error executing process > 'NFCORE_MAG:MAG:GTDBTK:GTDBTK_DB_PREPARATION'
+
+Caused by:
+  Can't stage file https://data.gtdb.aau.ecogenomic.org/releases/release226/226.0/auxillary_files/gtdbtk_package/full_package/gtdbtk_r226_data.tar.gz -- reason: Connection reset by peer
+
+
+Command executed:
+
+  mkdir database
+  tar -xzf gtdbtk_r226_data.tar.gz -C database --strip 1
+  
+  cat <<-END_VERSIONS > versions.yml
+  "NFCORE_MAG:MAG:GTDBTK:GTDBTK_DB_PREPARATION":
+      tar: $(tar --version 2>&1 | sed -n 1p | sed 's/tar (GNU tar) //')
+  END_VERSIONS
+
+Command exit status:
+  -
+
+Command output:
+  (empty)
+
+Container:
+  /gpfs/home/ajh20fhu/medfly_metagenomics/mag_project/work/singularity/community.wave.seqera.io-library-coreutils_grep_gzip_lbzip2_pruned-838ba80435a629f8.img
+
+Tip: you can try to figure out what's wrong by changing to the process work dir and showing the script file named `.command.sh`
+
+ -- Check '.nextflow.log' file for details
+
+executor >  slurm (23)
+[49/8b34cc] NFC…TQC_RAW (H_13_01_run0_raw) | 2 of 2 ✔
+[a4/95cb59] NFC…SSING:FASTP (H_13_01_run0) | 2 of 2 ✔
+[1f/4b6160] NFC…SM259684v1_genomic.fna.gz) | 1 of 1 ✔
+[2c/c6309e] NFC…MOVAL_ALIGN (H_13_01_run0) | 2 of 2 ✔
+[f4/aec404] NFC…TQC_TRIMMED (H_13_01_run0) | 2 of 2 ✔
+[-        ] NFC…AD_PREPROCESSING:CAT_FASTQ -
+[-        ] NFC…PREPROCESSING:NANOPLOT_RAW -
+[-        ] NFC…PREPROCESSING:PORECHOP_ABI -
+[-        ] NFC…EAD_PREPROCESSING:NANOLYSE -
+[-        ] NFC…EAD_PREPROCESSING:FILTLONG -
+[-        ] NFC…OCESSING:NANOPLOT_FILTERED -
+[-        ] NFC…ESSING:CAT_FASTQ_LONGREADS -
+[-        ] NFC…G:ASSEMBLY:POOL_LONG_READS -
+[72/36a727] NFC…MBLY:METASPADES (NH_12_01) | 0 of 2
+[46/a83cfb] NFC…ASSEMBLY:MEGAHIT (H_13_01) | 2 of 2 ✔
+[-        ] NFC…_ASSEMBLY:METASPADESHYBRID -
+[-        ] NFC…BLY:LONGREAD_ASSEMBLY:FLYE -
+[-        ] NFC…READ_ASSEMBLY:METAMDBG_ASM -
+[7b/7cb546] NFC…HIT-H_13_01.contigs.fa.gz) | 2 of 2
+[-        ] NFC…GUNZIP_LONGREAD_ASSEMBLIES -
+[68/b21068] NFC…AG:QUAST (MEGAHIT-H_13_01) | 2 of 2
+[b2/387685] NFC…MAG:MAG:PRODIGAL (H_13_01) | 2 of 2
+[b0/f0c415] NFC…LY_BUILD (MEGAHIT-H_13_01) | 2 of 2
+[21/3fd303] NFC… (MEGAHIT-H_13_01-H_13_01) | 2 of 2
+Plus 37 more processes waiting for tasks…
+Execution cancelled -- Finishing pending tasks before exit
+ERROR ~ Error executing process > 'NFCORE_MAG:MAG:GTDBTK:GTDBTK_DB_PREPARATION'
+
+Caused by:
+  Can't stage file https://data.gtdb.aau.ecogenomic.org/releases/release226/226.0/auxillary_files/gtdbtk_package/full_package/gtdbtk_r226_data.tar.gz -- reason: Connection reset by peer
+
+
+Command executed:
+
+  mkdir database
+  tar -xzf gtdbtk_r226_data.tar.gz -C database --strip 1
+  
+  cat <<-END_VERSIONS > versions.yml
+  "NFCORE_MAG:MAG:GTDBTK:GTDBTK_DB_PREPARATION":
+      tar: $(tar --version 2>&1 | sed -n 1p | sed 's/tar (GNU tar) //')
+  END_VERSIONS
+
+Command exit status:
+  -
+
+Command output:
+  (empty)
+
+Container:
+  /gpfs/home/ajh20fhu/medfly_metagenomics/mag_project/work/singularity/community.wave.seqera.io-library-coreutils_grep_gzip_lbzip2_pruned-838ba80435a629f8.img
+
+Tip: you can try to figure out what's wrong by changing to the process work dir and showing the script file named `.command.sh`
+
+ -- Check '.nextflow.log' file for details
+ERROR ~ Pipeline failed. Please refer to troubleshooting docs: https://nf-co.re/docs/usage/troubleshooting
+
+ -- Check '.nextflow.log' file for details
+
+executor >  slurm (23)
+[49/8b34cc] NFC…TQC_RAW (H_13_01_run0_raw) | 2 of 2 ✔
+[a4/95cb59] NFC…SSING:FASTP (H_13_01_run0) | 2 of 2 ✔
+[1f/4b6160] NFC…SM259684v1_genomic.fna.gz) | 1 of 1 ✔
+[2c/c6309e] NFC…MOVAL_ALIGN (H_13_01_run0) | 2 of 2 ✔
+[f4/aec404] NFC…TQC_TRIMMED (H_13_01_run0) | 2 of 2 ✔
+[-        ] NFC…AD_PREPROCESSING:CAT_FASTQ -
+[-        ] NFC…PREPROCESSING:NANOPLOT_RAW -
+[-        ] NFC…PREPROCESSING:PORECHOP_ABI -
+[-        ] NFC…EAD_PREPROCESSING:NANOLYSE -
+[-        ] NFC…EAD_PREPROCESSING:FILTLONG -
+[-        ] NFC…OCESSING:NANOPLOT_FILTERED -
+[-        ] NFC…ESSING:CAT_FASTQ_LONGREADS -
+[-        ] NFC…G:ASSEMBLY:POOL_LONG_READS -
+[72/36a727] NFC…MBLY:METASPADES (NH_12_01) | 0 of 2
+[46/a83cfb] NFC…ASSEMBLY:MEGAHIT (H_13_01) | 2 of 2 ✔
+[-        ] NFC…_ASSEMBLY:METASPADESHYBRID -
+[-        ] NFC…BLY:LONGREAD_ASSEMBLY:FLYE -
+[-        ] NFC…READ_ASSEMBLY:METAMDBG_ASM -
+[7b/7cb546] NFC…HIT-H_13_01.contigs.fa.gz) | 2 of 2 ✔
+[-        ] NFC…GUNZIP_LONGREAD_ASSEMBLIES -
+[68/b21068] NFC…AG:QUAST (MEGAHIT-H_13_01) | 2 of 2 ✔
+[b2/387685] NFC…MAG:MAG:PRODIGAL (H_13_01) | 2 of 2
+[b0/f0c415] NFC…LY_BUILD (MEGAHIT-H_13_01) | 2 of 2
+[21/3fd303] NFC… (MEGAHIT-H_13_01-H_13_01) | 2 of 2
+Plus 37 more processes waiting for tasks…
+Execution cancelled -- Finishing pending tasks before exit
+ERROR ~ Error executing process > 'NFCORE_MAG:MAG:GTDBTK:GTDBTK_DB_PREPARATION'
+
+Caused by:
+  Can't stage file https://data.gtdb.aau.ecogenomic.org/releases/release226/226.0/auxillary_files/gtdbtk_package/full_package/gtdbtk_r226_data.tar.gz -- reason: Connection reset by peer
+
+
+Command executed:
+
+  mkdir database
+  tar -xzf gtdbtk_r226_data.tar.gz -C database --strip 1
+  
+  cat <<-END_VERSIONS > versions.yml
+  "NFCORE_MAG:MAG:GTDBTK:GTDBTK_DB_PREPARATION":
+      tar: $(tar --version 2>&1 | sed -n 1p | sed 's/tar (GNU tar) //')
+  END_VERSIONS
+
+Command exit status:
+  -
+
+Command output:
+  (empty)
+
+Container:
+  /gpfs/home/ajh20fhu/medfly_metagenomics/mag_project/work/singularity/community.wave.seqera.io-library-coreutils_grep_gzip_lbzip2_pruned-838ba80435a629f8.img
+
+Tip: you can try to figure out what's wrong by changing to the process work dir and showing the script file named `.command.sh`
+
+ -- Check '.nextflow.log' file for details
+ERROR ~ Pipeline failed. Please refer to troubleshooting docs: https://nf-co.re/docs/usage/troubleshooting
+
+ -- Check '.nextflow.log' file for details
+
+executor >  slurm (23)
+[49/8b34cc] NFC…TQC_RAW (H_13_01_run0_raw) | 2 of 2 ✔
+[a4/95cb59] NFC…SSING:FASTP (H_13_01_run0) | 2 of 2 ✔
+[1f/4b6160] NFC…SM259684v1_genomic.fna.gz) | 1 of 1 ✔
+[2c/c6309e] NFC…MOVAL_ALIGN (H_13_01_run0) | 2 of 2 ✔
+[f4/aec404] NFC…TQC_TRIMMED (H_13_01_run0) | 2 of 2 ✔
+[-        ] NFC…AD_PREPROCESSING:CAT_FASTQ -
+[-        ] NFC…PREPROCESSING:NANOPLOT_RAW -
+[-        ] NFC…PREPROCESSING:PORECHOP_ABI -
+[-        ] NFC…EAD_PREPROCESSING:NANOLYSE -
+[-        ] NFC…EAD_PREPROCESSING:FILTLONG -
+[-        ] NFC…OCESSING:NANOPLOT_FILTERED -
+[-        ] NFC…ESSING:CAT_FASTQ_LONGREADS -
+[-        ] NFC…G:ASSEMBLY:POOL_LONG_READS -
+[72/36a727] NFC…MBLY:METASPADES (NH_12_01) | 1 of 2
+[46/a83cfb] NFC…ASSEMBLY:MEGAHIT (H_13_01) | 2 of 2 ✔
+[-        ] NFC…_ASSEMBLY:METASPADESHYBRID -
+[-        ] NFC…BLY:LONGREAD_ASSEMBLY:FLYE -
+[-        ] NFC…READ_ASSEMBLY:METAMDBG_ASM -
+[7b/7cb546] NFC…HIT-H_13_01.contigs.fa.gz) | 2 of 2 ✔
+[-        ] NFC…GUNZIP_LONGREAD_ASSEMBLIES -
+[68/b21068] NFC…AG:QUAST (MEGAHIT-H_13_01) | 2 of 2 ✔
+[b2/387685] NFC…MAG:MAG:PRODIGAL (H_13_01) | 2 of 2
+[b0/f0c415] NFC…LY_BUILD (MEGAHIT-H_13_01) | 2 of 2
+[21/3fd303] NFC… (MEGAHIT-H_13_01-H_13_01) | 2 of 2
+Plus 37 more processes waiting for tasks…
+
+ERROR ~ Error executing process > 'NFCORE_MAG:MAG:GTDBTK:GTDBTK_DB_PREPARATION'
+
+Caused by:
+  Can't stage file https://data.gtdb.aau.ecogenomic.org/releases/release226/226.0/auxillary_files/gtdbtk_package/full_package/gtdbtk_r226_data.tar.gz -- reason: Connection reset by peer
+
+
+Command executed:
+
+  mkdir database
+  tar -xzf gtdbtk_r226_data.tar.gz -C database --strip 1
+  
+  cat <<-END_VERSIONS > versions.yml
+  "NFCORE_MAG:MAG:GTDBTK:GTDBTK_DB_PREPARATION":
+      tar: $(tar --version 2>&1 | sed -n 1p | sed 's/tar (GNU tar) //')
+  END_VERSIONS
+
+Command exit status:
+  -
+
+Command output:
+  (empty)
+
+Container:
+  /gpfs/home/ajh20fhu/medfly_metagenomics/mag_project/work/singularity/community.wave.seqera.io-library-coreutils_grep_gzip_lbzip2_pruned-838ba80435a629f8.img
+
+Tip: you can try to figure out what's wrong by changing to the process work dir and showing the script file named `.command.sh`
+
+ -- Check '.nextflow.log' file for details
+ERROR ~ Pipeline failed. Please refer to troubleshooting docs: https://nf-co.re/docs/usage/troubleshooting
+
+ -- Check '.nextflow.log' file for details
+
+executor >  slurm (23)
+[49/8b34cc] NFC…TQC_RAW (H_13_01_run0_raw) | 2 of 2 ✔
+[a4/95cb59] NFC…SSING:FASTP (H_13_01_run0) | 2 of 2 ✔
+[1f/4b6160] NFC…SM259684v1_genomic.fna.gz) | 1 of 1 ✔
+[2c/c6309e] NFC…MOVAL_ALIGN (H_13_01_run0) | 2 of 2 ✔
+[f4/aec404] NFC…TQC_TRIMMED (H_13_01_run0) | 2 of 2 ✔
+[-        ] NFC…AD_PREPROCESSING:CAT_FASTQ -
+[-        ] NFC…PREPROCESSING:NANOPLOT_RAW -
+[-        ] NFC…PREPROCESSING:PORECHOP_ABI -
+[-        ] NFC…EAD_PREPROCESSING:NANOLYSE -
+[-        ] NFC…EAD_PREPROCESSING:FILTLONG -
+[-        ] NFC…OCESSING:NANOPLOT_FILTERED -
+[-        ] NFC…ESSING:CAT_FASTQ_LONGREADS -
+[-        ] NFC…G:ASSEMBLY:POOL_LONG_READS -
+[ea/e7d6ba] NFC…EMBLY:METASPADES (H_13_01) | 2 of 2 ✔
+[46/a83cfb] NFC…ASSEMBLY:MEGAHIT (H_13_01) | 2 of 2 ✔
+[-        ] NFC…_ASSEMBLY:METASPADESHYBRID -
+[-        ] NFC…BLY:LONGREAD_ASSEMBLY:FLYE -
+[-        ] NFC…READ_ASSEMBLY:METAMDBG_ASM -
+[7b/7cb546] NFC…HIT-H_13_01.contigs.fa.gz) | 2 of 2 ✔
+[-        ] NFC…GUNZIP_LONGREAD_ASSEMBLIES -
+[68/b21068] NFC…AG:QUAST (MEGAHIT-H_13_01) | 2 of 2 ✔
+[b2/387685] NFC…MAG:MAG:PRODIGAL (H_13_01) | 2 of 2
+[b0/f0c415] NFC…LY_BUILD (MEGAHIT-H_13_01) | 2 of 2
+[21/3fd303] NFC… (MEGAHIT-H_13_01-H_13_01) | 2 of 2
+Plus 37 more processes waiting for tasks…
+ERROR ~ Error executing process > 'NFCORE_MAG:MAG:GTDBTK:GTDBTK_DB_PREPARATION'
+
+Caused by:
+  Can't stage file https://data.gtdb.aau.ecogenomic.org/releases/release226/226.0/auxillary_files/gtdbtk_package/full_package/gtdbtk_r226_data.tar.gz -- reason: Connection reset by peer
+
+
+Command executed:
+
+  mkdir database
+  tar -xzf gtdbtk_r226_data.tar.gz -C database --strip 1
+  
+  cat <<-END_VERSIONS > versions.yml
+  "NFCORE_MAG:MAG:GTDBTK:GTDBTK_DB_PREPARATION":
+      tar: $(tar --version 2>&1 | sed -n 1p | sed 's/tar (GNU tar) //')
+  END_VERSIONS
+
+Command exit status:
+  -
+
+Command output:
+  (empty)
+
+Container:
+  /gpfs/home/ajh20fhu/medfly_metagenomics/mag_project/work/singularity/community.wave.seqera.io-library-coreutils_grep_gzip_lbzip2_pruned-838ba80435a629f8.img
+
+Tip: you can try to figure out what's wrong by changing to the process work dir and showing the script file named `.command.sh`
+
+ -- Check '.nextflow.log' file for details
+ERROR ~ Pipeline failed. Please refer to troubleshooting docs: https://nf-co.re/docs/usage/troubleshooting
+
+ -- Check '.nextflow.log' file for details
+
+
+executor >  slurm (23)
+[49/8b34cc] NFC…TQC_RAW (H_13_01_run0_raw) | 2 of 2 ✔
+[a4/95cb59] NFC…SSING:FASTP (H_13_01_run0) | 2 of 2 ✔
+[1f/4b6160] NFC…SM259684v1_genomic.fna.gz) | 1 of 1 ✔
+[2c/c6309e] NFC…MOVAL_ALIGN (H_13_01_run0) | 2 of 2 ✔
+[f4/aec404] NFC…TQC_TRIMMED (H_13_01_run0) | 2 of 2 ✔
+[-        ] NFC…AD_PREPROCESSING:CAT_FASTQ -
+[-        ] NFC…PREPROCESSING:NANOPLOT_RAW -
+[-        ] NFC…PREPROCESSING:PORECHOP_ABI -
+[-        ] NFC…EAD_PREPROCESSING:NANOLYSE -
+[-        ] NFC…EAD_PREPROCESSING:FILTLONG -
+[-        ] NFC…OCESSING:NANOPLOT_FILTERED -
+[-        ] NFC…ESSING:CAT_FASTQ_LONGREADS -
+[-        ] NFC…G:ASSEMBLY:POOL_LONG_READS -
+[ea/e7d6ba] NFC…EMBLY:METASPADES (H_13_01) | 2 of 2 ✔
+[46/a83cfb] NFC…ASSEMBLY:MEGAHIT (H_13_01) | 2 of 2 ✔
+[-        ] NFC…_ASSEMBLY:METASPADESHYBRID -
+[-        ] NFC…BLY:LONGREAD_ASSEMBLY:FLYE -
+[-        ] NFC…READ_ASSEMBLY:METAMDBG_ASM -
+[7b/7cb546] NFC…HIT-H_13_01.contigs.fa.gz) | 2 of 2 ✔
+[-        ] NFC…GUNZIP_LONGREAD_ASSEMBLIES -
+[68/b21068] NFC…AG:QUAST (MEGAHIT-H_13_01) | 2 of 2 ✔
+[b2/387685] NFC…MAG:MAG:PRODIGAL (H_13_01) | 2 of 2
+[b0/f0c415] NFC…LY_BUILD (MEGAHIT-H_13_01) | 2 of 2
+[21/3fd303] NFC… (MEGAHIT-H_13_01-H_13_01) | 2 of 2
+Plus 37 more processes waiting for tasks…
+-[nf-core/mag] Pipeline completed with errors-
+ERROR ~ Error executing process > 'NFCORE_MAG:MAG:GTDBTK:GTDBTK_DB_PREPARATION'
+
+Caused by:
+  Can't stage file https://data.gtdb.aau.ecogenomic.org/releases/release226/226.0/auxillary_files/gtdbtk_package/full_package/gtdbtk_r226_data.tar.gz -- reason: Connection reset by peer
+
+
+Command executed:
+
+  mkdir database
+  tar -xzf gtdbtk_r226_data.tar.gz -C database --strip 1
+  
+  cat <<-END_VERSIONS > versions.yml
+  "NFCORE_MAG:MAG:GTDBTK:GTDBTK_DB_PREPARATION":
+      tar: $(tar --version 2>&1 | sed -n 1p | sed 's/tar (GNU tar) //')
+  END_VERSIONS
+
+Command exit status:
+  -
+
+Command output:
+  (empty)
+
+Container:
+  /gpfs/home/ajh20fhu/medfly_metagenomics/mag_project/work/singularity/community.wave.seqera.io-library-coreutils_grep_gzip_lbzip2_pruned-838ba80435a629f8.img
+
+Tip: you can try to figure out what's wrong by changing to the process work dir and showing the script file named `.command.sh`
+
+ -- Check '.nextflow.log' file for details
+ERROR ~ Pipeline failed. Please refer to troubleshooting docs: https://nf-co.re/docs/usage/troubleshooting
+
+ -- Check '.nextflow.log' file for details
+
+executor >  slurm (23)
+[49/8b34cc] NFC…TQC_RAW (H_13_01_run0_raw) | 2 of 2 ✔
+[a4/95cb59] NFC…SSING:FASTP (H_13_01_run0) | 2 of 2 ✔
+[1f/4b6160] NFC…SM259684v1_genomic.fna.gz) | 1 of 1 ✔
+[2c/c6309e] NFC…MOVAL_ALIGN (H_13_01_run0) | 2 of 2 ✔
+[f4/aec404] NFC…TQC_TRIMMED (H_13_01_run0) | 2 of 2 ✔
+[-        ] NFC…AD_PREPROCESSING:CAT_FASTQ -
+[-        ] NFC…PREPROCESSING:NANOPLOT_RAW -
+[-        ] NFC…PREPROCESSING:PORECHOP_ABI -
+[-        ] NFC…EAD_PREPROCESSING:NANOLYSE -
+[-        ] NFC…EAD_PREPROCESSING:FILTLONG -
+[-        ] NFC…OCESSING:NANOPLOT_FILTERED -
+[-        ] NFC…ESSING:CAT_FASTQ_LONGREADS -
+[-        ] NFC…G:ASSEMBLY:POOL_LONG_READS -
+[ea/e7d6ba] NFC…EMBLY:METASPADES (H_13_01) | 2 of 2 ✔
+[46/a83cfb] NFC…ASSEMBLY:MEGAHIT (H_13_01) | 2 of 2 ✔
+[-        ] NFC…_ASSEMBLY:METASPADESHYBRID -
+[-        ] NFC…BLY:LONGREAD_ASSEMBLY:FLYE -
+[-        ] NFC…READ_ASSEMBLY:METAMDBG_ASM -
+[7b/7cb546] NFC…HIT-H_13_01.contigs.fa.gz) | 2 of 2 ✔
+[-        ] NFC…GUNZIP_LONGREAD_ASSEMBLIES -
+[68/b21068] NFC…AG:QUAST (MEGAHIT-H_13_01) | 2 of 2 ✔
+[b2/387685] NFC…MAG:MAG:PRODIGAL (H_13_01) | 2 of 2
+[b0/f0c415] NFC…LY_BUILD (MEGAHIT-H_13_01) | 2 of 2
+[21/3fd303] NFC… (MEGAHIT-H_13_01-H_13_01) | 2 of 2
+Plus 37 more processes waiting for tasks…
+-[nf-core/mag] Pipeline completed with errors-
+ERROR ~ Error executing process > 'NFCORE_MAG:MAG:GTDBTK:GTDBTK_DB_PREPARATION'
+
+Caused by:
+  Can't stage file https://data.gtdb.aau.ecogenomic.org/releases/release226/226.0/auxillary_files/gtdbtk_package/full_package/gtdbtk_r226_data.tar.gz -- reason: Connection reset by peer
+
+
+Command executed:
+
+  mkdir database
+  tar -xzf gtdbtk_r226_data.tar.gz -C database --strip 1
+  
+  cat <<-END_VERSIONS > versions.yml
+  "NFCORE_MAG:MAG:GTDBTK:GTDBTK_DB_PREPARATION":
+      tar: $(tar --version 2>&1 | sed -n 1p | sed 's/tar (GNU tar) //')
+  END_VERSIONS
+
+Command exit status:
+  -
+
+Command output:
+  (empty)
+
+Container:
+  /gpfs/home/ajh20fhu/medfly_metagenomics/mag_project/work/singularity/community.wave.seqera.io-library-coreutils_grep_gzip_lbzip2_pruned-838ba80435a629f8.img
+
+Tip: you can try to figure out what's wrong by changing to the process work dir and showing the script file named `.command.sh`
+
+ -- Check '.nextflow.log' file for details
+ERROR ~ Pipeline failed. Please refer to troubleshooting docs: https://nf-co.re/docs/usage/troubleshooting
+
+ -- Check '.nextflow.log' file for details
+

@@ -1,0 +1,26 @@
+/gpfs/home/ajh20fhu/.conda/envs/gtdbtk_env/bin/gtdbtk: line 3: import: command not found
+/gpfs/home/ajh20fhu/.conda/envs/gtdbtk_env/bin/gtdbtk: line 4: import: command not found
+/gpfs/home/ajh20fhu/.conda/envs/gtdbtk_env/bin/gtdbtk: line 6: from: command not found
+/gpfs/home/ajh20fhu/.conda/envs/gtdbtk_env/bin/gtdbtk: line 9: syntax error near unexpected token `('
+/gpfs/home/ajh20fhu/.conda/envs/gtdbtk_env/bin/gtdbtk: line 9: `    sys.argv[0] = re.sub(r'(-script\.pyw?|\.exe)?$', '', sys.argv[0])'
+
+CommandNotFoundError: Your shell has not been properly configured to use 'conda activate'.
+To initialize your shell, run
+
+    $ conda init <SHELL_NAME>
+
+Currently supported shells are:
+  - bash
+  - fish
+  - tcsh
+  - xonsh
+  - zsh
+  - powershell
+
+See 'conda init --help' for more information and options.
+
+IMPORTANT: You may need to close and restart your shell after running 'conda init'.
+
+
+/tmp/slurmd/job2089211/slurm_script: line 34: unexpected EOF while looking for matching `"'
+/tmp/slurmd/job2089211/slurm_script: line 35: syntax error: unexpected end of file

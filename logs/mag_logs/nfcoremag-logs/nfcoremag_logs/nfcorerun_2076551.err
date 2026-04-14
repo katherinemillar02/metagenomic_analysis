@@ -1,0 +1,20 @@
+[33mNextflow 25.10.4 is available - Please consider updating your version to it(B[m
+The following invalid input values have been detected:
+
+* --input (/gpfs/scratch/ajh20fhu/scripts/nfcoresheet.csv): Validation of file failed:
+	-> Entry 1: Object does not have some of the required properties [[short_reads_platform]]
+	-> Entry 1: Error for field 'short_reads_1' (/gpfs/scratch/ajh20fhu/post-qc/results/H_13_01_nohost.fastq.1.gz): "/gpfs/scratch/ajh20fhu/post-qc/results/H_13_01_nohost.fastq.1.gz" does not match regular expression [^\S+\.f(ast)?q\.gz$] (short_reads_1 needs to be a file path with no spaces.
+
+File needs to exist!)
+	-> Entry 1: Error for field 'short_reads_2' (/gpfs/scratch/ajh20fhu/post-qc/results/H_13_01_nohost.fastq.2.gz): "/gpfs/scratch/ajh20fhu/post-qc/results/H_13_01_nohost.fastq.2.gz" does not match regular expression [^\S+\.f(ast)?q\.gz$] (short_reads_2 needs to be a file path with no spaces.
+
+File needs to exist!)
+	-> Entry 2: Object does not have some of the required properties [[short_reads_platform]]
+	-> Entry 2: Error for field 'short_reads_1' (/gpfs/scratch/ajh20fhu/post-qc/results/NH_12_01_nohost.fastq.1.gz): "/gpfs/scratch/ajh20fhu/post-qc/results/NH_12_01_nohost.fastq.1.gz" does not match regular expression [^\S+\.f(ast)?q\.gz$] (short_reads_1 needs to be a file path with no spaces.
+
+File needs to exist!)
+	-> Entry 2: Error for field 'short_reads_2' (/gpfs/scratch/ajh20fhu/post-qc/results/NH_12_01_nohost.fastq.2.gz): "/gpfs/scratch/ajh20fhu/post-qc/results/NH_12_01_nohost.fastq.2.gz" does not match regular expression [^\S+\.f(ast)?q\.gz$] (short_reads_2 needs to be a file path with no spaces.
+
+File needs to exist!)
+
+ -- Check script '/gpfs/home/ajh20fhu/.nextflow/assets/nf-core/mag/subworkflows/nf-core/utils_nfschema_plugin/main.nf' at line: 68 or see '.nextflow.log' file for more details

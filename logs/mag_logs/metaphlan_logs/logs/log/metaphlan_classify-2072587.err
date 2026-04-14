@@ -1,0 +1,13 @@
+/tmp/slurmd/job2072587/slurm_script: line 12: cd: results: No such file or directory
+
+Downloading https://www.dropbox.com/sh/7qze7m7g9fe2xjg/AAA4XDP85WHon_eHvztxkamTa/file_list.txt?dl=1
+
+Warning: Unable to download https://www.dropbox.com/sh/7qze7m7g9fe2xjg/AAA4XDP85WHon_eHvztxkamTa/file_list.txt?dl=1
+Traceback (most recent call last):
+  File "/gpfs/home/ajh20fhu/.conda/envs/metaphlan/bin/metaphlan", line 10, in <module>
+    sys.exit(main())
+  File "/gpfs/home/ajh20fhu/.conda/envs/metaphlan/lib/python3.6/site-packages/metaphlan/metaphlan.py", line 1187, in main
+    pars['index'] = check_and_install_database(pars['index'], pars['bowtie2db'], pars['bowtie2_build'], pars['nproc'], pars['force_download'])
+  File "/gpfs/home/ajh20fhu/.conda/envs/metaphlan/lib/python3.6/site-packages/metaphlan/metaphlan.py", line 589, in check_and_install_database
+    index = resolve_latest_database(bowtie2_db, ls_f['mpa_latest'], force_redownload_latest)
+UnboundLocalError: local variable 'ls_f' referenced before assignment

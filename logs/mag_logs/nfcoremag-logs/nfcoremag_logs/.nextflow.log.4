@@ -1,0 +1,320 @@
+Mar-27 04:43:03.968 [main] DEBUG nextflow.cli.Launcher - $> nextflow run nf-core/taxprofiler -r 1.2.6 -profile apptainer --input /gpfs/scratch/ajh20fhu/taxprofiler/samplesheet.csv --databases /gpfs/scratch/ajh20fhu/taxprofiler/databases.csv --outdir taxprofiler_results --run_kraken2 --run_metaphlan -resume
+Mar-27 04:43:04.049 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 25.04.6
+Mar-27 04:43:04.068 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/gpfs/home/ajh20fhu/.nextflow/plugins; core-plugins: nf-amazon@2.15.0,nf-azure@1.16.0,nf-cloudcache@0.4.3,nf-codecommit@0.2.3,nf-console@1.2.1,nf-google@1.21.1,nf-k8s@1.0.0,nf-tower@1.11.4,nf-wave@1.12.1
+Mar-27 04:43:04.094 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Mar-27 04:43:04.095 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Mar-27 04:43:04.097 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+Mar-27 04:43:04.107 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Mar-27 04:43:04.116 [main] DEBUG nextflow.scm.ProviderConfig - Using SCM config path: /gpfs/home/ajh20fhu/.nextflow/scm
+Mar-27 04:43:04.749 [main] DEBUG nextflow.scm.AssetManager - Git config: /gpfs/home/ajh20fhu/.nextflow/assets/nf-core/taxprofiler/.git/config; branch: master; remote: origin; url: https://github.com/nf-core/taxprofiler.git
+Mar-27 04:43:04.774 [main] DEBUG nextflow.scm.RepositoryFactory - Found Git repository result: [RepositoryFactory]
+Mar-27 04:43:04.782 [main] DEBUG nextflow.scm.AssetManager - Git config: /gpfs/home/ajh20fhu/.nextflow/assets/nf-core/taxprofiler/.git/config; branch: master; remote: origin; url: https://github.com/nf-core/taxprofiler.git
+Mar-27 04:43:05.418 [main] DEBUG nextflow.config.ConfigBuilder - Found config base: /gpfs/home/ajh20fhu/.nextflow/assets/nf-core/taxprofiler/nextflow.config
+Mar-27 04:43:05.420 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /gpfs/home/ajh20fhu/.nextflow/assets/nf-core/taxprofiler/nextflow.config
+Mar-27 04:43:05.425 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /gpfs/home/ajh20fhu/.nextflow/secrets/store.json
+Mar-27 04:43:05.427 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@64e7d698] - activable => nextflow.secret.LocalSecretsProvider@64e7d698
+Mar-27 04:43:05.436 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `apptainer`
+Mar-27 04:43:06.289 [main] DEBUG nextflow.config.ConfigBuilder - Available config profiles: [bih, cfc_dev, uzl_omics, ifb_core, embl_hd, denbi_qbic, alice, mjolnir_globe, uppmax, test_malt, giga, metaval, test_fastp, incliva, ilifu, ki_luria, uge, icr_alma, rosalind_uge, lugh, mccleary, test_prinseqplusplus, unibe_ibu, vai, czbiohub_aws, jax, roslin, iris, tes, scw, unc_longleaf, tigem, tubingen_apg, apollo, ipop_up, vsc_calcua, pdc_kth, ceci_nic5, ccga_cau, humantechnopole, stjude, daisybio, eddie, medair, biowulf, mahuika, apptainer, bi, test_minimal, bigpurple, adcra, cedars, pawsey_setonix, vsc_kul_uhasselt, pawsey_nimbus, rki, test_motus, ucl_myriad, utd_ganymede, charliecloud, fred_hutch, seattlechildrens, icr_davros, ceres, test_nopreprocessing, munin, rosalind, hasta, cfc, emulate_amd64, uzh, shu_bmrc, ebi_codon_slurm, ebc, ccga_dx, crick, ku_sund_danhead, marvin, lrz_cm4, shifter, biohpc_gen, mana, mamba, york_viking, unc_lccc, wehi, awsbatch, wustl_htcf, arcc, ceci_dragon2, imperial, maestro, software_license, cannon, genotoul, nci_gadi, abims, eva_grace, janelia, nu_genomics, googlebatch, oist, sahmri, kaust, alliance_canada, arm64, mpcdf, leicester, vsc_ugent, create, sage, cambridge, jex, test_noprofiling, podman, ebi_codon, cheaha, xanadu, nyu_hpc, test, marjorie, computerome, ucd_sonic, gpu, seg_globe, mssm, sanger, test_alternativepreprocessing, dkfz, bluebear, pasteur, einstein, ethz_euler, m3c, test_bbduk, test_full, imb, ucl_cscluster, tuos_stanage, azurebatch, seadragon, crukmi, csiro_petrichor, qmul_apocrita, wave, docker, engaging, gis, hypatia, psmn, eva, unity, cropdiversityhpc, nygc, fgcz, conda, crg, singularity, mpcdf_viper, dirac, self_hosted_runner, tufts, uw_hyak_pedslabs, binac2, debug, hki_genie, genouest, cbe, unsw_katana, utd_juno, phoenix, seawulf, test_krakenuniq, uod_hpc, fub_curta, test_falco, lovelace, uct_hpc, aws_tower, fsu_draco]
+Mar-27 04:43:06.323 [main] DEBUG nextflow.cli.CmdRun - Enabling nextflow strict mode
+Mar-27 04:43:06.324 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 by global default
+Mar-27 04:43:06.325 [main] DEBUG nextflow.cli.CmdRun - Launching `https://github.com/nf-core/taxprofiler` [cheesy_bohr] DSL2 - revision: 3c3fb68033 [1.2.6]
+Mar-27 04:43:06.325 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins declared=[nf-schema@2.5.1]
+Mar-27 04:43:06.326 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Mar-27 04:43:06.326 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[nf-schema@2.5.1]
+Mar-27 04:43:06.327 [main] DEBUG nextflow.plugin.PluginUpdater - Installing plugin nf-schema version: 2.5.1
+Mar-27 04:43:06.337 [main] INFO  org.pf4j.AbstractPluginManager - Plugin 'nf-schema@2.5.1' resolved
+Mar-27 04:43:06.337 [main] INFO  org.pf4j.AbstractPluginManager - Start plugin 'nf-schema@2.5.1'
+Mar-27 04:43:06.347 [main] DEBUG nextflow.plugin.BasePlugin - Plugin started nf-schema@2.5.1
+Mar-27 04:43:06.382 [main] DEBUG nextflow.Session - Session UUID: 8234bf92-d369-479e-8a31-c14add273fc6
+Mar-27 04:43:06.382 [main] DEBUG nextflow.Session - Run name: cheesy_bohr
+Mar-27 04:43:06.383 [main] DEBUG nextflow.Session - Executor pool size: 32
+Mar-27 04:43:06.388 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Mar-27 04:43:06.392 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=96; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Mar-27 04:43:06.405 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 25.04.6 build 5954
+  Created: 01-07-2025 11:27 UTC (12:27 BST)
+  System: Linux 4.18.0-553.105.1.el8_10.x86_64
+  Runtime: Groovy 4.0.26 on OpenJDK 64-Bit Server VM 24.0.2+12-54
+  Encoding: UTF-8 (ANSI_X3.4-1968)
+  Process: 3794682@compute043.hali.private [10.0.17.43]
+  CPUs: 32 - Mem: 64 GB (63.5 GB) - Swap: 0 (0)
+Mar-27 04:43:06.419 [main] DEBUG nextflow.Session - Work-dir: /gpfs/scratch/ajh20fhu/scripts/work [gpfs]
+Mar-27 04:43:06.420 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /gpfs/home/ajh20fhu/.nextflow/assets/nf-core/taxprofiler/bin
+Mar-27 04:43:06.430 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Mar-27 04:43:06.437 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Mar-27 04:43:06.454 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
+Mar-27 04:43:06.456 [main] DEBUG nextflow.Session - Observer factory (v2): ValidationObserverFactory
+Mar-27 04:43:06.485 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Mar-27 04:43:06.492 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 33; maxThreads: 1000
+Mar-27 04:43:06.734 [main] DEBUG nextflow.Session - Session start
+Mar-27 04:43:06.738 [main] DEBUG nextflow.trace.TraceFileObserver - Workflow started -- trace file: /gpfs/scratch/ajh20fhu/scripts/taxprofiler_results/pipeline_info/execution_trace_2026-03-27_04-43-05.txt
+Mar-27 04:43:06.846 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Mar-27 04:43:07.341 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [paramsSummaryMap:paramsSummaryMap]; plugin Id: nf-schema
+Mar-27 04:43:07.351 [main] DEBUG n.validation.config.ValidationConfig - Set `validation.monochromeLogs` to false
+Mar-27 04:43:07.353 [main] DEBUG n.validation.config.ValidationConfig - Added the following parameters to the ignored parameters: [genomes]
+Mar-27 04:43:07.652 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [paramsSummaryLog:paramsSummaryLog]; plugin Id: nf-schema
+Mar-27 04:43:07.652 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [validateParameters:validateParameters]; plugin Id: nf-schema
+Mar-27 04:43:07.653 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [paramsHelp:paramsHelp]; plugin Id: nf-schema
+Mar-27 04:43:07.655 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [paramsSummaryMap:paramsSummaryMap]; plugin Id: nf-schema
+Mar-27 04:43:07.655 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [samplesheetToList:samplesheetToList]; plugin Id: nf-schema
+Mar-27 04:43:07.656 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [paramsHelp:paramsHelp]; plugin Id: nf-schema
+Mar-27 04:43:10.856 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [paramsSummaryLog:paramsSummaryLog]; plugin Id: nf-schema
+Mar-27 04:43:10.857 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [validateParameters:validateParameters]; plugin Id: nf-schema
+Mar-27 04:43:10.858 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [paramsHelp:paramsHelp]; plugin Id: nf-schema
+Mar-27 04:43:10.859 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [paramsSummaryMap:paramsSummaryMap]; plugin Id: nf-schema
+Mar-27 04:43:10.860 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [samplesheetToList:samplesheetToList]; plugin Id: nf-schema
+Mar-27 04:43:10.860 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [paramsHelp:paramsHelp]; plugin Id: nf-schema
+Mar-27 04:43:11.033 [main] INFO  nextflow.Nextflow - 
+-[2m----------------------------------------------------[0m-
+                                        [0;32m,--.[0;30m/[0;32m,-.[0m
+[0;34m        ___     __   __   __   ___     [0;32m/,-._.--~'[0m
+[0;34m  |\ | |__  __ /  ` /  \ |__) |__         [0;33m}  {[0m
+[0;34m  | \| |       \__, \__/ |  \ |___     [0;32m\`-._,-`-,[0m
+                                        [0;32m`._,._,'[0m
+[0;35m  nf-core/taxprofiler 1.2.6[0m
+-[2m----------------------------------------------------[0m-
+
+Mar-27 04:43:11.062 [main] INFO  nextflow.Nextflow - [1mInput/output options[0m
+  [0;34minput              : [0;32m/gpfs/scratch/ajh20fhu/taxprofiler/samplesheet.csv[0m
+  [0;34mdatabases          : [0;32m/gpfs/scratch/ajh20fhu/taxprofiler/databases.csv[0m
+  [0;34moutdir             : [0;32mtaxprofiler_results[0m
+
+[1mProfiling options[0m
+  [0;34mrun_kraken2        : [0;32mtrue[0m
+  [0;34mrun_metaphlan      : [0;32mtrue[0m
+
+[1mGeneric options[0m
+  [0;34mtrace_report_suffix: [0;32m2026-03-27_04-43-05[0m
+
+[1mCore Nextflow options[0m
+  [0;34mrevision           : [0;32m1.2.6[0m
+  [0;34mrunName            : [0;32mcheesy_bohr[0m
+  [0;34mcontainerEngine    : [0;32mapptainer[0m
+  [0;34mlaunchDir          : [0;32m/gpfs/scratch/ajh20fhu/scripts[0m
+  [0;34mworkDir            : [0;32m/gpfs/scratch/ajh20fhu/scripts/work[0m
+  [0;34mprojectDir         : [0;32m/gpfs/home/ajh20fhu/.nextflow/assets/nf-core/taxprofiler[0m
+  [0;34muserName           : [0;32majh20fhu[0m
+  [0;34mprofile            : [0;32mapptainer[0m
+  [0;34mconfigFiles        : [0;32m/gpfs/home/ajh20fhu/.nextflow/assets/nf-core/taxprofiler/nextflow.config[0m
+
+!! Only displaying parameters that differ from the pipeline defaults !!
+-[2m----------------------------------------------------[0m-
+Mar-27 04:43:11.063 [main] INFO  nextflow.Nextflow - 
+* The pipeline
+    https://doi.org/10.1101/2023.10.20.563221
+
+* The nf-core framework
+    https://doi.org/10.1038/s41587-020-0439-x
+
+* Software dependencies
+    https://github.com/nf-core/taxprofiler/blob/master/CITATIONS.md
+
+Mar-27 04:43:11.066 [main] DEBUG n.v.parameters.ParameterValidator - Starting parameters validation
+Mar-27 04:43:11.203 [main] DEBUG n.v.v.evaluators.SchemaEvaluator - Started validating /gpfs/scratch/ajh20fhu/taxprofiler/databases.csv
+Mar-27 04:43:11.501 [main] DEBUG n.v.v.evaluators.SchemaEvaluator - Validation of file '/gpfs/scratch/ajh20fhu/taxprofiler/databases.csv' passed!
+Mar-27 04:43:11.505 [main] DEBUG n.v.v.evaluators.SchemaEvaluator - Started validating /gpfs/scratch/ajh20fhu/taxprofiler/samplesheet.csv
+Mar-27 04:43:11.547 [main] DEBUG n.v.v.evaluators.SchemaEvaluator - Validation of file '/gpfs/scratch/ajh20fhu/taxprofiler/samplesheet.csv' passed!
+Mar-27 04:43:11.615 [main] DEBUG n.v.parameters.ParameterValidator - Finishing parameters validation
+Mar-27 04:43:11.949 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_TAXPROFILER:TAXPROFILER:UNTAR
+Mar-27 04:43:11.950 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:UNTAR` matches process NFCORE_TAXPROFILER:TAXPROFILER:UNTAR
+Mar-27 04:43:11.958 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar-27 04:43:11.958 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-27 04:43:11.962 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Mar-27 04:43:11.967 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=32; memory=64 GB; capacity=32; pollInterval=100ms; dumpInterval=5m
+Mar-27 04:43:11.968 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Mar-27 04:43:11.982 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'NFCORE_TAXPROFILER:TAXPROFILER:UNTAR': maxForks=0; fair=false; array=0
+Mar-27 04:43:12.010 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_TAXPROFILER:TAXPROFILER:FASTQC
+Mar-27 04:43:12.012 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:FASTQC` matches process NFCORE_TAXPROFILER:TAXPROFILER:FASTQC
+Mar-27 04:43:12.016 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar-27 04:43:12.016 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-27 04:43:12.017 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'NFCORE_TAXPROFILER:TAXPROFILER:FASTQC': maxForks=0; fair=false; array=0
+Mar-27 04:43:12.046 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_high` matches labels `process_high` for process with name NFCORE_TAXPROFILER:TAXPROFILER:PROFILING:KRAKEN2_KRAKEN2
+Mar-27 04:43:12.047 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:KRAKEN2_KRAKEN2` matches process NFCORE_TAXPROFILER:TAXPROFILER:PROFILING:KRAKEN2_KRAKEN2
+Mar-27 04:43:12.049 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar-27 04:43:12.050 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-27 04:43:12.050 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'NFCORE_TAXPROFILER:TAXPROFILER:PROFILING:KRAKEN2_KRAKEN2': maxForks=0; fair=false; array=0
+Mar-27 04:43:12.064 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_TAXPROFILER:TAXPROFILER:PROFILING:METAPHLAN_METAPHLAN
+Mar-27 04:43:12.065 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:METAPHLAN_METAPHLAN` matches process NFCORE_TAXPROFILER:TAXPROFILER:PROFILING:METAPHLAN_METAPHLAN
+Mar-27 04:43:12.141 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar-27 04:43:12.141 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-27 04:43:12.142 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'NFCORE_TAXPROFILER:TAXPROFILER:PROFILING:METAPHLAN_METAPHLAN': maxForks=0; fair=false; array=0
+Mar-27 04:43:12.256 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_TAXPROFILER:TAXPROFILER:MULTIQC
+Mar-27 04:43:12.257 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:MULTIQC` matches process NFCORE_TAXPROFILER:TAXPROFILER:MULTIQC
+Mar-27 04:43:12.259 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar-27 04:43:12.259 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-27 04:43:12.260 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'NFCORE_TAXPROFILER:TAXPROFILER:MULTIQC': maxForks=0; fair=false; array=0
+Mar-27 04:43:12.272 [main] DEBUG nextflow.Session - Config process names validation disabled as requested
+Mar-27 04:43:12.274 [main] DEBUG nextflow.Session - Igniting dataflow network (21)
+Mar-27 04:43:12.275 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_TAXPROFILER:TAXPROFILER:UNTAR
+Mar-27 04:43:12.275 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_TAXPROFILER:TAXPROFILER:FASTQC
+Mar-27 04:43:12.275 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_TAXPROFILER:TAXPROFILER:PROFILING:KRAKEN2_KRAKEN2
+Mar-27 04:43:12.275 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_TAXPROFILER:TAXPROFILER:PROFILING:METAPHLAN_METAPHLAN
+Mar-27 04:43:12.280 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_TAXPROFILER:TAXPROFILER:MULTIQC
+Mar-27 04:43:12.281 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_580731b654d6198d: /gpfs/home/ajh20fhu/.nextflow/assets/nf-core/taxprofiler/modules/nf-core/megan/rma2info/main.nf
+  Script_35ce3bb82354ee09: /gpfs/home/ajh20fhu/.nextflow/assets/nf-core/taxprofiler/modules/nf-core/ganon/report/main.nf
+  Script_e9a768d67897c677: /gpfs/home/ajh20fhu/.nextflow/assets/nf-core/taxprofiler/modules/nf-core/kaiju/kaiju2table/main.nf
+  Script_a0b4df308a893f81: /gpfs/home/ajh20fhu/.nextflow/assets/nf-core/taxprofiler/modules/nf-core/metaphlan/metaphlan/main.nf
+  Script_3ff72e26fdce4851: /gpfs/home/ajh20fhu/.nextflow/assets/nf-core/taxprofiler/modules/nf-core/nonpareil/nonpareilcurvesr/main.nf
+  Script_688121a32534d1f1: /gpfs/home/ajh20fhu/.nextflow/assets/nf-core/taxprofiler/modules/nf-core/prinseqplusplus/main.nf
+  Script_89e855d3f71aff1f: /gpfs/home/ajh20fhu/.nextflow/assets/nf-core/taxprofiler/subworkflows/local/visualization_krona.nf
+  Script_b11e267fbc222249: /gpfs/home/ajh20fhu/.nextflow/assets/nf-core/taxprofiler/modules/nf-core/krakentools/kreport2krona/main.nf
+  Script_a5e43a9616ce379d: /gpfs/home/ajh20fhu/.nextflow/assets/nf-core/taxprofiler/subworkflows/local/shortread_preprocessing.nf
+  Script_06fda78357024c08: /gpfs/home/ajh20fhu/.nextflow/assets/nf-core/taxprofiler/subworkflows/local/longread_hostremoval.nf
+  Script_1643cd40eddb2dcb: /gpfs/home/ajh20fhu/.nextflow/assets/nf-core/taxprofiler/modules/nf-core/centrifuge/centrifuge/main.nf
+  Script_9e61b79b569950a4: /gpfs/home/ajh20fhu/.nextflow/assets/nf-core/taxprofiler/modules/nf-core/fastqc/main.nf
+  Script_a780234b47eb3af3: /gpfs/home/ajh20fhu/.nextflow/assets/nf-core/taxprofiler/modules/nf-core/gunzip/main.nf
+  Script_4d9521eff850ef17: /gpfs/home/ajh20fhu/.nextflow/assets/nf-core/taxprofiler/modules/nf-core/krona/ktimporttaxonomy/main.nf
+  Script_57cb67e37d725c0d: /gpfs/home/ajh20fhu/.nextflow/assets/nf-core/taxprofiler/modules/nf-core/krona/ktimporttext/main.nf
+  Script_07719c64c87d7acf: /gpfs/home/ajh20fhu/.nextflow/assets/nf-core/taxprofiler/subworkflows/local/standardisation_profiles.nf
+  Script_325caa881dec42e2: /gpfs/home/ajh20fhu/.nextflow/assets/nf-core/taxprofiler/modules/nf-core/porechop/abi/main.nf
+  Script_99472d6aa6f45c35: /gpfs/home/ajh20fhu/.nextflow/assets/nf-core/taxprofiler/modules/nf-core/samtools/fastq/main.nf
+  Script_2a3123de5fac596c: /gpfs/home/ajh20fhu/.nextflow/assets/nf-core/taxprofiler/modules/nf-core/untar/main.nf
+  Script_76f9041d9ade3f9f: /gpfs/home/ajh20fhu/.nextflow/assets/nf-core/taxprofiler/modules/nf-core/malt/run/main.nf
+  Script_b7c1ee87598bf1e0: /gpfs/home/ajh20fhu/.nextflow/assets/nf-core/taxprofiler/modules/nf-core/krakenuniq/preloadedkrakenuniq/main.nf
+  Script_3638011c9808828b: /gpfs/home/ajh20fhu/.nextflow/assets/nf-core/taxprofiler/modules/nf-core/falco/main.nf
+  Script_91dc0e2bf71ccbd5: /gpfs/home/ajh20fhu/.nextflow/assets/nf-core/taxprofiler/modules/nf-core/samtools/index/main.nf
+  Script_fd4ce9d483f47fbf: /gpfs/home/ajh20fhu/.nextflow/assets/nf-core/taxprofiler/modules/nf-core/diamond/blastx/main.nf
+  Script_afc4fc062ddd5fec: /gpfs/home/ajh20fhu/.nextflow/assets/nf-core/taxprofiler/subworkflows/local/nonpareil.nf
+  Script_c1d8d98529efafbb: /gpfs/home/ajh20fhu/.nextflow/assets/nf-core/taxprofiler/modules/nf-core/bowtie2/align/main.nf
+  Script_85ee399a15460323: /gpfs/home/ajh20fhu/.nextflow/assets/nf-core/taxprofiler/modules/nf-core/kmcp/profile/main.nf
+  Script_82ee5691354bfa51: /gpfs/home/ajh20fhu/.nextflow/assets/nf-core/taxprofiler/modules/nf-core/bracken/bracken/main.nf
+  Script_ded2a7093ebd0749: /gpfs/home/ajh20fhu/.nextflow/assets/nf-core/taxprofiler/modules/nf-core/samtools/view/main.nf
+  Script_c02b1fb65911905c: /gpfs/home/ajh20fhu/.nextflow/assets/nf-core/taxprofiler/modules/nf-core/taxpasta/standardise/main.nf
+  Script_134e90019f9f87ec: /gpfs/home/ajh20fhu/.nextflow/assets/nf-core/taxprofiler/modules/nf-core/multiqc/main.nf
+  Script_bd916c2261039f53: /gpfs/home/ajh20fhu/.nextflow/assets/nf-core/taxprofiler/subworkflows/local/shortread_complexityfiltering.nf
+  Script_8c6cd303ae812c8b: /gpfs/home/ajh20fhu/.nextflow/assets/nf-core/taxprofiler/modules/nf-core/minimap2/align/main.nf
+  Script_1378ad3d2fa0e999: /gpfs/home/ajh20fhu/.nextflow/assets/nf-core/taxprofiler/main.nf
+  Script_e7ba334f78f9495c: /gpfs/home/ajh20fhu/.nextflow/assets/nf-core/taxprofiler/modules/local/krona_cleanup.nf
+  Script_b19a2856c95de23c: /gpfs/home/ajh20fhu/.nextflow/assets/nf-core/taxprofiler/modules/nf-core/samtools/stats/main.nf
+  Script_1926d0fcefb4d542: /gpfs/home/ajh20fhu/.nextflow/assets/nf-core/taxprofiler/modules/nf-core/motus/profile/main.nf
+  Script_a87135d0f460e6ce: /gpfs/home/ajh20fhu/.nextflow/assets/nf-core/taxprofiler/subworkflows/local/profiling.nf
+  Script_f2c44f664d240f01: /gpfs/home/ajh20fhu/.nextflow/assets/nf-core/taxprofiler/subworkflows/local/shortread_fastp.nf
+  Script_60ebceeed72f5693: /gpfs/home/ajh20fhu/.nextflow/assets/nf-core/taxprofiler/modules/nf-core/ganon/table/main.nf
+  Script_80eec337e304f7e4: /gpfs/home/ajh20fhu/.nextflow/assets/nf-core/taxprofiler/modules/nf-core/nonpareil/nonpareil/main.nf
+  Script_4e51b53ff7a33a0f: /gpfs/home/ajh20fhu/.nextflow/assets/nf-core/taxprofiler/modules/nf-core/bbmap/bbduk/main.nf
+  Script_e56af4e74a72fd3c: /gpfs/home/ajh20fhu/.nextflow/assets/nf-core/taxprofiler/modules/nf-core/nonpareil/set/main.nf
+  Script_41bd0f9820609141: /gpfs/home/ajh20fhu/.nextflow/assets/nf-core/taxprofiler/modules/nf-core/kraken2/kraken2/main.nf
+  Script_f93ae1b28ada1448: /gpfs/home/ajh20fhu/.nextflow/assets/nf-core/taxprofiler/modules/nf-core/adapterremoval/main.nf
+  Script_eee2828e27cd2d0a: /gpfs/home/ajh20fhu/.nextflow/assets/nf-core/taxprofiler/modules/local/kraken2_standard_report.nf
+  Script_40116f323c6ad0c6: /gpfs/home/ajh20fhu/.nextflow/assets/nf-core/taxprofiler/modules/nf-core/minimap2/index/main.nf
+  Script_fde59658c49abbd9: /gpfs/home/ajh20fhu/.nextflow/assets/nf-core/taxprofiler/modules/nf-core/centrifuge/kreport/main.nf
+  Script_3998212310dae98b: /gpfs/home/ajh20fhu/.nextflow/assets/nf-core/taxprofiler/modules/nf-core/nonpareil/curve/main.nf
+  Script_5c2449b67f50a876: /gpfs/home/ajh20fhu/.nextflow/assets/nf-core/taxprofiler/modules/nf-core/kaiju/kaiju/main.nf
+  Script_a00d27839be80c01: /gpfs/home/ajh20fhu/.nextflow/assets/nf-core/taxprofiler/modules/nf-core/bracken/combinebrackenoutputs/main.nf
+  Script_3234366649af58ab: /gpfs/home/ajh20fhu/.nextflow/assets/nf-core/taxprofiler/subworkflows/local/longread_filtering.nf
+  Script_f5b64176d9a6b718: /gpfs/home/ajh20fhu/.nextflow/assets/nf-core/taxprofiler/subworkflows/local/shortread_hostremoval.nf
+  Script_c0d5b8bfa549d36a: /gpfs/home/ajh20fhu/.nextflow/assets/nf-core/taxprofiler/modules/nf-core/porechop/porechop/main.nf
+  Script_34bb0ebf41e831b0: /gpfs/home/ajh20fhu/.nextflow/assets/nf-core/taxprofiler/modules/nf-core/kaiju/kaiju2krona/main.nf
+  Script_4f612cfd8c52e8cd: /gpfs/home/ajh20fhu/.nextflow/assets/nf-core/taxprofiler/subworkflows/nf-core/utils_nextflow_pipeline/main.nf
+  Script_029dc9a3afba34cb: /gpfs/home/ajh20fhu/.nextflow/assets/nf-core/taxprofiler/modules/nf-core/filtlong/main.nf
+  Script_b355087dc9d365d0: /gpfs/home/ajh20fhu/.nextflow/assets/nf-core/taxprofiler/modules/nf-core/fastp/main.nf
+  Script_e35aeb318b66fc04: /gpfs/home/ajh20fhu/.nextflow/assets/nf-core/taxprofiler/subworkflows/local/utils_nfcore_taxprofiler_pipeline/main.nf
+  Script_5977f542cd315b9b: /gpfs/home/ajh20fhu/.nextflow/assets/nf-core/taxprofiler/subworkflows/nf-core/utils_nfcore_pipeline/main.nf
+  Script_1da8f76648124a72: /gpfs/home/ajh20fhu/.nextflow/assets/nf-core/taxprofiler/subworkflows/local/longread_adapterremoval.nf
+  Script_f236c00f8bab21e8: /gpfs/home/ajh20fhu/.nextflow/assets/nf-core/taxprofiler/modules/nf-core/metaphlan/mergemetaphlantables/main.nf
+  Script_ec1daa6037d5f73e: /gpfs/home/ajh20fhu/.nextflow/assets/nf-core/taxprofiler/modules/nf-core/nanoq/main.nf
+  Script_e6eaaab3947e46fe: /gpfs/home/ajh20fhu/.nextflow/assets/nf-core/taxprofiler/subworkflows/local/longread_preprocessing.nf
+  Script_ba3dee804d95fe94: /gpfs/home/ajh20fhu/.nextflow/assets/nf-core/taxprofiler/modules/nf-core/krakentools/combinekreports/main.nf
+  Script_8e76819e5c540da2: /gpfs/home/ajh20fhu/.nextflow/assets/nf-core/taxprofiler/modules/nf-core/taxpasta/merge/main.nf
+  Script_4779b6382e5427ab: /gpfs/home/ajh20fhu/.nextflow/assets/nf-core/taxprofiler/modules/nf-core/cat/fastq/main.nf
+  Script_053a4f981e60653f: /gpfs/home/ajh20fhu/.nextflow/assets/nf-core/taxprofiler/modules/nf-core/bowtie2/build/main.nf
+  Script_815095cae2e55f35: /gpfs/home/ajh20fhu/.nextflow/assets/nf-core/taxprofiler/modules/nf-core/motus/merge/main.nf
+  Script_1a2037a6183f7e1a: /gpfs/home/ajh20fhu/.nextflow/assets/nf-core/taxprofiler/subworkflows/nf-core/utils_nfschema_plugin/main.nf
+  Script_315276634d38e207: /gpfs/home/ajh20fhu/.nextflow/assets/nf-core/taxprofiler/subworkflows/local/shortread_adapterremoval.nf
+  Script_7c7b55d28029b1cf: /gpfs/home/ajh20fhu/.nextflow/assets/nf-core/taxprofiler/modules/nf-core/ganon/classify/main.nf
+  Script_0b85c21f8ba6c74b: /gpfs/home/ajh20fhu/.nextflow/assets/nf-core/taxprofiler/workflows/taxprofiler.nf
+  Script_a8789a5d9b4b681b: /gpfs/home/ajh20fhu/.nextflow/assets/nf-core/taxprofiler/modules/nf-core/kmcp/search/main.nf
+Mar-27 04:43:12.281 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Mar-27 04:43:12.281 [main] DEBUG nextflow.Session - Session await
+Mar-27 04:43:12.335 [Actor Thread 23] DEBUG nextflow.sort.BigSort - Sort completed -- entries: 1; slices: 1; internal sort time: 0.001 s; external sort time: 0.009 s; total time: 0.01 s
+Mar-27 04:43:12.335 [Actor Thread 22] DEBUG nextflow.sort.BigSort - Sort completed -- entries: 1; slices: 1; internal sort time: 0.001 s; external sort time: 0.009 s; total time: 0.01 s
+Mar-27 04:43:12.336 [Actor Thread 22] DEBUG nextflow.file.FileCollector - >> temp file exists? false
+Mar-27 04:43:12.336 [Actor Thread 23] DEBUG nextflow.file.FileCollector - >> temp file exists? false
+Mar-27 04:43:12.336 [Actor Thread 22] DEBUG nextflow.file.FileCollector - Missed collect-file cache -- cause: java.nio.file.NoSuchFileException: /gpfs/scratch/ajh20fhu/scripts/work/collect-file/b829fb0f84c09710fb9a73b3a63f767b
+Mar-27 04:43:12.336 [Actor Thread 23] DEBUG nextflow.file.FileCollector - Missed collect-file cache -- cause: java.nio.file.NoSuchFileException: /gpfs/scratch/ajh20fhu/scripts/work/collect-file/d0068223b04feca70f17bdb83d16a3cd
+Mar-27 04:43:12.338 [Actor Thread 19] WARN  nextflow.container.SingularityCache - Apptainer cache directory has not been defined -- Remote image will be stored in the path: /gpfs/scratch/ajh20fhu/scripts/work/singularity -- Use the environment variable NXF_APPTAINER_CACHEDIR to specify a different location
+Mar-27 04:43:12.339 [Actor Thread 19] INFO  nextflow.container.SingularityCache - Pulling Apptainer image docker://quay.io/biocontainers/fastqc:0.12.1--hdfd78af_0 [cache /gpfs/scratch/ajh20fhu/scripts/work/singularity/quay.io-biocontainers-fastqc-0.12.1--hdfd78af_0.img]
+Mar-27 04:43:12.339 [Actor Thread 24] INFO  nextflow.container.SingularityCache - Pulling Apptainer image docker://community.wave.seqera.io/library/kraken2_coreutils_pigz:45764814c4bb5bf3 [cache /gpfs/scratch/ajh20fhu/scripts/work/singularity/community.wave.seqera.io-library-kraken2_coreutils_pigz-45764814c4bb5bf3.img]
+Mar-27 04:43:12.340 [Actor Thread 33] INFO  nextflow.container.SingularityCache - Pulling Apptainer image docker://quay.io/biocontainers/metaphlan:4.1.1--pyhdfd78af_0 [cache /gpfs/scratch/ajh20fhu/scripts/work/singularity/quay.io-biocontainers-metaphlan-4.1.1--pyhdfd78af_0.img]
+Mar-27 04:43:12.341 [Actor Thread 22] DEBUG nextflow.file.FileCollector - Saved collect-files list to: /gpfs/scratch/ajh20fhu/scripts/work/collect-file/b829fb0f84c09710fb9a73b3a63f767b
+Mar-27 04:43:12.341 [Actor Thread 23] DEBUG nextflow.file.FileCollector - Saved collect-files list to: /gpfs/scratch/ajh20fhu/scripts/work/collect-file/d0068223b04feca70f17bdb83d16a3cd
+Mar-27 04:43:12.346 [Actor Thread 22] DEBUG nextflow.file.FileCollector - Deleting file collector temp dir: /tmp/nxf-3207945726816007858
+Mar-27 04:43:12.346 [Actor Thread 23] DEBUG nextflow.file.FileCollector - Deleting file collector temp dir: /tmp/nxf-14026186556631498482
+Mar-27 04:43:15.118 [Actor Thread 19] DEBUG nextflow.container.SingularityCache - Apptainer pull complete image=docker://quay.io/biocontainers/fastqc:0.12.1--hdfd78af_0 path=/gpfs/scratch/ajh20fhu/scripts/work/singularity/quay.io-biocontainers-fastqc-0.12.1--hdfd78af_0.img
+Mar-27 04:43:15.253 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar-27 04:43:15.255 [Task submitter] INFO  nextflow.Session - [f1/1fcd4c] Submitted process > NFCORE_TAXPROFILER:TAXPROFILER:FASTQC (H_13_01_nohost)
+Mar-27 04:43:40.043 [Actor Thread 24] DEBUG nextflow.container.SingularityCache - Apptainer pull complete image=docker://community.wave.seqera.io/library/kraken2_coreutils_pigz:45764814c4bb5bf3 path=/gpfs/scratch/ajh20fhu/scripts/work/singularity/community.wave.seqera.io-library-kraken2_coreutils_pigz-45764814c4bb5bf3.img
+Mar-27 04:43:40.429 [Task submitter] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=NFCORE_TAXPROFILER:TAXPROFILER:PROFILING:KRAKEN2_KRAKEN2 (standard|kraken2|NH_12_01_nohost); work-dir=/gpfs/scratch/ajh20fhu/scripts/work/72/1206ae0d8a7d0568bd63c8d7ae6e57
+  error [nextflow.exception.ProcessUnrecoverableException]: Process requirement exceeds available memory -- req: 72 GB; avail: 64 GB
+Mar-27 04:43:40.441 [Task submitter] DEBUG nextflow.processor.TaskRun - Unable to dump error of process 'NFCORE_TAXPROFILER:TAXPROFILER:PROFILING:KRAKEN2_KRAKEN2 (standard|kraken2|NH_12_01_nohost)' -- Cause: java.nio.file.NoSuchFileException: /gpfs/scratch/ajh20fhu/scripts/work/72/1206ae0d8a7d0568bd63c8d7ae6e57/.command.log
+Mar-27 04:43:40.443 [Task submitter] ERROR nextflow.processor.TaskProcessor - Error executing process > 'NFCORE_TAXPROFILER:TAXPROFILER:PROFILING:KRAKEN2_KRAKEN2 (standard|kraken2|NH_12_01_nohost)'
+
+Caused by:
+  Process requirement exceeds available memory -- req: 72 GB; avail: 64 GB
+
+
+Command executed:
+
+  kraken2 \
+      --db kraken_db2 \
+      --threads 12 \
+      --report NH_12_01_nohost_NH_12_01_nohost_standard.kraken2.kraken2.report.txt \
+      --gzip-compressed \
+       \
+       \
+      --output /dev/null \
+      --paired \
+       \
+      NH_12_01_nohost_R1.fastq.gz NH_12_01_nohost_R2.fastq.gz
+  
+  
+  
+  cat <<-END_VERSIONS > versions.yml
+  "NFCORE_TAXPROFILER:TAXPROFILER:PROFILING:KRAKEN2_KRAKEN2":
+      kraken2: $(echo $(kraken2 --version 2>&1) | sed 's/^.*Kraken version //; s/ .*$//')
+      pigz: $( pigz --version 2>&1 | sed 's/pigz //g' )
+  END_VERSIONS
+
+Command exit status:
+  -
+
+Command output:
+  (empty)
+
+Work dir:
+  /gpfs/scratch/ajh20fhu/scripts/work/72/1206ae0d8a7d0568bd63c8d7ae6e57
+
+Container:
+  /gpfs/scratch/ajh20fhu/scripts/work/singularity/community.wave.seqera.io-library-kraken2_coreutils_pigz-45764814c4bb5bf3.img
+
+Tip: view the complete command output by changing to the process work dir and entering the command `cat .command.out`
+Mar-27 04:43:40.445 [Task submitter] INFO  nextflow.Session - Execution cancelled -- Finishing pending tasks before exit
+Mar-27 04:43:40.449 [Task submitter] ERROR nextflow.Nextflow - Pipeline failed. Please refer to troubleshooting docs: https://nf-co.re/docs/usage/troubleshooting
+Mar-27 04:43:40.449 [main] DEBUG nextflow.Session - Session await > all processes finished
+Mar-27 04:43:40.451 [Actor Thread 28] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=NFCORE_TAXPROFILER:TAXPROFILER:PROFILING:METAPHLAN_METAPHLAN; work-dir=null
+  error [java.lang.InterruptedException]: java.lang.InterruptedException
+Mar-27 04:43:40.451 [Actor Thread 25] DEBUG nextflow.sort.BigSort - Sort completed -- entries: 1; slices: 1; internal sort time: 0.0 s; external sort time: 0.001 s; total time: 0.001 s
+Mar-27 04:43:40.451 [Actor Thread 25] DEBUG nextflow.file.FileCollector - >> temp file exists? false
+Mar-27 04:43:40.451 [Actor Thread 25] DEBUG nextflow.file.FileCollector - Missed collect-file cache -- cause: java.nio.file.NoSuchFileException: /gpfs/scratch/ajh20fhu/scripts/work/collect-file/4a015409b61d2cef3ebf908df8671c24
+Mar-27 04:43:40.486 [Actor Thread 25] DEBUG nextflow.file.FileCollector - Saved collect-files list to: /gpfs/scratch/ajh20fhu/scripts/work/collect-file/4a015409b61d2cef3ebf908df8671c24
+Mar-27 04:43:40.487 [Actor Thread 25] DEBUG nextflow.file.FileCollector - Deleting file collector temp dir: /tmp/nxf-13136097272875925874
+Mar-27 04:43:59.643 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: NFCORE_TAXPROFILER:TAXPROFILER:FASTQC (H_13_01_nohost); status: COMPLETED; exit: 0; error: -; workDir: /gpfs/scratch/ajh20fhu/scripts/work/f1/1fcd4c1d4a5879272b2a1ddee1d774]
+Mar-27 04:43:59.643 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=96; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Mar-27 04:43:59.645 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Mar-27 04:43:59.645 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Mar-27 04:43:59.678 [TaskFinalizer-1] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'PublishDir' minSize=10; maxSize=96; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Mar-27 04:43:59.702 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'TaskFinalizer' shutdown completed (hard=false)
+Mar-27 04:43:59.752 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'PublishDir' shutdown completed (hard=false)
+Mar-27 04:43:59.755 [main] INFO  nextflow.Nextflow - -[0;35m[nf-core/taxprofiler][0;31m Pipeline completed with errors[0m-
+Mar-27 04:43:59.758 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=1; failedCount=1; ignoredCount=0; cachedCount=0; pendingCount=3; submittedCount=0; runningCount=-1; retriesCount=0; abortedCount=0; succeedDuration=4m 24s; failedDuration=0ms; cachedDuration=0ms;loadCpus=-12; loadMemory=0; peakRunning=1; peakCpus=6; peakMemory=36 GB; ]
+Mar-27 04:43:59.759 [main] DEBUG nextflow.trace.TraceFileObserver - Workflow completed -- saving trace file
+Mar-27 04:43:59.759 [main] DEBUG nextflow.trace.ReportObserver - Workflow completed -- rendering execution report
+Mar-27 04:44:00.370 [main] DEBUG nextflow.trace.TimelineObserver - Workflow completed -- rendering execution timeline
+Mar-27 04:44:00.538 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Mar-27 04:44:00.565 [main] INFO  org.pf4j.AbstractPluginManager - Stop plugin 'nf-schema@2.5.1'
+Mar-27 04:44:00.566 [main] DEBUG nextflow.plugin.BasePlugin - Plugin stopped nf-schema
+Mar-27 04:44:00.566 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
+Mar-27 04:44:00.567 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

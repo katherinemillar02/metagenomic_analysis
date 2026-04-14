@@ -1,0 +1,5 @@
+Uncompressing taxonomy data... done.
+Untarring taxonomy tree data... done.
+rsync: [Receiver] safe_read failed to read 1 bytes: Connection timed out (110)
+rsync error: error in rsync protocol data stream (code 12) at io.c(283) [Receiver=3.2.7]
+Error downloading assembly summary file for bacteria, exiting.

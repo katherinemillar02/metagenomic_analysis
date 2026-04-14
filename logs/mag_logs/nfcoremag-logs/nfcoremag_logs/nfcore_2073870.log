@@ -1,0 +1,74 @@
+
+ N E X T F L O W   ~  version 25.04.6
+
+NOTE: Your local project version looks outdated - a different revision is available in the remote repository [0c370baf73]
+Launching `https://github.com/nf-core/mag` [dreamy_cuvier] DSL2 - revision: b52fa53592 [main]
+
+
+------------------------------------------------------
+                                        ,--./,-.
+        ___     __   __   __   ___     /,-._.--~'
+  |\ | |__  __ /  ` /  \ |__) |__         }  {
+  | \| |       \__, \__/ |  \ |___     \`-._,-`-,
+                                        `._,._,'
+  nf-core/mag 5.4.0
+------------------------------------------------------
+
+Input/output options
+  input                   : /gpfs/scratch/ajh20fhu/nfcore/nfcore_magpipeline/samplesheet.csv
+  outdir                  : results
+
+Generic options
+  trace_report_suffix     : 2026-03-20_22-13-55
+
+Quality control for short reads options
+  host_genome             : /gpfs/scratch/ajh20fhu/medfly_ref/GCF_000347755.3_Ccap_2.1_genomic.fna.gz
+
+Taxonomic profiling options
+  gtdbtk_min_completeness : 50.0
+  gtdbtk_max_contamination: 10.0
+
+Bin quality check options
+  run_busco               : true
+
+Core Nextflow options
+  revision                : main
+  runName                 : dreamy_cuvier
+  launchDir               : /gpfs/scratch/ajh20fhu/scripts
+  workDir                 : /gpfs/scratch/ajh20fhu/scripts/work
+  projectDir              : /gpfs/home/ajh20fhu/.nextflow/assets/nf-core/mag
+  userName                : ajh20fhu
+  profile                 : standard
+  configFiles             : /gpfs/home/ajh20fhu/.nextflow/assets/nf-core/mag/nextflow.config
+
+!! Only displaying parameters that differ from the pipeline defaults !!
+------------------------------------------------------
+
+* The pipeline
+    https://doi.org/10.1093/nargab/lqac007
+
+* The nf-core framework
+    https://doi.org/10.1038/s41587-020-0439-x
+
+* Software dependencies
+    https://github.com/nf-core/mag/blob/main/CITATIONS.md
+
+WARN: The following invalid input values have been detected:
+
+* --gtdbtk_db: /gpfs/scratch/ajh20fhu/gtdbtk_db
+
+
+WARN: [nf-core/mag] You are attempting to run the pipeline without any custom configuration!
+
+This will be dependent on your local compute environment but can be achieved via one or more of the following:
+   (1) Using an existing pipeline profile e.g. `-profile docker` or `-profile singularity`
+   (2) Using an existing nf-core/configs for your Institution e.g. `-profile crick` or `-profile uppmax`
+   (3) Using your own local custom config e.g. `-c /path/to/your/custom.config`
+
+Please refer to the quick start section and usage docs for the pipeline.
+ 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  Genome '/gpfs/scratch/ajh20fhu/medfly_ref/GCF_000347755.3_Ccap_2.1_genomic.fna.gz' not found in any config files provided to the pipeline.
+  Currently, the available genome keys are:
+  GRCh37, GRCh38, CHM13, GRCm38, TAIR10, EB2, UMD3.1, WBcel235, CanFam3.1, GRCz10, BDGP6, EquCab2, EB1, Galgal4, Gm01, Mmul_1, IRGSP-1.0, CHIMP2.1.4, Rnor_5.0, Rnor_6.0, R64-1-1, EF2, Sbi1, Sscrofa10.2, AGPv3, hg38, hg19, mm10, bosTau8, ce10, canFam3, danRer10, dm6, equCab2, galGal4, panTro4, rn6, sacCer3, susScr3
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

@@ -1,0 +1,37 @@
+[2026-03-29 20:41:04] INFO: GTDB-Tk v2.6.1
+[2026-03-29 20:41:04] INFO: gtdbtk classify_wf --genome_dir /gpfs/scratch/ajh20fhu/nfcore/nfcore_magpipeline_21032026_trial/results/GenomeBinning/COMEBin/bins/dRep --out_dir /gpfs/scratch/ajh20fhu/nfcore/gtdbtk_db/result_COMEBin_dRep --extension fa --cpus 16 --pplacer_cpus 1
+[2026-03-29 20:41:05] INFO: Using GTDB-Tk reference data version r226: /gpfs/scratch/ajh20fhu/gtdbtk_db/release226
+[2026-03-29 20:41:05] INFO: Loading reference genomes.
+[2026-03-29 20:41:06] INFO: Calculating all vs all ANI with skani v0.3.1.
+[2026-03-29 20:41:06] INFO: Sketching refence genomes
+[2026-03-29 20:49:16] INFO: Done
+[2026-03-29 20:49:35] INFO: Capturing skani results.
+[2026-03-29 20:49:45] INFO: Summary of results saved to: /gpfs/scratch/ajh20fhu/nfcore/gtdbtk_db/result_COMEBin_dRep/classify/ani_screen/gtdbtk.bac120.ani_summary.tsv
+[2026-03-29 20:49:45] INFO: 29 genome(s) have been classified using the ANI pre-screening step.
+[2026-03-29 20:49:45] INFO: Done.
+[2026-03-29 20:49:45] INFO: Identifying markers in 3 genomes with 16 threads.
+[2026-03-29 20:49:46] TASK: Running Prodigal V2.6.3 to identify genes.
+[2026-03-29 20:49:47] INFO: Completed 3 genomes in 0.62 seconds (4.86 genomes/second).
+[2026-03-29 20:49:47] TASK: Identifying TIGRFAM protein families.
+[2026-03-29 20:49:47] INFO: Completed 3 genomes in 0.51 seconds (5.87 genomes/second).
+[2026-03-29 20:49:47] TASK: Identifying Pfam protein families.
+[2026-03-29 20:49:47] INFO: Completed 3 genomes in 0.16 seconds (19.35 genomes/second).
+[2026-03-29 20:49:47] INFO: Annotations done using HMMER 3.4 (Aug 2023).
+[2026-03-29 20:49:47] TASK: Summarising identified marker genes.
+[2026-03-29 20:49:47] INFO: Completed 3 genomes in 0.00 seconds (855.98 genomes/second).
+[2026-03-29 20:49:47] INFO: Done.
+[2026-03-29 20:49:50] INFO: Aligning markers in 3 genomes with 16 CPUs.
+[2026-03-29 20:49:50] INFO: Processing 3 genomes identified as bacterial.
+[2026-03-29 20:50:02] INFO: Read concatenated alignment for 136,646 GTDB genomes.
+[2026-03-29 20:50:02] TASK: Generating concatenated alignment for each marker.
+[2026-03-29 20:50:04] INFO: Completed 3 genomes in 0.00 seconds (1,364.45 genomes/second).
+[2026-03-29 20:50:04] TASK: Aligning 0 identified markers using hmmalign 3.4 (Aug 2023).
+[2026-03-29 20:50:06] WARNING: Identified 0 single copy bacterial hits.
+[2026-03-29 20:50:07] INFO: Done.
+[2026-03-29 20:50:08] WARNING: 3 of 32 genomes have been labeled as 'Unclassified'.
+[2026-03-29 20:50:08] INFO: Note that Tk classification mode is insufficient for publication of new taxonomic designations. New designations should be based on one or more de novo trees, an example of which can be produced by Tk in de novo mode.
+[2026-03-29 20:50:08] INFO: Done.
+[2026-03-29 20:50:08] INFO: Removing intermediate files.
+[2026-03-29 20:50:08] INFO: Intermediate files removed.
+[2026-03-29 20:50:08] INFO: Done.
+GTDB-Tk job finished!

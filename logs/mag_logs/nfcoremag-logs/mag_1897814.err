@@ -1,0 +1,8 @@
+[33mNextflow 25.10.4 is available - Please consider updating your version to it(B[m
+The following invalid input values have been detected:
+
+* --input (/gpfs/home/ajh20fhu/medfly_metagenomics/mag_project/samplesheet.csv): Validation of file failed:
+	-> Entry 1: Object does not have some of the required properties [[short_reads_platform]]
+	-> Entry 2: Object does not have some of the required properties [[short_reads_platform]]
+
+ -- Check script '/gpfs/home/ajh20fhu/.nextflow/assets/nf-core/mag/subworkflows/nf-core/utils_nfschema_plugin/main.nf' at line: 68 or see '.nextflow.log' file for more details

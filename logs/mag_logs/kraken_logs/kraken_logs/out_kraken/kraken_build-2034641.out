@@ -1,0 +1,33 @@
+======================================
+STEP 2: KRAKEN2 DATABASE BUILD
+Date: Sat Mar 14 06:21:59 GMT 2026
+======================================
+Creating sequence ID to taxonomy ID map (step 1)...
+Sequence ID to taxonomy ID map already present, skipping map creation.
+Estimating required capacity (step 2)...
+Estimated hash table requirement: 19939807816 bytes
+Capacity estimation complete. [2m24.059s]
+Building database files (step 3)...
+Database files completed. [45m0.767s]
+Database construction complete. [Total: 47m25.185s]
+Inspecting first 20 entries in database:
+# Database options: nucleotide db, k = 35, l = 31
+# Spaced mask = 11111111111111111111111111111111110011001100110011001100110011
+# Toggle mask = 1110001101111110001010001100010000100111000110110101101000101101
+# Total taxonomy nodes: 42762
+# Table size: 3490953953
+# Table capacity: 4984951954
+# Min clear hash value = 0
+100.00	3490953953	1985093	R	1	root
+ 96.59	3371973547	654611	R1	131567	  cellular organisms
+ 61.45	2145328346	1684973	R2	2759	    Eukaryota
+ 51.44	1795627051	384389	R3	33154	      Opisthokonta
+ 28.63	999563877	38300	K	4751	        Fungi
+ 27.38	955823841	118376	K1	451864	          Dikarya
+ 20.98	732241419	7008	P	4890	            Ascomycota
+ 20.76	724628558	68094	P1	716545	              saccharomyceta
+ 16.41	572756015	0	P2	147538	                Pezizomycotina
+ 16.41	572756015	224523	P3	716546	                  leotiomyceta
+ 11.02	384766031	8863	P4	715989	                    sordariomyceta
+ 10.63	371111577	208400	C	147550	                      Sordariomycetes
+  7.32	255697138	71160	C1	222543	                        Hypocreomycetidae

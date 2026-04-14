@@ -1,0 +1,3 @@
+Found 120471/120472 targets, searched through 2984969436 accession IDs, search complete.
+lookup_accession_numbers: 1/120472 accession numbers remain unmapped, see unmapped.txt in DB directory
+slurmstepd: error: *** JOB 2034609 ON compute048 CANCELLED AT 2026-03-14T06:18:42 ***

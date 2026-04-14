@@ -1,0 +1,15 @@
+======================================
+Processing H_13_01
+======================================
+STEP 1: REMOVE MEDFLY HOST READS
+Host removal finished
+STEP 2: KRAKEN2 CLASSIFICATION
+H_13_01 complete
+======================================
+Processing NH_12_01
+======================================
+STEP 1: REMOVE MEDFLY HOST READS
+Host removal finished
+STEP 2: KRAKEN2 CLASSIFICATION
+NH_12_01 complete
+Pipeline complete: Mon Mar 16 18:33:35 GMT 2026

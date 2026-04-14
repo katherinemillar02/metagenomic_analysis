@@ -1,0 +1,10 @@
+Creating Python venv at /gpfs/home/ajh20fhu/metaphlan_env ...
+Collecting pip
+  Downloading https://files.pythonhosted.org/packages/8a/6a/19e9fe04fca059ccf770861c7d5721ab4c2aebc539889e97c7977528a53b/pip-24.0-py3-none-any.whl (2.1MB)
+Installing collected packages: pip
+  Found existing installation: pip 19.0.3
+    Uninstalling pip-19.0.3:
+      Successfully uninstalled pip-19.0.3
+Successfully installed pip-24.0
+Installing MetaPhlAn...
+ERROR: MetaPhlAn not found. Installation failed.

@@ -1,0 +1,55 @@
+
+ N E X T F L O W   ~  version 25.04.6
+
+Launching `https://github.com/nf-core/mag` [wise_goldberg] DSL2 - revision: b52fa53592 [main]
+
+
+------------------------------------------------------
+                                        ,--./,-.
+        ___     __   __   __   ___     /,-._.--~'
+  |\ | |__  __ /  ` /  \ |__) |__         }  {
+  | \| |       \__, \__/ |  \ |___     \`-._,-`-,
+                                        `._,._,'
+  nf-core/mag 5.4.0
+------------------------------------------------------
+
+Input/output options
+  input                   : /gpfs/home/ajh20fhu/medfly_metagenomics/mag_project/samplesheet.csv
+  outdir                  : results
+
+Generic options
+  trace_report_suffix     : 2026-02-27_11-19-33
+
+Taxonomic profiling options
+  gtdbtk_min_completeness : 50.0
+  gtdbtk_max_contamination: 10.0
+
+Bin quality check options
+  run_busco               : true
+
+Core Nextflow options
+  revision                : main
+  runName                 : wise_goldberg
+  containerEngine         : apptainer
+  launchDir               : /gpfs/home/ajh20fhu/medfly_metagenomics/mag_project
+  workDir                 : /gpfs/home/ajh20fhu/medfly_metagenomics/mag_project/work
+  projectDir              : /gpfs/home/ajh20fhu/.nextflow/assets/nf-core/mag
+  userName                : ajh20fhu
+  profile                 : standard
+  configFiles             : /gpfs/home/ajh20fhu/.nextflow/assets/nf-core/mag/nextflow.config, /gpfs/home/ajh20fhu/medfly_metagenomics/mag_project/nextflow.config, /gpfs/home/ajh20fhu/medfly_metagenomics/mag_project/nextflow.config
+
+!! Only displaying parameters that differ from the pipeline defaults !!
+------------------------------------------------------
+
+* The pipeline
+    https://doi.org/10.1093/nargab/lqac007
+
+* The nf-core framework
+    https://doi.org/10.1038/s41587-020-0439-x
+
+* Software dependencies
+    https://github.com/nf-core/mag/blob/main/CITATIONS.md
+
+ERROR ~ Validation of pipeline parameters failed!
+
+ -- Check '.nextflow.log' file for details

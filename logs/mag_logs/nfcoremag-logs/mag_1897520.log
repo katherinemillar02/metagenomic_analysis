@@ -1,0 +1,8 @@
+
+ N E X T F L O W   ~  version 25.04.6
+
+Launching `https://github.com/nf-core/mag` [pensive_wilson] DSL2 - revision: b52fa53592 [main]
+
+ERROR ~ Cannot enable more than one container engine -- Choose either one of: singularity, apptainer
+
+ -- Check '.nextflow.log' file for details

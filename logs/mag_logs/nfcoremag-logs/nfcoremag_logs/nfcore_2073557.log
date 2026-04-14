@@ -1,0 +1,5 @@
+
+ N E X T F L O W   ~  version 25.04.6
+
+Pulling nfcore/mag ...
+WARN: Cannot read project manifest -- Cause: Remote resource not found: https://api.github.com/repos/nfcore/mag/contents/nextflow.config

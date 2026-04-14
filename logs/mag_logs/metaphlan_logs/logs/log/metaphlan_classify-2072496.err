@@ -1,0 +1,78 @@
++ export PS1=
++ PS1=
++ export _CONDA_SET_PROJ_LIB=
++ _CONDA_SET_PROJ_LIB=
++ set +u
++ source /gpfs/software/ada/python/anaconda/2019.10/3.7/etc/profile.d/conda.sh
+++ export CONDA_EXE=/gpfs/software/ada/python/anaconda/2019.10/3.7/bin/conda
+++ CONDA_EXE=/gpfs/software/ada/python/anaconda/2019.10/3.7/bin/conda
+++ export _CE_M=
+++ _CE_M=
+++ export _CE_CONDA=
+++ _CE_CONDA=
+++ export CONDA_PYTHON_EXE=/gpfs/software/ada/python/anaconda/2019.10/3.7/bin/python
+++ CONDA_PYTHON_EXE=/gpfs/software/ada/python/anaconda/2019.10/3.7/bin/python
+++ export PATH=/gpfs/software/ada/python/anaconda/2019.10/3.7/bin:/gpfs/home/ajh20fhu/.conda/envs/metaphlan/bin:/gpfs/home/ajh20fhu/.local/bin:/gpfs/home/ajh20fhu/.local/bin:/gpfs/home/ajh20fhu/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/gpfs/home/ajh20fhu/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/gpfs/home/ajh20fhu/.vscode-server/cli/servers/Stable-07ff9d6178ede9a1bd12ad3399074d726ebe6e43/server/bin/remote-cli:/gpfs/home/ajh20fhu/.local/bin:/gpfs/home/ajh20fhu/.local/bin:/opt/slurm/23.02.6/el8/bin:/opt/slurm/23.02.6/el8/sbin:/usr/local/UEA/bin:/gpfs/home/ajh20fhu/.local/bin:/gpfs/software/ada/python/anaconda/2019.10/3.7/bin:/gpfs/software/ada/python/anaconda/2019.10/3.7/condabin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/lpp/mmfs/bin
+++ PATH=/gpfs/software/ada/python/anaconda/2019.10/3.7/bin:/gpfs/home/ajh20fhu/.conda/envs/metaphlan/bin:/gpfs/home/ajh20fhu/.local/bin:/gpfs/home/ajh20fhu/.local/bin:/gpfs/home/ajh20fhu/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/gpfs/home/ajh20fhu/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/gpfs/home/ajh20fhu/.vscode-server/cli/servers/Stable-07ff9d6178ede9a1bd12ad3399074d726ebe6e43/server/bin/remote-cli:/gpfs/home/ajh20fhu/.local/bin:/gpfs/home/ajh20fhu/.local/bin:/opt/slurm/23.02.6/el8/bin:/opt/slurm/23.02.6/el8/sbin:/usr/local/UEA/bin:/gpfs/home/ajh20fhu/.local/bin:/gpfs/software/ada/python/anaconda/2019.10/3.7/bin:/gpfs/software/ada/python/anaconda/2019.10/3.7/condabin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/lpp/mmfs/bin
+++ '[' -z x ']'
++ conda activate metaphlan
++ '[' 2 -lt 1 ']'
++ local cmd=activate
++ shift
++ case "$cmd" in
++ __conda_activate activate metaphlan
++ '[' -n '' ']'
++ local cmd=activate
++ shift
++ local ask_conda
++ CONDA_INTERNAL_OLDPATH=/gpfs/software/ada/python/anaconda/2019.10/3.7/bin:/gpfs/home/ajh20fhu/.conda/envs/metaphlan/bin:/gpfs/home/ajh20fhu/.local/bin:/gpfs/home/ajh20fhu/.local/bin:/gpfs/home/ajh20fhu/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/gpfs/home/ajh20fhu/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/gpfs/home/ajh20fhu/.vscode-server/cli/servers/Stable-07ff9d6178ede9a1bd12ad3399074d726ebe6e43/server/bin/remote-cli:/gpfs/home/ajh20fhu/.local/bin:/gpfs/home/ajh20fhu/.local/bin:/opt/slurm/23.02.6/el8/bin:/opt/slurm/23.02.6/el8/sbin:/usr/local/UEA/bin:/gpfs/home/ajh20fhu/.local/bin:/gpfs/software/ada/python/anaconda/2019.10/3.7/bin:/gpfs/software/ada/python/anaconda/2019.10/3.7/condabin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/lpp/mmfs/bin
++ __add_sys_prefix_to_path
++ '[' -n '' ']'
+++ dirname /gpfs/software/ada/python/anaconda/2019.10/3.7/bin/conda
++ SYSP=/gpfs/software/ada/python/anaconda/2019.10/3.7/bin
+++ dirname /gpfs/software/ada/python/anaconda/2019.10/3.7/bin
++ SYSP=/gpfs/software/ada/python/anaconda/2019.10/3.7
++ '[' -n '' ']'
++ PATH=/gpfs/software/ada/python/anaconda/2019.10/3.7/bin:/gpfs/software/ada/python/anaconda/2019.10/3.7/bin:/gpfs/home/ajh20fhu/.conda/envs/metaphlan/bin:/gpfs/home/ajh20fhu/.local/bin:/gpfs/home/ajh20fhu/.local/bin:/gpfs/home/ajh20fhu/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/gpfs/home/ajh20fhu/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/gpfs/home/ajh20fhu/.vscode-server/cli/servers/Stable-07ff9d6178ede9a1bd12ad3399074d726ebe6e43/server/bin/remote-cli:/gpfs/home/ajh20fhu/.local/bin:/gpfs/home/ajh20fhu/.local/bin:/opt/slurm/23.02.6/el8/bin:/opt/slurm/23.02.6/el8/sbin:/usr/local/UEA/bin:/gpfs/home/ajh20fhu/.local/bin:/gpfs/software/ada/python/anaconda/2019.10/3.7/bin:/gpfs/software/ada/python/anaconda/2019.10/3.7/condabin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/lpp/mmfs/bin
++ export PATH
+++ PS1=
+++ /gpfs/software/ada/python/anaconda/2019.10/3.7/bin/conda shell.posix activate metaphlan
++ ask_conda='PS1='\''(metaphlan) '\''
+export PATH='\''/gpfs/software/ada/python/anaconda/2019.10/3.7/bin:/gpfs/home/ajh20fhu/.conda/envs/metaphlan/bin:/gpfs/home/ajh20fhu/.local/bin:/gpfs/home/ajh20fhu/.local/bin:/gpfs/home/ajh20fhu/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/gpfs/home/ajh20fhu/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/gpfs/home/ajh20fhu/.vscode-server/cli/servers/Stable-07ff9d6178ede9a1bd12ad3399074d726ebe6e43/server/bin/remote-cli:/gpfs/home/ajh20fhu/.local/bin:/gpfs/home/ajh20fhu/.local/bin:/opt/slurm/23.02.6/el8/bin:/opt/slurm/23.02.6/el8/sbin:/usr/local/UEA/bin:/gpfs/home/ajh20fhu/.local/bin:/gpfs/software/ada/python/anaconda/2019.10/3.7/bin:/gpfs/software/ada/python/anaconda/2019.10/3.7/condabin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/lpp/mmfs/bin'\''
+export CONDA_SHLVL='\''2'\''
+export CONDA_PROMPT_MODIFIER='\''(metaphlan) '\'''
++ rc=0
++ PATH=/gpfs/software/ada/python/anaconda/2019.10/3.7/bin:/gpfs/home/ajh20fhu/.conda/envs/metaphlan/bin:/gpfs/home/ajh20fhu/.local/bin:/gpfs/home/ajh20fhu/.local/bin:/gpfs/home/ajh20fhu/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/gpfs/home/ajh20fhu/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/gpfs/home/ajh20fhu/.vscode-server/cli/servers/Stable-07ff9d6178ede9a1bd12ad3399074d726ebe6e43/server/bin/remote-cli:/gpfs/home/ajh20fhu/.local/bin:/gpfs/home/ajh20fhu/.local/bin:/opt/slurm/23.02.6/el8/bin:/opt/slurm/23.02.6/el8/sbin:/usr/local/UEA/bin:/gpfs/home/ajh20fhu/.local/bin:/gpfs/software/ada/python/anaconda/2019.10/3.7/bin:/gpfs/software/ada/python/anaconda/2019.10/3.7/condabin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/lpp/mmfs/bin
++ eval 'PS1='\''(metaphlan) '\''
+export PATH='\''/gpfs/software/ada/python/anaconda/2019.10/3.7/bin:/gpfs/home/ajh20fhu/.conda/envs/metaphlan/bin:/gpfs/home/ajh20fhu/.local/bin:/gpfs/home/ajh20fhu/.local/bin:/gpfs/home/ajh20fhu/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/gpfs/home/ajh20fhu/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/gpfs/home/ajh20fhu/.vscode-server/cli/servers/Stable-07ff9d6178ede9a1bd12ad3399074d726ebe6e43/server/bin/remote-cli:/gpfs/home/ajh20fhu/.local/bin:/gpfs/home/ajh20fhu/.local/bin:/opt/slurm/23.02.6/el8/bin:/opt/slurm/23.02.6/el8/sbin:/usr/local/UEA/bin:/gpfs/home/ajh20fhu/.local/bin:/gpfs/software/ada/python/anaconda/2019.10/3.7/bin:/gpfs/software/ada/python/anaconda/2019.10/3.7/condabin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/lpp/mmfs/bin'\''
+export CONDA_SHLVL='\''2'\''
+export CONDA_PROMPT_MODIFIER='\''(metaphlan) '\'''
+++ PS1='(metaphlan) '
+++ export PATH=/gpfs/software/ada/python/anaconda/2019.10/3.7/bin:/gpfs/home/ajh20fhu/.conda/envs/metaphlan/bin:/gpfs/home/ajh20fhu/.local/bin:/gpfs/home/ajh20fhu/.local/bin:/gpfs/home/ajh20fhu/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/gpfs/home/ajh20fhu/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/gpfs/home/ajh20fhu/.vscode-server/cli/servers/Stable-07ff9d6178ede9a1bd12ad3399074d726ebe6e43/server/bin/remote-cli:/gpfs/home/ajh20fhu/.local/bin:/gpfs/home/ajh20fhu/.local/bin:/opt/slurm/23.02.6/el8/bin:/opt/slurm/23.02.6/el8/sbin:/usr/local/UEA/bin:/gpfs/home/ajh20fhu/.local/bin:/gpfs/software/ada/python/anaconda/2019.10/3.7/bin:/gpfs/software/ada/python/anaconda/2019.10/3.7/condabin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/lpp/mmfs/bin
+++ PATH=/gpfs/software/ada/python/anaconda/2019.10/3.7/bin:/gpfs/home/ajh20fhu/.conda/envs/metaphlan/bin:/gpfs/home/ajh20fhu/.local/bin:/gpfs/home/ajh20fhu/.local/bin:/gpfs/home/ajh20fhu/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/gpfs/home/ajh20fhu/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/gpfs/home/ajh20fhu/.vscode-server/cli/servers/Stable-07ff9d6178ede9a1bd12ad3399074d726ebe6e43/server/bin/remote-cli:/gpfs/home/ajh20fhu/.local/bin:/gpfs/home/ajh20fhu/.local/bin:/opt/slurm/23.02.6/el8/bin:/opt/slurm/23.02.6/el8/sbin:/usr/local/UEA/bin:/gpfs/home/ajh20fhu/.local/bin:/gpfs/software/ada/python/anaconda/2019.10/3.7/bin:/gpfs/software/ada/python/anaconda/2019.10/3.7/condabin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/lpp/mmfs/bin
+++ export CONDA_SHLVL=2
+++ CONDA_SHLVL=2
+++ export 'CONDA_PROMPT_MODIFIER=(metaphlan) '
+++ CONDA_PROMPT_MODIFIER='(metaphlan) '
++ '[' 0 '!=' 0 ']'
++ __conda_hashr
++ '[' -n '' ']'
++ '[' -n '' ']'
++ hash -r
++ set -u
++ INPUT_DIR=/gpfs/scratch/ajh20fhu/post-qc/results
++ OUTPUT_DIR=metaphlan_results
++ LOG_DIR=logs
++ mkdir -p metaphlan_results
++ mkdir -p logs
++ mkdir -p out log
++ MASTER_LOG=logs/metaphlan_master.log
++ ERROR_LOG=logs/metaphlan_error.log
+++ date
++ echo '=== MetaPhlAn run started at Fri Mar 20 16:21:50 GMT 2026 ==='
++ for R1 in $INPUT_DIR/*.R1.fastq.gz
++ '[' '!' -f '/gpfs/scratch/ajh20fhu/post-qc/results/*.R1.fastq.gz' ']'
++ echo 'Missing file: /gpfs/scratch/ajh20fhu/post-qc/results/*.R1.fastq.gz'
++ continue
+++ date
++ echo '=== MetaPhlAn run finished at Fri Mar 20 16:21:50 GMT 2026 ==='

@@ -1,0 +1,6 @@
+[2026-03-29 16:45:12] INFO: GTDB-Tk v2.6.1
+[2026-03-29 16:45:12] INFO: gtdbtk classify_wf --genome_dir /gpfs/scratch/ajh20fhu/nfcore/nfcore_magpipeline_21032026_trial/results/GenomeBinning/COMEBin/bins --out_dir /gpfs/scratch/ajh20fhu/nfcore/gtdbtk_db/results_COMEBin --extension fa --cpus 16 --pplacer_cpus 1
+[2026-03-29 16:45:12] INFO: Using GTDB-Tk reference data version r226: /gpfs/scratch/ajh20fhu/gtdbtk_db/release226
+[2026-03-29 16:45:12] ERROR: No genomes found in directory: /gpfs/scratch/ajh20fhu/nfcore/nfcore_magpipeline_21032026_trial/results/GenomeBinning/COMEBin/bins. Check the --extension flag used to identify genomes.
+[2026-03-29 16:45:12] ERROR: Controlled exit resulting from an unrecoverable error or warning.
+GTDB-Tk job finished!

@@ -1,0 +1,19 @@
+Mar-27 04:35:42.406 [main] DEBUG nextflow.cli.Launcher - $> nextflow run nf-core/taxprofiler -profile apptainer --input /gpfs/scratch/ajh20fhu/taxprofiler/samplesheet.csv --databases /gpfs/scratch/ajh20fhu/taxprofiler/databases.csv --outdir taxprofiler_results --run_kraken2 --run_metaphlan -resume
+Mar-27 04:35:42.552 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 25.04.6
+Mar-27 04:35:42.596 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/gpfs/home/ajh20fhu/.nextflow/plugins; core-plugins: nf-amazon@2.15.0,nf-azure@1.16.0,nf-cloudcache@0.4.3,nf-codecommit@0.2.3,nf-console@1.2.1,nf-google@1.21.1,nf-k8s@1.0.0,nf-tower@1.11.4,nf-wave@1.12.1
+Mar-27 04:35:42.697 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Mar-27 04:35:42.698 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Mar-27 04:35:42.700 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+Mar-27 04:35:42.709 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Mar-27 04:35:42.719 [main] DEBUG nextflow.scm.ProviderConfig - Using SCM config path: /gpfs/home/ajh20fhu/.nextflow/scm
+Mar-27 04:35:43.419 [main] DEBUG nextflow.scm.AssetManager - Git config: /gpfs/home/ajh20fhu/.nextflow/assets/nf-core/taxprofiler/.git/config; branch: master; remote: origin; url: https://github.com/nf-core/taxprofiler.git
+Mar-27 04:35:43.445 [main] DEBUG nextflow.scm.RepositoryFactory - Found Git repository result: [RepositoryFactory]
+Mar-27 04:35:43.453 [main] DEBUG nextflow.scm.AssetManager - Git config: /gpfs/home/ajh20fhu/.nextflow/assets/nf-core/taxprofiler/.git/config; branch: master; remote: origin; url: https://github.com/nf-core/taxprofiler.git
+Mar-27 04:35:43.791 [main] DEBUG nextflow.cli.Launcher - Operation aborted
+nextflow.exception.AbortOperationException: Project `nf-core/taxprofiler` is currently stuck on revision: 1.2.6 -- you need to explicitly specify a revision with the option `-r` in order to use it
+	at nextflow.scm.AssetManager.checkout(AssetManager.groovy:942)
+	at nextflow.cli.CmdRun.getScriptFile0(CmdRun.groovy:598)
+	at nextflow.cli.CmdRun.getScriptFile(CmdRun.groovy:524)
+	at nextflow.cli.CmdRun.run(CmdRun.groovy:326)
+	at nextflow.cli.Launcher.run(Launcher.groovy:513)
+	at nextflow.cli.Launcher.main(Launcher.groovy:673)

@@ -1,0 +1,131 @@
+
+ N E X T F L O W   ~  version 25.04.6
+
+Launching `https://github.com/nf-core/taxprofiler` [cheesy_curran] DSL2 - revision: 3c3fb68033 [1.2.6]
+
+
+------------------------------------------------------
+                                        ,--./,-.
+        ___     __   __   __   ___     /,-._.--~'
+  |\ | |__  __ /  ` /  \ |__) |__         }  {
+  | \| |       \__, \__/ |  \ |___     \`-._,-`-,
+                                        `._,._,'
+  nf-core/taxprofiler 1.2.6
+------------------------------------------------------
+
+Input/output options
+  input              : /gpfs/scratch/ajh20fhu/taxprofiler/samplesheet.csv
+  databases          : /gpfs/scratch/ajh20fhu/taxprofiler/databases.csv
+  outdir             : taxprofiler_results
+
+Profiling options
+  run_kraken2        : true
+  run_metaphlan      : true
+
+Generic options
+  trace_report_suffix: 2026-03-27_05-53-32
+
+Core Nextflow options
+  revision           : 1.2.6
+  runName            : cheesy_curran
+  containerEngine    : apptainer
+  launchDir          : /gpfs/scratch/ajh20fhu/scripts
+  workDir            : /gpfs/scratch/ajh20fhu/scripts/work
+  projectDir         : /gpfs/home/ajh20fhu/.nextflow/assets/nf-core/taxprofiler
+  userName           : ajh20fhu
+  profile            : apptainer
+  configFiles        : /gpfs/home/ajh20fhu/.nextflow/assets/nf-core/taxprofiler/nextflow.config
+
+!! Only displaying parameters that differ from the pipeline defaults !!
+------------------------------------------------------
+
+* The pipeline
+    https://doi.org/10.1101/2023.10.20.563221
+
+* The nf-core framework
+    https://doi.org/10.1038/s41587-020-0439-x
+
+* Software dependencies
+    https://github.com/nf-core/taxprofiler/blob/master/CITATIONS.md
+
+[-        ] NFC…PROFILER:TAXPROFILER:UNTAR -
+[-        ] NFC…ROFILER:TAXPROFILER:FASTQC -
+[-        ] NFC…:PROFILING:KRAKEN2_KRAKEN2 -
+
+[-        ] NFC…PROFILER:TAXPROFILER:UNTAR -
+[-        ] NFC…ROFILER:TAXPROFILER:FASTQC -
+[-        ] NFC…:PROFILING:KRAKEN2_KRAKEN2 -
+[-        ] NFC…FILING:METAPHLAN_METAPHLAN -
+[-        ] NFC…OFILER:TAXPROFILER:MULTIQC -
+
+executor >  local (2)
+[-        ] NFC…PROFILER:TAXPROFILER:UNTAR -
+[f1/1fcd4c] NFC…ER:FASTQC (H_13_01_nohost) | 2 of 2, cached: 2 ✔
+[5e/3b7923] NFC…d|kraken2|NH_12_01_nohost) | 2 of 2, cached: 2 ✔
+[a5/7e9f9b] NFC… (mpa_v30|NH_12_01_nohost) | 0 of 2
+[-        ] NFC…OFILER:TAXPROFILER:MULTIQC -
+
+executor >  local (2)
+[-        ] NFC…PROFILER:TAXPROFILER:UNTAR -
+[f1/1fcd4c] NFC…ER:FASTQC (H_13_01_nohost) | 2 of 2, cached: 2 ✔
+[5e/3b7923] NFC…d|kraken2|NH_12_01_nohost) | 2 of 2, cached: 2 ✔
+[a5/7e9f9b] NFC… (mpa_v30|NH_12_01_nohost) | 1 of 2
+[-        ] NFC…OFILER:TAXPROFILER:MULTIQC -
+
+executor >  local (2)
+[-        ] NFC…PROFILER:TAXPROFILER:UNTAR -
+[f1/1fcd4c] NFC…ER:FASTQC (H_13_01_nohost) | 2 of 2, cached: 2 ✔
+[5e/3b7923] NFC…d|kraken2|NH_12_01_nohost) | 2 of 2, cached: 2 ✔
+[30/7397e1] NFC…N (mpa_v30|H_13_01_nohost) | 2 of 2 ✔
+[-        ] NFC…OFILER:TAXPROFILER:MULTIQC -
+Pulling Apptainer image docker://community.wave.seqera.io/library/multiqc:1.32--d58f60e4deb769bf [cache /gpfs/scratch/ajh20fhu/scripts/work/singularity/community.wave.seqera.io-library-multiqc-1.32--d58f60e4deb769bf.img]
+WARN: Apptainer cache directory has not been defined -- Remote image will be stored in the path: /gpfs/scratch/ajh20fhu/scripts/work/singularity -- Use the environment variable NXF_APPTAINER_CACHEDIR to specify a different location
+
+executor >  local (3)
+[-        ] NFC…PROFILER:TAXPROFILER:UNTAR -
+[f1/1fcd4c] NFC…ER:FASTQC (H_13_01_nohost) | 2 of 2, cached: 2 ✔
+[5e/3b7923] NFC…d|kraken2|NH_12_01_nohost) | 2 of 2, cached: 2 ✔
+[30/7397e1] NFC…N (mpa_v30|H_13_01_nohost) | 2 of 2 ✔
+[98/8aba74] NFC…OFILER:TAXPROFILER:MULTIQC | 0 of 1
+
+
+
+executor >  local (3)
+[-        ] NFC…PROFILER:TAXPROFILER:UNTAR -
+[f1/1fcd4c] NFC…ER:FASTQC (H_13_01_nohost) | 2 of 2, cached: 2 ✔
+[5e/3b7923] NFC…d|kraken2|NH_12_01_nohost) | 2 of 2, cached: 2 ✔
+[30/7397e1] NFC…N (mpa_v30|H_13_01_nohost) | 2 of 2 ✔
+[98/8aba74] NFC…OFILER:TAXPROFILER:MULTIQC | 0 of 1
+
+
+
+executor >  local (3)
+[-        ] NFC…PROFILER:TAXPROFILER:UNTAR -
+[f1/1fcd4c] NFC…ER:FASTQC (H_13_01_nohost) | 2 of 2, cached: 2 ✔
+[5e/3b7923] NFC…d|kraken2|NH_12_01_nohost) | 2 of 2, cached: 2 ✔
+[30/7397e1] NFC…N (mpa_v30|H_13_01_nohost) | 2 of 2 ✔
+[98/8aba74] NFC…OFILER:TAXPROFILER:MULTIQC | 1 of 1 ✔
+
+executor >  local (3)
+[-        ] NFC…PROFILER:TAXPROFILER:UNTAR -
+[f1/1fcd4c] NFC…ER:FASTQC (H_13_01_nohost) | 2 of 2, cached: 2 ✔
+[5e/3b7923] NFC…d|kraken2|NH_12_01_nohost) | 2 of 2, cached: 2 ✔
+[30/7397e1] NFC…N (mpa_v30|H_13_01_nohost) | 2 of 2 ✔
+[98/8aba74] NFC…OFILER:TAXPROFILER:MULTIQC | 1 of 1 ✔
+-[nf-core/taxprofiler] Pipeline completed successfully-
+
+executor >  local (3)
+[-        ] NFC…PROFILER:TAXPROFILER:UNTAR -
+[f1/1fcd4c] NFC…ER:FASTQC (H_13_01_nohost) | 2 of 2, cached: 2 ✔
+[5e/3b7923] NFC…d|kraken2|NH_12_01_nohost) | 2 of 2, cached: 2 ✔
+[30/7397e1] NFC…N (mpa_v30|H_13_01_nohost) | 2 of 2 ✔
+[98/8aba74] NFC…OFILER:TAXPROFILER:MULTIQC | 1 of 1 ✔
+-[nf-core/taxprofiler] Pipeline completed successfully-
+Completed at: 27-Mar-2026 06:05:21
+Duration    : 11m 48s
+CPU hours   : 2.9 (28.4% cached)
+Succeeded   : 3
+Cached      : 4
+
+
+nf-core/taxprofiler run launched

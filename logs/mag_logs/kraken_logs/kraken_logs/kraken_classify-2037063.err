@@ -1,0 +1,21 @@
+7537225 reads; of these:
+  7537225 (100.00%) were paired; of these:
+    5891621 (78.17%) aligned concordantly 0 times
+    1444339 (19.16%) aligned concordantly exactly 1 time
+    201265 (2.67%) aligned concordantly >1 times
+    ----
+    5891621 pairs aligned concordantly 0 times; of these:
+      11570 (0.20%) aligned discordantly 1 time
+    ----
+    5880051 pairs aligned 0 times concordantly or discordantly; of these:
+      11760102 mates make up the pairs; of these:
+        11571010 (98.39%) aligned 0 times
+        152673 (1.30%) aligned exactly 1 time
+        36419 (0.31%) aligned >1 times
+23.24% overall alignment rate
+Loading database information...gzip: /gpfs/scratch/ajh20fhu/medfly_metagenomics/results/H_13_01_nohost.1.fastq.gz: No such file or directory
+gzip: /gpfs/scratch/ajh20fhu/medfly_metagenomics/results/H_13_01_nohost.2.fastq.gz: No such file or directory
+ done.
+0 sequences (0.00 Mbp) processed in 0.017s (0.0 Kseq/m, 0.00 Mbp/m).
+  0 sequences classified (-nan%)
+  0 sequences unclassified (-nan%)

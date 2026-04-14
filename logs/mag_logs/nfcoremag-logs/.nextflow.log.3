@@ -1,0 +1,85 @@
+Feb-27 11:17:51.209 [main] DEBUG nextflow.cli.Launcher - $> nextflow run nf-core/mag -profile singularity --input /gpfs/home/ajh20fhu/medfly_metagenomics/mag_project/samplesheet.csv --outdir results -c /gpfs/home/ajh20fhu/medfly_metagenomics/mag_project/nextflow.config
+Feb-27 11:17:51.479 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 25.04.6
+Feb-27 11:17:51.498 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/gpfs/home/ajh20fhu/.nextflow/plugins; core-plugins: nf-amazon@2.15.0,nf-azure@1.16.0,nf-cloudcache@0.4.3,nf-codecommit@0.2.3,nf-console@1.2.1,nf-google@1.21.1,nf-k8s@1.0.0,nf-tower@1.11.4,nf-wave@1.12.1
+Feb-27 11:17:51.543 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Feb-27 11:17:51.544 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Feb-27 11:17:51.547 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+Feb-27 11:17:51.556 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Feb-27 11:17:51.565 [main] DEBUG nextflow.scm.ProviderConfig - Using SCM config path: /gpfs/home/ajh20fhu/.nextflow/scm
+Feb-27 11:17:52.321 [main] DEBUG nextflow.scm.AssetManager - Git config: /gpfs/home/ajh20fhu/.nextflow/assets/nf-core/mag/.git/config; branch: main; remote: origin; url: https://github.com/nf-core/mag.git
+Feb-27 11:17:52.346 [main] DEBUG nextflow.scm.RepositoryFactory - Found Git repository result: [RepositoryFactory]
+Feb-27 11:17:52.353 [main] DEBUG nextflow.scm.AssetManager - Git config: /gpfs/home/ajh20fhu/.nextflow/assets/nf-core/mag/.git/config; branch: main; remote: origin; url: https://github.com/nf-core/mag.git
+Feb-27 11:17:53.288 [main] DEBUG nextflow.config.ConfigBuilder - Found config base: /gpfs/home/ajh20fhu/.nextflow/assets/nf-core/mag/nextflow.config
+Feb-27 11:17:53.292 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /gpfs/home/ajh20fhu/medfly_metagenomics/mag_project/nextflow.config
+Feb-27 11:17:53.293 [main] DEBUG nextflow.config.ConfigBuilder - User config file: /gpfs/home/ajh20fhu/medfly_metagenomics/mag_project/nextflow.config
+Feb-27 11:17:53.294 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /gpfs/home/ajh20fhu/.nextflow/assets/nf-core/mag/nextflow.config
+Feb-27 11:17:53.295 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /gpfs/home/ajh20fhu/medfly_metagenomics/mag_project/nextflow.config
+Feb-27 11:17:53.295 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /gpfs/home/ajh20fhu/medfly_metagenomics/mag_project/nextflow.config
+Feb-27 11:17:53.302 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /gpfs/home/ajh20fhu/.nextflow/secrets/store.json
+Feb-27 11:17:53.304 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@7ecda95b] - activable => nextflow.secret.LocalSecretsProvider@7ecda95b
+Feb-27 11:17:53.313 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `singularity`
+Feb-27 11:17:54.700 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `singularity`
+Feb-27 11:17:54.734 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `singularity`
+Feb-27 11:17:54.739 [main] DEBUG nextflow.config.ConfigBuilder - Available config profiles: [bih, cfc_dev, uzl_omics, ifb_core, embl_hd, denbi_qbic, alice, mjolnir_globe, uppmax, giga, incliva, ilifu, ki_luria, uge, icr_alma, rosalind_uge, lugh, mccleary, unibe_ibu, vai, czbiohub_aws, jax, roslin, iris, tes, scw, unc_longleaf, tigem, tubingen_apg, apollo, ipop_up, vsc_calcua, pdc_kth, ceci_nic5, ccga_cau, humantechnopole, stjude, daisybio, eddie, medair, biowulf, apptainer, bi, test_minimal, bigpurple, adcra, cedars, pawsey_setonix, vsc_kul_uhasselt, pawsey_nimbus, rki, ucl_myriad, utd_ganymede, charliecloud, fred_hutch, seattlechildrens, icr_davros, ceres, munin, rosalind, hasta, cfc, emulate_amd64, uzh, shu_bmrc, ebi_codon_slurm, test_alternatives, ebc, ccga_dx, test_hybrid, crick, ku_sund_danhead, marvin, lrz_cm4, shifter, biohpc_gen, mana, mamba, york_viking, unc_lccc, wehi, awsbatch, wustl_htcf, arcc, ceci_dragon2, imperial, maestro, software_license, cannon, genotoul, nci_gadi, abims, eva_grace, janelia, nu_genomics, googlebatch, oist, sahmri, kaust, alliance_canada, arm64, mpcdf, leicester, vsc_ugent, create, sage, cambridge, jex, test_assembly_input, podman, ebi_codon, cheaha, xanadu, nyu_hpc, test, marjorie, test_longreadonly_alternatives, computerome, ucd_sonic, gpu, test_single_end, seg_globe, mssm, sanger, dkfz, bluebear, pasteur, einstein, ethz_euler, m3c, test_full, imb, ucl_cscluster, tuos_stanage, azurebatch, seadragon, crukmi, csiro_petrichor, qmul_apocrita, wave, docker, engaging, gis, hypatia, psmn, eva, unity, cropdiversityhpc, nygc, fgcz, conda, crg, singularity, mpcdf_viper, dirac, self_hosted_runner, tufts, uw_hyak_pedslabs, binac2, debug, hki_genie, genouest, cbe, unsw_katana, utd_juno, phoenix, seawulf, test_longreadonly, uod_hpc, fub_curta, lovelace, uct_hpc, aws_tower, binac, fsu_draco]
+Feb-27 11:17:54.797 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 by global default
+Feb-27 11:17:54.798 [main] DEBUG nextflow.cli.CmdRun - Launching `https://github.com/nf-core/mag` [pensive_wilson] DSL2 - revision: b52fa53592 [main]
+Feb-27 11:17:54.799 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins declared=[nf-schema@2.5.1]
+Feb-27 11:17:54.799 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Feb-27 11:17:54.799 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[nf-schema@2.5.1]
+Feb-27 11:17:54.801 [main] DEBUG nextflow.plugin.PluginUpdater - Installing plugin nf-schema version: 2.5.1
+Feb-27 11:17:54.923 [main] INFO  org.pf4j.AbstractPluginManager - Plugin 'nf-schema@2.5.1' resolved
+Feb-27 11:17:54.923 [main] INFO  org.pf4j.AbstractPluginManager - Start plugin 'nf-schema@2.5.1'
+Feb-27 11:17:54.982 [main] DEBUG nextflow.plugin.BasePlugin - Plugin started nf-schema@2.5.1
+Feb-27 11:17:55.020 [main] DEBUG nextflow.Session - Session UUID: 0a2eaf41-f7f1-4c79-b3f2-452ef7750c9d
+Feb-27 11:17:55.020 [main] DEBUG nextflow.Session - Run name: pensive_wilson
+Feb-27 11:17:55.021 [main] DEBUG nextflow.Session - Executor pool size: 5
+Feb-27 11:17:55.026 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Feb-27 11:17:55.030 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=15; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Feb-27 11:17:55.089 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 25.04.6 build 5954
+  Created: 01-07-2025 11:27 UTC (12:27 BST)
+  System: Linux 4.18.0-553.85.1.el8_10.x86_64
+  Runtime: Groovy 4.0.26 on OpenJDK 64-Bit Server VM 24.0.2+12-54
+  Encoding: UTF-8 (ANSI_X3.4-1968)
+  Process: 965033@compute081.hali.private [10.0.17.81]
+  CPUs: 5 - Mem: 24 GB (23.6 GB) - Swap: 0 (0)
+Feb-27 11:17:55.114 [main] DEBUG nextflow.Session - Work-dir: /gpfs/home/ajh20fhu/medfly_metagenomics/mag_project/work [gpfs]
+Feb-27 11:17:55.287 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Feb-27 11:17:55.295 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Feb-27 11:17:55.312 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
+Feb-27 11:17:55.314 [main] DEBUG nextflow.Session - Observer factory (v2): ValidationObserverFactory
+Feb-27 11:17:55.360 [main] ERROR nextflow.cli.Launcher - @unknown
+nextflow.exception.IllegalConfigException: Cannot enable more than one container engine -- Choose either one of: singularity, apptainer
+	at nextflow.Session.memoizedMethodPriv$getContainerConfigString(Session.groovy:1228)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+	at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1333)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1088)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
+	at org.codehaus.groovy.runtime.InvokerHelper.invokePogoMethod(InvokerHelper.java:645)
+	at org.codehaus.groovy.runtime.InvokerHelper.invokeMethod(InvokerHelper.java:628)
+	at org.codehaus.groovy.runtime.InvokerHelper.invokeMethodSafe(InvokerHelper.java:82)
+	at nextflow.Session$_closure5.doCall(Session.groovy)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:280)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
+	at groovy.lang.Closure.call(Closure.java:433)
+	at org.codehaus.groovy.runtime.memoize.Memoize$MemoizeFunction.lambda$call$0(Memoize.java:137)
+	at org.codehaus.groovy.runtime.memoize.ConcurrentCommonCache.getAndPut(ConcurrentCommonCache.java:137)
+	at org.codehaus.groovy.runtime.memoize.ConcurrentCommonCache.getAndPut(ConcurrentCommonCache.java:113)
+	at org.codehaus.groovy.runtime.memoize.Memoize$MemoizeFunction.call(Memoize.java:136)
+	at groovy.lang.Closure.call(Closure.java:422)
+	at nextflow.Session.getContainerConfig(Session.groovy)
+	at nextflow.Session.getContainerConfig(Session.groovy:1240)
+	at nextflow.script.WorkflowMetadata.containerEngine0(WorkflowMetadata.groovy:292)
+	at nextflow.script.WorkflowMetadata.<init>(WorkflowMetadata.groovy:275)
+	at nextflow.Session.init(Session.groovy:445)
+	at nextflow.script.ScriptRunner.execute(ScriptRunner.groovy:130)
+	at nextflow.cli.CmdRun.run(CmdRun.groovy:379)
+	at nextflow.cli.Launcher.run(Launcher.groovy:513)
+	at nextflow.cli.Launcher.main(Launcher.groovy:673)

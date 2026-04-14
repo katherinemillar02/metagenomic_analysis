@@ -1,0 +1,42 @@
+7529565 reads; of these:
+  7529565 (100.00%) were paired; of these:
+    5873837 (78.01%) aligned concordantly 0 times
+    1452852 (19.30%) aligned concordantly exactly 1 time
+    202876 (2.69%) aligned concordantly >1 times
+    ----
+    5873837 pairs aligned concordantly 0 times; of these:
+      4857 (0.08%) aligned discordantly 1 time
+    ----
+    5868980 pairs aligned 0 times concordantly or discordantly; of these:
+      11737960 mates make up the pairs; of these:
+        11550948 (98.41%) aligned 0 times
+        151556 (1.29%) aligned exactly 1 time
+        35456 (0.30%) aligned >1 times
+23.30% overall alignment rate
+gzip: gzip: /gpfs/scratch/ajh20fhu/post-qc/results/H_13_01_nohost.2.fastq.gz: No such file or directory
+/gpfs/scratch/ajh20fhu/post-qc/results/H_13_01_nohost.1.fastq.gz: No such file or directory
+Loading database information... done.
+0 sequences (0.00 Mbp) processed in 0.048s (0.0 Kseq/m, 0.00 Mbp/m).
+  0 sequences classified (-nan%)
+  0 sequences unclassified (-nan%)
+6357700 reads; of these:
+  6357700 (100.00%) were paired; of these:
+    4933806 (77.60%) aligned concordantly 0 times
+    1260806 (19.83%) aligned concordantly exactly 1 time
+    163088 (2.57%) aligned concordantly >1 times
+    ----
+    4933806 pairs aligned concordantly 0 times; of these:
+      5533 (0.11%) aligned discordantly 1 time
+    ----
+    4928273 pairs aligned 0 times concordantly or discordantly; of these:
+      9856546 mates make up the pairs; of these:
+        9692165 (98.33%) aligned 0 times
+        133672 (1.36%) aligned exactly 1 time
+        30709 (0.31%) aligned >1 times
+23.78% overall alignment rate
+gzip: gzip: /gpfs/scratch/ajh20fhu/post-qc/results/NH_12_01_nohost.1.fastq.gz: No such file or directory
+/gpfs/scratch/ajh20fhu/post-qc/results/NH_12_01_nohost.2.fastq.gz: No such file or directory
+Loading database information... done.
+0 sequences (0.00 Mbp) processed in 0.053s (0.0 Kseq/m, 0.00 Mbp/m).
+  0 sequences classified (-nan%)
+  0 sequences unclassified (-nan%)
