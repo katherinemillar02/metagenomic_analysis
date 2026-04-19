@@ -1,0 +1,24 @@
+Could not find conda environment: drep_env
+You can list all discoverable environments with `conda info --envs`.
+
+***************************************************
+    ..:: dRep dereplicate Step 1. Filter ::..
+***************************************************
+    
+Will filter the genome list
+Loading genomes from a list
+Nevermind! Ill try loading as a genome now
+Traceback (most recent call last):
+  File "/gpfs/software/ada/python/anaconda/2019.10/3.7/bin/dRep", line 33, in <module>
+    controller.parseArguments(args)
+  File "/gpfs/software/ada/python/anaconda/2019.10/3.7/lib/python3.7/site-packages/drep/controller.py", line 144, in parseArguments
+    self.dereplicate_operation(**vars(args))
+  File "/gpfs/software/ada/python/anaconda/2019.10/3.7/lib/python3.7/site-packages/drep/controller.py", line 86, in dereplicate_operation
+    drep.d_workflows.dereplicate_wrapper(kwargs['work_directory'],**kwargs)
+  File "/gpfs/software/ada/python/anaconda/2019.10/3.7/lib/python3.7/site-packages/drep/d_workflows.py", line 28, in dereplicate_wrapper
+    drep.d_filter.d_filter_wrapper(wd, genomes = genomes, Chdb = Chdb, **kwargs)
+  File "/gpfs/software/ada/python/anaconda/2019.10/3.7/lib/python3.7/site-packages/drep/d_filter.py", line 65, in d_filter_wrapper
+    bdb = drep.d_cluster.load_genomes(kwargs['genomes'])
+  File "/gpfs/software/ada/python/anaconda/2019.10/3.7/lib/python3.7/site-packages/drep/d_cluster.py", line 1531, in load_genomes
+    assert os.path.isfile(genome), "{0} is not a file".format(genome)
+AssertionError: /gpfs/scratch/ajh20fhu/nfcore/drep/all_bins/*.fa is not a file

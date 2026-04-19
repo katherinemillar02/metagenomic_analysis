@@ -1,0 +1,18 @@
+Path to Cutadapt set as: 'cutadapt' (default)
+Cutadapt seems to be working fine (tested command 'cutadapt --version')
+Cutadapt version: 4.9
+Cutadapt seems to be using Python 3! Proceeding with multi-core enabled Cutadapt using 8 cores
+Proceeding with 'gzip' for compression. PLEASE NOTE: Using multi-cores for trimming with 'gzip' only has only very limited effect! (see here: https://github.com/FelixKrueger/TrimGalore/issues/16#issuecomment-458557103)
+To increase performance, please install 'pigz' and run again
+
+Proceeding with 'gzip' for decompression
+To decrease CPU usage of decompression, please install 'igzip' and run again
+
+No quality encoding type selected. Assuming that the data provided uses Sanger encoded Phred scores (default)
+
+Output will be written into the directory: /gpfs/scratch/ajh20fhu/qc/
+gzip: /gpfs/scratch/ajh20fhu/fastq/X204SC26022514-Z01-F001/01.RawData/H_13_01/*/*_1.fq.gz: No such file or directory
+Input file '/gpfs/scratch/ajh20fhu/fastq/X204SC26022514-Z01-F001/01.RawData/H_13_01/*/*_1.fq.gz' seems to be completely empty. Consider respecifying!
+
+/tmp/slurmd/job2045979/slurm_script: line 34: syntax error near unexpected token `done'
+/tmp/slurmd/job2045979/slurm_script: line 34: `done'

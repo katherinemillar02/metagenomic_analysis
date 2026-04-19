@@ -1,0 +1,20 @@
+Lmod has detected the following error: The following module(s) are unknown:
+"trimmomatic"
+
+Please check the spelling or version number. Also try "module spider ..."
+It is also possible your cache file is out-of-date; it may help to try:
+  $ module --ignore_cache load "trimmomatic"
+
+Also make sure that all modulefiles written in TCL start with the string
+#%Module
+
+
+
+/tmp/slurmd/job2045868/slurm_script: line 22: trimmomatic: command not found
+/tmp/slurmd/job2045868/slurm_script: line 23: /gpfs/scratch/ajh20fhu/fastq/X204SC26022514-Z01-F001/01.RawData/H_13_01/*/*_1.fq.gz: No such file or directory
+/tmp/slurmd/job2045868/slurm_script: line 24: /gpfs/scratch/ajh20fhu/qc/*_1_clean.fq.gz: No such file or directory
+/tmp/slurmd/job2045868/slurm_script: line 25: /gpfs/scratch/ajh20fhu/qc/*_1_unpaired.fq.gz: No such file or directory
+/tmp/slurmd/job2045868/slurm_script: line 26: /gpfs/scratch/ajh20fhu/qc/*_2_clean.fq.gz: No such file or directory
+/tmp/slurmd/job2045868/slurm_script: line 27: /gpfs/scratch/ajh20fhu/qc/*_2_unpaired.fq.gz: No such file or directory
+/tmp/slurmd/job2045868/slurm_script: line 28: ILLUMINACLIP:TruSeq3-PE.fa:2:30:10: command not found
+/tmp/slurmd/job2045868/slurm_script: line 29: SLIDINGWINDOW:4:20: command not found

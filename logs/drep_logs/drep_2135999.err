@@ -1,0 +1,14 @@
+***************************************************
+    ..:: dRep dereplicate Step 1. Filter ::..
+***************************************************
+    
+Will filter the genome list
+Loading genomes from a list
+Calculating genome info of genomes
+Note: NumExpr detected 64 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+NumExpr defaulting to 8 threads.
+100.00% of genomes passed length filtering
+Running prodigal
+Running checkM
+!!! checkM failed !!!
+You can run again with the --debug option to see what went wrong (command logs will be created in the log folder)

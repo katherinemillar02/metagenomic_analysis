@@ -1,0 +1,7 @@
+[2026-03-29 22:57:53] INFO: CheckM v1.1.2
+[2026-03-29 22:57:53] INFO: checkm lineage_wf -x fa /gpfs/scratch/ajh20fhu/nfcore/drep/all_bins /gpfs/scratch/ajh20fhu/nfcore/drep/checkm -t 16
+[2026-03-29 22:57:53] INFO: [CheckM - tree] Placing bins in reference genome tree.
+[2026-03-29 22:57:53] ERROR: No bins found. Check the extension (-x) used to identify bins.
+
+  Controlled exit resulting from an unrecoverable error or warning.
+dRep dereplication finished!

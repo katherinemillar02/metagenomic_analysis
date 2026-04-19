@@ -1,0 +1,4 @@
+usage: dRep [-h]
+            {filter,cluster,choose,analyze,bonus,evaluate,dereplicate,compare}
+            ...
+dRep: error: unrecognized arguments: --skipCheckM

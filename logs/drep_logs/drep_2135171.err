@@ -1,0 +1,5 @@
+Could not find conda environment: drep_env
+You can list all discoverable environments with `conda info --envs`.
+
+/tmp/slurmd/job2135171/slurm_script: line 36: unexpected EOF while looking for matching `"'
+/tmp/slurmd/job2135171/slurm_script: line 37: syntax error: unexpected end of file
