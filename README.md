@@ -8,39 +8,36 @@ project-root/
 │   └── software_versions.txt
 │
 ├── pipelines/
- 
 │   ├── mag/
 │   │   ├── results/
-│   │   └── nfcoresheet.csv/
-|
-│   ├── taxprofiler/
-│   │   ├── results/
-│   │   ├── metaphlan_db/
-│   │   ├── databases.csv/
-│   │   └── rawsamples.csv/
-│  
-├── raw_data/
-│ ├── raw_data/
+│   │   └── nfcoresheet.csv
+│   │
+│   └── taxprofiler/
+│       ├── results/
+│       ├── metaphlan_db/
+│       ├── databases.csv
+│       └── rawsamples.csv
 │
+├── raw_data/
+│   └── raw_data/
 │
 ├── scripts_and_logs/
-│   │   ├── logs/
-│   │   ├── scripts/
-│   │   └── README.md/
+│   ├── logs/
+│   ├── scripts/
+│   └── README.md
 │
 ├── workflows/
-│   ├── kraken/ 
+│   ├── kraken/
 │   │   ├── kraken_db/
 │   │   └── results/
 │   │
-│   ├──mag_downstream/ - for eggnog, gtdbk, checkM, dRep etc
+│   ├── mag_downstream/
 │   │   ├── nextflow.config
 │   │   ├── eggnog_db/
 │   │   └── results/
 │   │
-│   │
-│   └── raw_sample_preprocessing
-│   │  └── results/
+│   └── raw_sample_preprocessing/
+│       └── results/
 │
 ├── CHANGELOG.md
 └── README.md
