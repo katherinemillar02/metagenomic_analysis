@@ -2,6 +2,9 @@
 
 This GitHub repository contains R scripts, batch scripts and logs from analyses of two mmetagenomic Medfly gut samples. 
 
+<details>
+<summary>Project Structure</summary>
+```text
 project-root/
 ├── archive_scripts/
 ├── docs/
@@ -41,4 +44,4 @@ project-root/
 │
 ├── CHANGELOG.md
 └── README.md
-
+</details> ```
