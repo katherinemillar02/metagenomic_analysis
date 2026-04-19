@@ -28,6 +28,7 @@ project-root/
 ├── **GitHub: scripts_and_logs**/
 │   ├── **logs**/
 │   ├── **scripts**/
+│   ├── CHANGELOG.md
 │   └── **README.md**
 │
 ├── workflows/
