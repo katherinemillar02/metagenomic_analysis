@@ -25,10 +25,10 @@ project-root/
 ├── raw_data/
 │   └── raw_data/
 │
-├── scripts_and_logs/
-│   ├── logs/
-│   ├── scripts/
-│   └── README.md
+├── **GitHub: scripts_and_logs**/
+│   ├── **logs**/
+│   ├── **scripts**/
+│   └── **README.md**
 │
 ├── workflows/
 │   ├── kraken/
