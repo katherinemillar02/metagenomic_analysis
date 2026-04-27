@@ -1,8 +1,6 @@
-library(dplyr)
-library(tidyr)
-library(readr)
-library(ggplot2)
-library(stringr)
+# Load libraries
+source("R_scripts/packages.R")
+
 
 
 
@@ -11,8 +9,8 @@ library(stringr)
 
 # List of files and sample names
 files <- c(
-  "NH_12_01_nohost_NH_12_01_nohost_mpa_v30.metaphlan_profile.txt",
-  "H_13_01_nohost_H_13_01_nohost_mpa_v30.metaphlan_profile.txt"
+  "results/NH_12_01_nohost_NH_12_01_nohost_mpa_v30.metaphlan_profile.txt",
+  "results/H_13_01_nohost_H_13_01_nohost_mpa_v30.metaphlan_profile.txt"
 )
 samples <- c("NH_12_01", "H_13_01")
 
@@ -63,7 +61,8 @@ metaphlan <- ggplot(top_species,
 
 
 # Files and sample names
-files <- c("H_13_01_nohost_H_13_01_nohost_standard.kraken2.kraken2.report.txt", "NH_12_01_nohost_NH_12_01_nohost_standard.kraken2.kraken2.report.txt")
+files <- c("results/H_13_01_nohost_H_13_01_nohost_standard.kraken2.kraken2.report.txt", 
+           "results/NH_12_01_nohost_NH_12_01_nohost_standard.kraken2.kraken2.report.txt")
 samples <- c("H_13_01", "NH_12_01")
 
 # Read and combine Kraken reports

@@ -1,16 +1,12 @@
 # Load libraries
-library(tidyverse)
-library(data.table)
-library(stringr)
-library(RColorBrewer)
-library(vegan)
+source("R_scripts/packages.R")
 
 
 # ------------------------------
 # 1. Read MetaPhlAn files
 # ------------------------------
-meta_H  <- fread("taxprofiler/H_13_01_nohost_H_13_01_nohost_mpa_v30.metaphlan_profile.txt")
-meta_NH <- fread("taxprofiler/NH_12_01_nohost_NH_12_01_nohost_mpa_v30.metaphlan_profile.txt")
+meta_H  <- fread("results/H_13_01_nohost_H_13_01_nohost_mpa_v30.metaphlan_profile.txt")
+meta_NH <- fread("results/NH_12_01_nohost_NH_12_01_nohost_mpa_v30.metaphlan_profile.txt")
 
 # ------------------------------
 # 2. Clean and tidy each sample
